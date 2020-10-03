@@ -1,0 +1,46 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 00AC9B8E-FC46-3E41-ABAD-23B3B857B677' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Health/Plugins/NanoHealth.bundle/NanoHealth
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    objc-classes:         [ _NLNanoHealthPlugin ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _HKLogCoaching, _HKLogDefault,
+                            _NSCalendarIdentifierGregorian, _NSStringFromClass,
+                            _NSStringFromSelector, __Block_object_assign,
+                            __HKInitializeLogging, __NSConcreteStackBlock,
+                            ___CFConstantStringClassReference, ___stack_chk_fail,
+                            ___stack_chk_guard, __objc_empty_cache,
+                            __os_log_debug_impl, __os_log_impl, _objc_alloc,
+                            _objc_alloc_init, _objc_autoreleaseReturnValue,
+                            _objc_msgSend, _objc_msgSendSuper2, _objc_opt_class,
+                            _objc_release, _objc_retain,
+                            _objc_retainAutoreleasedReturnValue,
+                            _objc_storeStrong, _os_log_type_enabled,
+                            dyld_stub_binder ]
+    objc-classes:         [ _CSLSOnWristMonitor, _HDActivityCacheManager,
+                            _HDHealthExtensionsPlugin,
+                            _NLActivityAchievementsAlertManager,
+                            _NLAlertSuppressionManager,
+                            _NLAppleExerciseTimeDataCollector, _NLBridgeSettings,
+                            _NLCoachingAlertNotifier, _NLCoachingManager,
+                            _NLDailyGoalCompletionActivitySummaryObserver,
+                            _NLDailyGoalCompletionManager,
+                            _NLDailyGoalProgressManager, _NLDataLogger,
+                            _NLDeepBreathingCoachingSubmanager,
+                            _NLDeepBreathingSessionServer,
+                            _NLDeepBreathingWeeklySummarySubmanager,
+                            _NLFirstGlanceManager, _NLGizmoWristEventsManager,
+                            _NLHIDHandler, _NLNanoHealthServer,
+                            _NLPredictedActivityAlertController,
+                            _NLSedentaryTimer, _NLSwimmingDataCollector,
+                            _NLWorkoutAutopauseManager, _NSArray, _NSCalendar,
+                            _NSMutableArray, _NSObject ]
+...

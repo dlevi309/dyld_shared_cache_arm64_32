@@ -1,0 +1,22 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 16BC6F32-0276-3DAC-A353-2600134C5DC2' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          "/System/Library/PrivateFrameworks/FontServices.framework/libGSFontCache,6.dylib"
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _GSFontCacheGetData, _GSFontCacheGetDictionary ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ ___CFConstantStringClassReference, _objc_msgSend,
+                            dyld_stub_binder ]
+    objc-classes:         [ _NSConstantArray, _NSConstantDictionary,
+                            _NSConstantIntegerNumber, __NSConstantArray,
+                            __NSConstantData, __NSConstantDictionary,
+                            __NSConstantNumberBool, __NSConstantNumberFloat,
+                            __NSConstantNumberInt ]
+...

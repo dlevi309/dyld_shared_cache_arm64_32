@@ -1,0 +1,63 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 32D19373-52E9-3D9E-B580-397179C72BA2' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/RelevanceEngine/DataSources/RelevanceEngineMusicForYou.bundle/RelevanceEngineMusicForYou
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _REMusicForYouBundle, _REMusicForYouBundleIdentifier,
+                            _REMusicForYouElement,
+                            _REMusicForYouElementIdentifier,
+                            _REMusicForYouElementWithRelevanceProvider,
+                            _REMusicForYouImageNamed,
+                            _REMusicForYouLocalizedString,
+                            _RelevanceEngineMusicForYouVersionNumber,
+                            _RelevanceEngineMusicForYouVersionString ]
+    objc-classes:         [ _REMusicForYouBundleConfiguration,
+                            _REMusicForYouDataSource,
+                            _REMusicForYouDemoDataSource,
+                            _REMusicForYouSampleDataSource ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _CFPreferencesAppSynchronize,
+                            _CFPreferencesSetAppValue, _MGGetBoolAnswer,
+                            _NMSMediaSyncInfoDidUpdateNotification,
+                            _NMSMusicRecommendationsDidUpdateNotification,
+                            _NMSRecommendationHeavyRotationIdentifier,
+                            _REAbsoluteRelevanceProviderForDate,
+                            _REDefaultSectionIdentifier, _REDemoDataSourceKey,
+                            _REDemoDateForIdentifier, _REImageNamedFromBundle,
+                            _RELogForDomain, _REPrimaryDataSourceKey,
+                            _RESampleDataSourceKey,
+                            _REUISampleRelevanceProviderForSamplePosition,
+                            _REUIScaledFullColorImageProviderWithImage,
+                            __Block_object_assign, __Block_object_dispose,
+                            __NSConcreteGlobalBlock, __NSConcreteStackBlock,
+                            __Unwind_Resume, ___CFConstantStringClassReference,
+                            ___NSArray0__, ___objc_personality_v0,
+                            ___stack_chk_fail, ___stack_chk_guard,
+                            __objc_empty_cache, __os_log_impl, _abort_report_np,
+                            _dispatch_get_global_queue, _dispatch_once, _dlerror,
+                            _dlopen, _dlsym, _objc_alloc, _objc_alloc_init,
+                            _objc_autoreleaseReturnValue, _objc_copyWeak,
+                            _objc_destroyWeak, _objc_enumerationMutation,
+                            _objc_initWeak, _objc_loadWeakRetained, _objc_msgSend,
+                            _objc_msgSendSuper2, _objc_opt_class, _objc_release,
+                            _objc_retain, _objc_retainAutoreleaseReturnValue,
+                            _objc_retainAutoreleasedReturnValue,
+                            _objc_storeStrong, _os_log_type_enabled,
+                            dyld_stub_binder ]
+    objc-classes:         [ _CLKComplicationTemplateGraphicCircularImage,
+                            _CLKSimpleTextProvider, _NMSMediaSyncInfo,
+                            _NMSMusicRecommendationManager, _NMSyncDefaults,
+                            _NSArray, _NSBundle, _NSCalendar, _NSDate,
+                            _NSNotificationCenter, _NSNumber, _NSObject, _NSString,
+                            _NSURL, _REBundleConfiguration, _REContent,
+                            _REDailyRoutineRelevanceProvider, _REElement,
+                            _REElementDataSource, _REElementOpenAction,
+                            _RENowPlayingRelevanceProvider, _UIScreen ]
+...

@@ -1,0 +1,38 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 29533853-5630-3DAE-B7C5-64194751E63C' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/RelevanceEngine/DataSources/RelevanceEngineAudiobooksWatch.bundle/RelevanceEngineAudiobooksWatch
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _REAudiobooksBundle, _REAudiobooksBundleIdentifier,
+                            _REAudiobooksImageNamed,
+                            _REAudiobooksLocalizedString,
+                            _REAudiobooksSampleContent,
+                            _RelevanceEngineAudiobooksWatchVersionNumber,
+                            _RelevanceEngineAudiobooksWatchVersionString ]
+    objc-classes:         [ _REAudiobooksBundleConfiguration,
+                            _REAudiobooksDataSource, _REAudiobooksDemoDataSource,
+                            _REAudiobooksSampleDataSource ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _REDefaultSectionIdentifier, _REDemoDataSourceKey,
+                            _REImageNamedFromBundle, _REPrimaryDataSourceKey,
+                            _RESampleDataSourceKey,
+                            _REUISampleRelevanceProviderForSamplePosition,
+                            __NSConcreteGlobalBlock,
+                            ___CFConstantStringClassReference,
+                            __objc_empty_cache, _dispatch_once, _objc_alloc,
+                            _objc_alloc_init, _objc_autoreleaseReturnValue,
+                            _objc_msgSend, _objc_opt_class, _objc_release,
+                            _objc_retain, _objc_retainAutoreleaseReturnValue,
+                            _objc_retainAutoreleasedReturnValue,
+                            dyld_stub_binder ]
+    objc-classes:         [ _CLKSimpleTextProvider, _NSArray, _NSBundle, _NSObject,
+                            _NSString, _REBundleConfiguration, _REContent,
+                            _REElement, _REElementDataSource ]
+...

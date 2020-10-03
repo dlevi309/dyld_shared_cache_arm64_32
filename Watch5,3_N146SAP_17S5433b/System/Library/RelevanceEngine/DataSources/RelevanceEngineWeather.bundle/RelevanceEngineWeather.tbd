@@ -1,0 +1,85 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 85C519AB-A4CF-386D-87DF-F97B54A4913F' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/RelevanceEngine/DataSources/RelevanceEngineWeather.bundle/RelevanceEngineWeather
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _NWREConditionIconForCode, _NWREDeviceIsM8,
+                            _NWREIsCurrentLocaleCJK, _NWRELocalizationBundle,
+                            _NWRELocalizedImageNamed, _NWRELocalizedString,
+                            _NanoWeatherAppBundleID, _NanoWeatherBundleID,
+                            _kDefaultRoutineTimeInterval ]
+    objc-classes:         [ _NWREBundleConfiguration, _NWREDataProvider,
+                            _NWREDataSource, _NWREDemoDataSource,
+                            _NWRESampleDataSource ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _ADClientSetValueForScalarKey,
+                            _AD_KEY_NANOWEATHER_UPNEXTCOMPLICATION_DISPLAYING_BAD_AIR,
+                            _MGGetStringAnswer, _NSBaselineOffsetAttributeName,
+                            _NSCurrentLocaleDidChangeNotification,
+                            _NSDefaultRunLoopMode, _NSFontAttributeName,
+                            _NWKDaytimeConditionIconNameForCode,
+                            _NWKLogForCategory,
+                            _NWKNighttimeConditionIconNameForCode,
+                            _NWK_ROUTINE_FORECAST_UPDATED_NOTIFICATION_KEY,
+                            _REAllDaySectionIdentifier,
+                            _REDefaultSectionIdentifier, _REDemoDataSourceKey,
+                            _REEndOfDayForDate, _REPrimaryDataSourceKey,
+                            _RESampleDataSourceKey, _REStartOfNextDayForDate,
+                            _RETomorrowSectionIdentifier,
+                            _REUISampleRelevanceProviderForSamplePosition,
+                            _REUIScaledFullColorImageProviderWithImage,
+                            _REUpNextDemoWeatherHideWeatherConditions,
+                            _WFWeatherTemperatureComponent,
+                            __Block_object_assign, __Block_object_dispose,
+                            __NSConcreteGlobalBlock, __NSConcreteStackBlock,
+                            __Unwind_Resume, ___CFConstantStringClassReference,
+                            ___NSArray0__, ___objc_personality_v0,
+                            ___stack_chk_fail, ___stack_chk_guard,
+                            __dispatch_main_q, __objc_empty_cache, __os_log_impl,
+                            _abort_report_np, _dispatch_async,
+                            _dispatch_get_global_queue, _dispatch_once, _dlerror,
+                            _dlopen, _kNWKConstants_WeatherAppBundleIdentifier,
+                            _kNWKLaunchURL_Query_AQI,
+                            _kNWKLaunchURL_Query_Tomorrow, _notify_cancel,
+                            _notify_register_dispatch, _objc_alloc,
+                            _objc_alloc_init, _objc_autorelease,
+                            _objc_autoreleaseReturnValue, _objc_copyWeak,
+                            _objc_destroyWeak, _objc_enumerationMutation,
+                            _objc_getClass, _objc_initWeak, _objc_loadWeakRetained,
+                            _objc_msgSend, _objc_msgSendSuper2, _objc_opt_class,
+                            _objc_opt_new, _objc_release, _objc_retain,
+                            _objc_retainAutoreleaseReturnValue,
+                            _objc_retainAutoreleasedReturnValue,
+                            _objc_storeStrong, _os_log_type_enabled,
+                            dyld_stub_binder ]
+    objc-classes:         [ _CLKComplicationTemplateGraphicCircularImage,
+                            _CLKImageProvider, _CLKSimpleTextProvider,
+                            _CLKTextProvider, _CLKTimeTextProvider, _NSArray,
+                            _NSAttributedString, _NSBundle, _NSCalendar, _NSDate,
+                            _NSDateInterval, _NSDictionary, _NSLocale,
+                            _NSMutableArray, _NSMutableAttributedString,
+                            _NSNotificationCenter, _NSNumber, _NSNumberFormatter,
+                            _NSObject, _NSRunLoop, _NSSet, _NSString,
+                            _NSTextAttachment, _NSTimer,
+                            _NWCAirQualityTemplateFormatter, _NWKLaunchURL,
+                            _NWKLocalizedImage,
+                            _NWKSelectedLocationWeatherMonitor,
+                            _NWMTemperatureFormatter, _REAccessoryDescription,
+                            _REBundleConfiguration, _REContent,
+                            _REDailyRoutineRelevanceProvider,
+                            _REDateRelevanceProvider,
+                            _REDependentRelevanceProvider, _REElement,
+                            _REElementDataSource, _REElementOpenAction,
+                            _REPeriodOfDayPredictor,
+                            _REPriorityRelevanceProvider, _REUpNextScheduler,
+                            _UIColor, _UIImage, _UIImageSymbolConfiguration,
+                            _UIScreen, _WFAirQualityConditions, _WFLocation,
+                            _WFWeatherConditions ]
+...

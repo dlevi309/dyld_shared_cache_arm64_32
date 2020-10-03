@@ -1,0 +1,16 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 9B607264-2420-3C13-899E-B19864B7FAC8' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/CoreServices/Encodings/libSimplifiedChineseConverter.dylib
+current-version:       76
+compatibility-version: 1
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ ___CFStringEncodingGetSimplifiedChineseConverterDefinition ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ ___stack_chk_fail, ___stack_chk_guard, _strlen,
+                            dyld_stub_binder ]
+...

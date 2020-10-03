@@ -1,0 +1,51 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 6702C6F1-0F79-3CFA-9B62-FB42F6F95735' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/RelevanceEngine/DataSources/RelevanceEngineTimer.bundle/RelevanceEngineTimer
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _RETimerBundle, _RETimerBundleIdentifier,
+                            _RETimerContent, _RETimerElementIdentifier,
+                            _RETimerImageNamed, _RETimerLocalizedString,
+                            _RelevanceEngineTimerVersionNumber,
+                            _RelevanceEngineTimerVersionString ]
+    objc-classes:         [ _RETimerBundleConfiguration, _RETimerDataSource,
+                            _RETimerDemoDataSource, _RETimerSampleDataSource ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _MTTimerManagerStateReset,
+                            _MTTimerManagerTimersChanged,
+                            _MTTimerManagerTimersKey, _NAEmptyResult,
+                            _REDefaultSectionIdentifier, _REDemoDataSourceKey,
+                            _REImageNamedFromBundle, _RELogForDomain,
+                            _REPrimaryDataSourceKey, _RESampleDataSourceKey,
+                            _REUIGraphicCircularTemplateForAppWithIdentifier,
+                            _REUISampleRelevanceProviderForSamplePosition,
+                            __Block_object_assign, __NSConcreteGlobalBlock,
+                            __NSConcreteStackBlock,
+                            ___CFConstantStringClassReference, ___NSArray0__,
+                            ___stack_chk_fail, ___stack_chk_guard,
+                            __objc_empty_cache, __os_log_impl, _dispatch_async,
+                            _dispatch_once, _objc_alloc, _objc_alloc_init,
+                            _objc_autoreleaseReturnValue, _objc_msgSend,
+                            _objc_msgSendSuper2, _objc_opt_class, _objc_opt_new,
+                            _objc_release, _objc_retain,
+                            _objc_retainAutoreleaseReturnValue,
+                            _objc_retainAutoreleasedReturnValue,
+                            _objc_storeStrong,
+                            _objc_unsafeClaimAutoreleasedReturnValue,
+                            _os_log_type_enabled, dyld_stub_binder ]
+    objc-classes:         [ _CLKImageProvider, _CLKRelativeDateTextProvider,
+                            _CLKSimpleTextProvider, _MTTimerManager, _NSArray,
+                            _NSBundle, _NSDate, _NSNotificationCenter, _NSObject,
+                            _NSURL, _REBundleConfiguration, _REContent, _REElement,
+                            _REElementDataSource, _REElementOpenAction,
+                            _REForcedRelevanceProvider,
+                            _REGroupRelevanceProvider,
+                            _RESessionRelevanceProvider, _UIColor ]
+...

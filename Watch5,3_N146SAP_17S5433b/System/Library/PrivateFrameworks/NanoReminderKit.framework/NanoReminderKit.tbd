@@ -1,0 +1,80 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: B54E2DCF-5401-3726-8B7A-0ADBC73A9BE1' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/NanoReminderKit.framework/NanoReminderKit
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _NREMLogForCategory,
+                            _NRKReminderStoreDataChangedNotification,
+                            _NRKSyntheticDailyScheduledReminderListID,
+                            _NRKSyntheticScheduledReminderListID,
+                            _NanoReminderKitVersionNumber,
+                            _NanoReminderKitVersionString,
+                            _delayCommitInMilliseconds, _delayWriteInSeconds,
+                            _kListIdQueryTerm,
+                            _kNRKActivityRecipeErrorCode_DisplayLinkPollTimeout,
+                            _kNRKActivityRecipeErrorCode_TriggerTimeout,
+                            _kNRKActivityRecipeErrorDomain,
+                            _kNRKActivityRecipeNotificationName_RecipeComplete,
+                            _writeDelayThresholdInSeconds ]
+    objc-classes:         [ _NRKActivityRecipe, _NRKChangeRequest,
+                            _NRKCompletedChangedState,
+                            _NRKFetchCompletionBlockManager,
+                            _NRKGateKeeperReferenceCounter, _NRKReloadShuttle,
+                            _NRKReminder, _NRKReminderDay, _NRKReminderList,
+                            _NRKReminderStore, _NRKReminderURL,
+                            _NRKScheduledRemindersList, _NRKWriteQueue ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _CGColorCreateCopy, _EKCompletionDatePropertyId,
+                            _EKDisplayOrderPropertyId, _EKDueDatePropertyId,
+                            _EKDueDateTimeZonePropertyId,
+                            _EKEventStoreChangedNotification,
+                            _EKPriorityPropertyId, _EKTitlePropertyId,
+                            _EKUUIDPropertyId, _NSRunLoopCommonModes,
+                            __Block_object_assign, __Block_object_dispose,
+                            __EKReminderURLScheme, __NSConcreteGlobalBlock,
+                            __NSConcreteStackBlock, __Unwind_Resume,
+                            ___CFConstantStringClassReference, ___assert_rtn,
+                            ___objc_personality_v0, ___stack_chk_fail,
+                            ___stack_chk_guard, __dispatch_main_q,
+                            __objc_empty_cache, __os_log_debug_impl,
+                            __os_log_error_impl, __os_log_impl, _dispatch_after,
+                            _dispatch_async, _dispatch_block_cancel,
+                            _dispatch_block_create, _dispatch_get_global_queue,
+                            _dispatch_group_enter, _dispatch_group_leave,
+                            _dispatch_once,
+                            _dispatch_queue_attr_make_with_qos_class,
+                            _dispatch_queue_create, _dispatch_resume,
+                            _dispatch_semaphore_create,
+                            _dispatch_semaphore_signal, _dispatch_semaphore_wait,
+                            _dispatch_suspend, _dispatch_sync, _dispatch_time,
+                            _objc_alloc, _objc_alloc_init, _objc_autorelease,
+                            _objc_autoreleaseReturnValue, _objc_copyWeak,
+                            _objc_destroyWeak, _objc_enumerationMutation,
+                            _objc_getProperty, _objc_initWeak,
+                            _objc_loadWeakRetained, _objc_msgSend,
+                            _objc_msgSendSuper2, _objc_opt_class,
+                            _objc_opt_isKindOfClass, _objc_release, _objc_retain,
+                            _objc_retainAutorelease,
+                            _objc_retainAutoreleaseReturnValue,
+                            _objc_retainAutoreleasedReturnValue,
+                            _objc_retainBlock, _objc_setProperty_atomic,
+                            _objc_setProperty_atomic_copy,
+                            _objc_setProperty_nonatomic_copy, _objc_storeStrong,
+                            _objc_storeWeak, _objc_sync_enter, _objc_sync_exit,
+                            _os_log_create, _os_log_type_enabled, _usleep,
+                            dyld_stub_binder ]
+    objc-classes:         [ _BKSProcessAssertion, _CADisplayLink, _EKEventStore,
+                            _EKReminder, _NEKSignalCoalescer, _NSArray, _NSBundle,
+                            _NSCalendar, _NSDate, _NSError, _NSLock, _NSMutableArray,
+                            _NSMutableDictionary, _NSMutableSet, _NSMutableString,
+                            _NSNotificationCenter, _NSNumber, _NSObject,
+                            _NSPredicate, _NSProcessInfo, _NSRunLoop, _NSSet,
+                            _NSString, _NSURLComponents, _UIColor ]
+...

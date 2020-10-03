@@ -1,0 +1,15 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 1AB1C971-534A-3AC9-BABD-AD6EEC363F5A' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/CoreServices/Encodings/libHebrewConverter.dylib
+current-version:       76
+compatibility-version: 1
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ ___CFStringEncodingGetHebrewConverterDefinition ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ dyld_stub_binder ]
+...

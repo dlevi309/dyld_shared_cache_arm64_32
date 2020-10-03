@@ -1,0 +1,96 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 79193F91-45C8-37B2-B79B-7A88A4D78FB9' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/RelevanceEngine/DataSources/RelevanceEngineSiriActions.bundle/RelevanceEngineSiriActions
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _CreateIntent, _RETextProviderForVariableWidthString,
+                            _RelevanceEngineSiriActionsVersionNumber,
+                            _RelevanceEngineSiriActionsVersionString ]
+    objc-classes:         [ _REDemoIntent, _RESiriActionsBundleConfiguration,
+                            _RESiriActionsDataSource,
+                            _RESiriActionsDemoDataSource ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _CFNotificationCenterAddObserver,
+                            _CFNotificationCenterGetDarwinNotifyCenter,
+                            _CFNotificationCenterRemoveObserver,
+                            _CGContextAddPath, _CGContextClip,
+                            _CGContextSetInterpolationQuality, _CGSizeZero,
+                            _CSLSConnectionStatusToString,
+                            _INIntentSchemaGetIntentDescriptionWithFacadeClass,
+                            _NSClassFromString, _NSStringFromClass,
+                            _NSStringFromSelector,
+                            _REAbsoluteRelevanceProviderForDate,
+                            _REApplicationGetType, _REApplicationStateDidChange,
+                            _REDefaultSectionIdentifier, _REDemoDataSourceKey,
+                            _REDemoDateForIdentifier, _RELaunchApp,
+                            _RELocalApplicationIdentifierForRemoteApplication,
+                            _RELogForDomain, _REPrimaryDataSourceKey,
+                            _RERelevanceProvidersForDonatedAction,
+                            _REShowRecentDeveloperDonations,
+                            _RESuggestedBodyImageSizeForStyle,
+                            _RESuggestedHeaderImageSizeForStyle,
+                            _REUIScaledFullColorImageProviderWithImage,
+                            _REUpNextDemoUserDefaults, __Block_object_assign,
+                            __Block_object_dispose, __NSConcreteGlobalBlock,
+                            __NSConcreteStackBlock,
+                            __UIAdaptLocalizedStringForView, __Unwind_Resume,
+                            ___CFConstantStringClassReference, ___NSArray0__,
+                            ___objc_personality_v0, ___stack_chk_fail,
+                            ___stack_chk_guard, __objc_empty_cache,
+                            __os_log_debug_impl, __os_log_error_impl,
+                            __os_log_impl, _abort_report_np, _dispatch_async,
+                            _dispatch_group_create, _dispatch_group_enter,
+                            _dispatch_group_leave, _dispatch_group_notify,
+                            _dispatch_queue_create, _dlerror, _dlopen, _dlsym,
+                            _kAFPreferencesDidChangeDarwinNotification,
+                            _objc_alloc, _objc_alloc_init, _objc_autorelease,
+                            _objc_autoreleaseReturnValue, _objc_copyWeak,
+                            _objc_destroyWeak, _objc_enumerationMutation,
+                            _objc_getClass, _objc_initWeak, _objc_loadWeakRetained,
+                            _objc_msgSend, _objc_msgSendSuper2, _objc_opt_class,
+                            _objc_opt_isKindOfClass, _objc_opt_new, _objc_release,
+                            _objc_retain, _objc_retainAutorelease,
+                            _objc_retainAutoreleaseReturnValue,
+                            _objc_retainAutoreleasedReturnValue,
+                            _objc_retainBlock, _objc_storeStrong,
+                            _os_log_type_enabled, _powf, dyld_stub_binder ]
+    objc-classes:         [ _AFPreferences, _BLTSettingsService, _CLCircularRegion,
+                            _CLKComplicationTemplateGraphicCircularImage,
+                            _CLKImageProvider, _CLKSimpleTextProvider, _CLLocation,
+                            _CSLSConnectionStatusService,
+                            _INCodableObjectAttribute, _INIntent, _INObject,
+                            _INPlayMediaIntent, _INSchema, _LSApplicationProxy,
+                            _NSArray, _NSCalendar, _NSCharacterSet, _NSData, _NSDate,
+                            _NSDictionary, _NSFileManager, _NSMapTable,
+                            _NSMutableArray, _NSMutableDictionary, _NSMutableSet,
+                            _NSMutableString, _NSNotificationCenter, _NSObject,
+                            _NSSet, _NSString, _NSUUID, _NSUserActivity,
+                            _REBundleConfiguration, _REContent, _REDonatedAction,
+                            _REElement, _REElementBlockAction,
+                            _REElementDataSource, _REElementGroup,
+                            _REElementUserActivityAction,
+                            _REElementUserActivityShortcutAction, _REFeature,
+                            _REFeatureValue, _REGeofenceRelevanceProvider,
+                            _REGroupRelevanceProvider,
+                            _RELocationRelevanceProvider,
+                            _RENowPlayingRelevanceProvider,
+                            _REPredictedActionServer,
+                            _RERecentActionRelevanceProvider,
+                            _RERelevanceProvider,
+                            _RESiriActionsDonationsWhitelist,
+                            _REUIDonatedElementDemoProperties,
+                            _REUIDonatedElementProperties,
+                            _REUIElementIntentAction, _REUpNextTimer,
+                            _REWorkoutRelevanceProvider, _UIBezierPath,
+                            _UIGraphicsImageRenderer,
+                            _UIGraphicsImageRendererFormat, _UIImage, _UIScreen,
+                            _UIWindow, _VCIntentDefinitionManager,
+                            __MKLocationShifter ]
+...

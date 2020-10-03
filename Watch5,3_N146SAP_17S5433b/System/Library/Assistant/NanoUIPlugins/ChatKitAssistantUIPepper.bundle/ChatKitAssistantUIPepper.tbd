@@ -1,0 +1,49 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: B1AF7B63-5E01-3E24-8A48-7B5A51FF55FA' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Assistant/NanoUIPlugins/ChatKitAssistantUIPepper.bundle/ChatKitAssistantUIPepper
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _kLabelBalloonVert, _kToFieldLeftMargin,
+                            _kToFieldMinimumHeight ]
+    objc-classes:         [ _CKNanoAssistantInlineReplyFactory,
+                            _CKNanoAssistantInlineReplyViewController,
+                            _CKNanoCardView, _CKNanoMessageSnippetContentView,
+                            _CKNanoSiriCardTemplate,
+                            _CKNanoSiriCardTemplateCellLayoutValues ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _CGPointZero, _CGRectInset, _CGRectZero,
+                            _CKFrameworkBundle,
+                            _IMSharedUtilitiesFrameworkBundle,
+                            _NSFontAttributeName,
+                            _NSForegroundColorAttributeName, _NSLog,
+                            _NSParagraphStyleAttributeName,
+                            _SUICGetSiriUILanguageCode, _SUICSiriLanguageIsRTL,
+                            _UICeilToViewScale, _UIFontTextStyleBody,
+                            _UIFontTextStyleFootnote1,
+                            _UIGraphicsBeginImageContextWithOptions,
+                            _UIGraphicsEndImageContext,
+                            _UIGraphicsGetImageFromCurrentImageContext,
+                            _UIRoundToViewScale,
+                            ___CFConstantStringClassReference, ___stack_chk_fail,
+                            ___stack_chk_guard, __objc_empty_cache, _objc_alloc,
+                            _objc_alloc_init, _objc_autoreleaseReturnValue,
+                            _objc_msgSend, _objc_msgSendSuper2, _objc_opt_class,
+                            _objc_opt_isKindOfClass, _objc_release, _objc_retain,
+                            _objc_retainAutoreleaseReturnValue,
+                            _objc_retainAutoreleasedReturnValue,
+                            _objc_storeStrong, dyld_stub_binder ]
+    objc-classes:         [ _CKTextBalloonView, _CKUIBehavior, _IMPerson,
+                            _NSAttributedString, _NSDictionary,
+                            _NSMutableAttributedString, _NSMutableParagraphStyle,
+                            _NSMutableString, _NSObject, _NSString,
+                            _STShowMessageRequest, _UIBezierPath, _UIColor,
+                            _UIDevice, _UIFont, _UIFontDescriptor, _UIImageView,
+                            _UILabel, _UIScreen, _UIView, _UIViewController ]
+...

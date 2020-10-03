@@ -1,0 +1,69 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: A5C65F79-C20E-3EC2-8BF4-60334EF57772' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/AppleLisaSupport.framework/AppleLisaSupport
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _AppleLisaErrorDomain, _al_get_log ]
+    objc-classes:         [ _ALBonnDevice, _ALDevice, _ALManager, _ALOpalDevice,
+                            _ALPlayer, _ALRecorder ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _CFAbsoluteTimeGetCurrent, _CFDataCreate,
+                            _CFDataCreateWithBytesNoCopy, _CFDataGetBytePtr,
+                            _CFDataGetLength, _CFDictionaryCreateMutable,
+                            _CFDictionaryGetValue, _CFDictionarySetValue,
+                            _CFPropertyListCreateData,
+                            _CFPropertyListCreateWithData, _CFRelease, _CFRetain,
+                            _CFRunLoopGetCurrent, _CFRunLoopGetMain,
+                            _IOHIDDeviceGetReport, _IOHIDDeviceGetService,
+                            _IOHIDDeviceOpen,
+                            _IOHIDDeviceRegisterInputReportCallback,
+                            _IOHIDDeviceScheduleWithRunLoop,
+                            _IOHIDDeviceSetReport,
+                            _IOHIDDeviceUnscheduleFromRunLoop,
+                            _IOHIDManagerCopyDevices, _IOHIDManagerCreate,
+                            _IOHIDManagerSetDeviceMatching,
+                            _IOHIDUserDeviceCreate, _IOHIDUserDeviceHandleReport,
+                            _IOHIDUserDeviceScheduleWithRunLoop,
+                            _IOHIDUserDeviceUnscheduleFromRunLoop,
+                            _IOObjectRelease, _IOObjectRetain,
+                            _IORegistryEntryCreateCFProperties,
+                            _NSLocalizedDescriptionKey, _NSStringFromSelector,
+                            __NSConcreteGlobalBlock, __NSConcreteStackBlock,
+                            ___CFConstantStringClassReference, ___memcpy_chk,
+                            ___stack_chk_fail, ___stack_chk_guard,
+                            __dispatch_source_type_timer, __objc_empty_cache,
+                            __os_log_debug_impl, __os_log_error_impl,
+                            __os_log_impl, _close, _dispatch_async,
+                            _dispatch_group_async, _dispatch_group_create,
+                            _dispatch_group_wait, _dispatch_once,
+                            _dispatch_queue_create, _dispatch_resume,
+                            _dispatch_semaphore_create,
+                            _dispatch_semaphore_signal, _dispatch_semaphore_wait,
+                            _dispatch_source_cancel, _dispatch_source_create,
+                            _dispatch_source_set_event_handler,
+                            _dispatch_source_set_timer, _fchmod, _free, _fstat,
+                            _kCFAllocatorDefault, _kCFAllocatorNull,
+                            _kCFRunLoopCommonModes, _kCFRunLoopDefaultMode,
+                            _kCFTypeDictionaryKeyCallBacks,
+                            _kCFTypeDictionaryValueCallBacks, _malloc, _memcpy,
+                            _mmap, _objc_alloc, _objc_autorelease,
+                            _objc_autoreleaseReturnValue, _objc_copyStruct,
+                            _objc_destroyWeak, _objc_loadWeakRetained,
+                            _objc_msgSend, _objc_msgSendSuper2, _objc_opt_class,
+                            _objc_opt_respondsToSelector, _objc_release,
+                            _objc_retain, _objc_retainAutorelease,
+                            _objc_retainAutoreleaseReturnValue,
+                            _objc_retainAutoreleasedReturnValue,
+                            _objc_storeStrong, _objc_storeWeak, _open,
+                            _os_log_create, _os_log_type_enabled, _printf, _write,
+                            dyld_stub_binder ]
+    objc-classes:         [ _NSData, _NSDictionary, _NSError, _NSMutableDictionary,
+                            _NSNumber, _NSObject, _NSString ]
+...

@@ -1,0 +1,17 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 2F9AEAC9-81B3-3466-B2F4-09098465A017' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/CoreUtilsUI.framework/CoreUtilsUI
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    objc-classes:         [ _CUUIEnvironment ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ __objc_empty_cache, dyld_stub_binder ]
+    objc-classes:         [ _CUEnvironment, _NSObject ]
+...

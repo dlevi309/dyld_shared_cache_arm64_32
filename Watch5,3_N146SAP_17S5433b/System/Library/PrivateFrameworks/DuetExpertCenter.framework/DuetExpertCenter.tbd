@@ -1,0 +1,42 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: AE4B5D0A-E585-30C0-A46F-7D6FAD9F089A' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/DuetExpertCenter.framework/DuetExpertCenter
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _DuetExpertCenterVersionNumber,
+                            _DuetExpertCenterVersionString ]
+    objc-classes:         [ __DECABHelper, __DECAssets2, __DECPaths ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _NSRangeFromString, _NSStringFromClass,
+                            __NSConcreteGlobalBlock, __NSConcreteStackBlock,
+                            ___CFConstantStringClassReference, ___stack_chk_fail,
+                            ___stack_chk_guard, __objc_empty_cache,
+                            __os_log_debug_impl, __os_log_default,
+                            __os_log_error_impl, __os_log_impl,
+                            _arc4random_uniform, _dispatch_get_global_queue,
+                            _dispatch_once, _memcmp, _mkdir, _objc_alloc,
+                            _objc_autorelease, _objc_autoreleaseReturnValue,
+                            _objc_enumerationMutation, _objc_msgSend,
+                            _objc_msgSendSuper2, _objc_opt_class,
+                            _objc_opt_isKindOfClass, _objc_opt_new, _objc_release,
+                            _objc_retain, _objc_retainAutorelease,
+                            _objc_retainAutoreleaseReturnValue,
+                            _objc_retainAutoreleasedReturnValue,
+                            _objc_retainBlock, _objc_storeStrong,
+                            _objc_unsafeClaimAutoreleasedReturnValue,
+                            _os_log_type_enabled, _pthread_mutex_lock,
+                            _pthread_mutex_unlock, _xpc_transaction_exit_clean,
+                            dyld_stub_binder ]
+    objc-classes:         [ _ATXPaths, _NSBundle, _NSData, _NSDictionary,
+                            _NSMutableDictionary, _NSObject, _NSProcessInfo,
+                            _NSPropertyListSerialization, _NSString, _NSUUID,
+                            _NSUserDefaults, __PASAsset2, __PASDeviceIdentifier,
+                            __PASDeviceState, __PASLazyPlist, __PASTuple2 ]
+...

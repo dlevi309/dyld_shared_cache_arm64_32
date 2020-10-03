@@ -1,0 +1,83 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: E7933743-2BE5-3602-A5D7-033C38401EDC' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/Accessibility.framework/Frameworks/AXCarouselServerInstance.framework/AXCarouselServerInstance
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _AXCarouselServerInstanceVersionNumber,
+                            _AXCarouselServerInstanceVersionString ]
+    objc-classes:         [ _AXCarouselServerInstance,
+                            _AXCarouselServiceProvider ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _AXCarouselServerServiceName,
+                            _AXCarouselServerShowHearingControlsNotification,
+                            _AXIPCMessageKeyCarouselCanShowControlCenter,
+                            _AXIPCMessageKeyCarouselCanShowNotificationCenter,
+                            _AXIPCMessageKeyCarouselCurrentFaceClass,
+                            _AXIPCMessageKeyCarouselIsControlCenterVisible,
+                            _AXIPCMessageKeyCarouselIsNotificationCenterVisible,
+                            _AXIPCMessageKeyCarouselPID,
+                            _AXIPCMessageKeyCarouselShowControlCenter,
+                            _AXIPCMessageKeyCarouselShowNotificationCenter,
+                            _AXIPCPayloadKeyCarouselResult, _AXLogCommon,
+                            _AXPerformBlockOnMainThread,
+                            _AXPerformBlockOnMainThreadAfterDelay,
+                            _AXPerformSafeBlock, _AXPerformValidationChecks,
+                            _AXSafeClassFromString,
+                            _AXSystemAppServerReadyNotification,
+                            _AudioServicesCreateSystemSoundID,
+                            _AudioServicesPlaySystemSoundWithOptions,
+                            _AudioServicesSetProperty,
+                            _CFNotificationCenterAddObserver,
+                            _CFNotificationCenterGetDarwinNotifyCenter,
+                            _CFNotificationCenterPostNotification,
+                            _CFNotificationCenterRemoveObserver,
+                            _MGGetBoolAnswer, _MGGetStringAnswer,
+                            _NPSHasCompletedInitialSync, __AXLogWithFacility,
+                            __AXSAccessibilityEnabled,
+                            __AXSAssistiveTouchScannerEnabled,
+                            __AXSAssistiveTouchScannerSetEnabled,
+                            __AXSSetTripleClickOptions,
+                            __AXSTripleClickContainsOption,
+                            __AXSTripleClickCopyOptions,
+                            __AXSVoiceOverTouchEnabled,
+                            __AXSVoiceOverTouchSetEnabled, __AXSZoomTouchEnabled,
+                            __AXSZoomTouchSetEnabled, __Block_object_assign,
+                            __Block_object_dispose, __NSConcreteGlobalBlock,
+                            __NSConcreteStackBlock, __Unwind_Resume,
+                            ___CFConstantStringClassReference,
+                            ___objc_personality_v0, ___stack_chk_fail,
+                            ___stack_chk_guard, __dispatch_main_q,
+                            __objc_empty_cache, __os_log_error_impl, __os_log_impl,
+                            _abort_report_np, _dispatch_after, _dispatch_async,
+                            _dispatch_once, _dispatch_time, _dlerror, _dlopen, _dlsym,
+                            _kAXSAccessibilityEnabledNotification,
+                            _kAXSAccessibilityPreferenceDomain,
+                            _kAXSVoiceOverTouchEnabledNotification,
+                            _kAudioServicesPlaySystemSoundOptionBehaviorKey,
+                            _kAudioServicesPlaySystemSoundOptionIgnoreRingerSwitchKey,
+                            _objc_alloc, _objc_allocWithZone, _objc_alloc_init,
+                            _objc_autoreleaseReturnValue, _objc_copyWeak,
+                            _objc_destroyWeak, _objc_getClass, _objc_initWeak,
+                            _objc_loadWeakRetained, _objc_msgSend,
+                            _objc_msgSendSuper2, _objc_opt_class,
+                            _objc_opt_isKindOfClass, _objc_opt_new, _objc_release,
+                            _objc_retain, _objc_retainAutoreleaseReturnValue,
+                            _objc_retainAutoreleasedReturnValue,
+                            _objc_storeStrong,
+                            _objc_unsafeClaimAutoreleasedReturnValue,
+                            _os_log_type_enabled, dyld_stub_binder ]
+    objc-classes:         [ _AXIPCMessage, _AXIPCServer, _AXSettings,
+                            _AXSpeechAssetMonitorHelper, _AXTripleClickHelpers,
+                            _AXValidationManager, _CSLPIStartupService,
+                            _NPSDomainAccessor, _NPSManager, _NSArray, _NSBundle,
+                            _NSDictionary, _NSMutableDictionary,
+                            _NSNotificationCenter, _NSNumber, _NSObject,
+                            _NSProcessInfo, _NSSet, _NSString, _NSURL ]
+...

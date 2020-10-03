@@ -1,0 +1,60 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 61468675-978F-3610-992A-D63FE7B28560' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Assistant/NanoUIPlugins/NanoAlarmSiriUI.bundle/NanoAlarmSiriUI
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _NTALaunchApp, _NTALogForCategory ]
+    objc-classes:         [ _NASiriUIAlarmListViewController,
+                            _NASiriUIControllerFactory,
+                            _NASiriUITranscriptItemView, _NTATimeLabel,
+                            _NanoAlarmAdjustableHitTestAreaSwitch,
+                            _NanoAlarmMainListCell ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _BKSOpenApplicationOptionKeyActivateSuspended,
+                            _CGRectContainsPoint, _CGRectGetWidth, _CGRectZero,
+                            _FBSOpenApplicationOptionKeyPayloadURL,
+                            _MTAlarmManagerAlarmsChanged,
+                            _MTAlarmManagerAlarmsKey,
+                            _MTAlarmManagerFiringAlarmChanged,
+                            _NSCalendarIdentifierGregorian,
+                            _NSCurrentLocaleDidChangeNotification,
+                            _NSFontAttributeName,
+                            _UIApplicationSignificantTimeChangeNotification,
+                            _UIFontWeightMedium, __NSConcreteGlobalBlock,
+                            __NSConcreteStackBlock,
+                            ___CFConstantStringClassReference, ___NSArray0__,
+                            ___PUICDeviceIsCompact, ___PUICDeviceIsCompactOnce,
+                            ___assert_rtn, ___stack_chk_fail, ___stack_chk_guard,
+                            __objc_empty_cache, __os_log_error_impl, __os_log_impl,
+                            _dispatch_once, _objc_alloc, _objc_alloc_init,
+                            _objc_autoreleaseReturnValue, _objc_copyStruct,
+                            _objc_destroyWeak, _objc_enumerationMutation,
+                            _objc_loadWeakRetained, _objc_msgSend,
+                            _objc_msgSendSuper2, _objc_opt_class,
+                            _objc_opt_isKindOfClass, _objc_opt_new, _objc_release,
+                            _objc_retain, _objc_retainAutoreleaseReturnValue,
+                            _objc_retainAutoreleasedReturnValue,
+                            _objc_storeStrong, _objc_storeWeak,
+                            _objc_unsafeClaimAutoreleasedReturnValue,
+                            _os_log_create, _os_log_type_enabled, dyld_stub_binder ]
+    objc-classes:         [ _CLKTimeFormatter, _FBSSystemService, _MTAlarmManager,
+                            _MTMutableAlarm, _NSArray, _NSAttributedString,
+                            _NSBundle, _NSCalendar, _NSDate, _NSDictionary,
+                            _NSIndexPath, _NSLayoutConstraint, _NSMutableArray,
+                            _NSMutableAttributedString, _NSMutableDictionary,
+                            _NSNotificationCenter, _NSNumber, _NSObject, _NSString,
+                            _NSTimeZone, _NSURL, _PUICSwitch, _PUICTableView,
+                            _PUICTableViewCell,
+                            _STAlarmShowAlarmAndPerformActionRequest,
+                            _STCreateAlarmAction, _STDeleteAlarmAction,
+                            _STShowAlarmAction, _STUpdateAlarmAction, _UIColor,
+                            _UIDevice, _UIFont, _UILabel, _UILayoutGuide, _UIView,
+                            _UIViewController ]
+...

@@ -1,0 +1,18 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: DF1D1259-6043-3DD2-81EC-E964ED73DE29' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /usr/lib/log/liblog_signpost.dylib
+current-version:       42.1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _OSLogCopyFormattedString ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ ___CFConstantStringClassReference, _objc_alloc,
+                            _objc_msgSend, _strncmp, dyld_stub_binder ]
+    objc-classes:         [ _NSAttributedString ]
+...

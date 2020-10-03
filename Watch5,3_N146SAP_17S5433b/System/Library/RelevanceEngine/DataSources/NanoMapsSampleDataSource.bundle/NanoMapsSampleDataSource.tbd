@@ -1,0 +1,30 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: B9B05FDE-01AA-3107-808B-338111240D7E' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/RelevanceEngine/DataSources/NanoMapsSampleDataSource.bundle/NanoMapsSampleDataSource
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _NanoMapsSampleDataSourceVersionNumber,
+                            _NanoMapsSampleDataSourceVersionString ]
+    objc-classes:         [ _NanoMapsSampleDataSource,
+                            _NanoMapsSampleDataSourceConfiguration ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _NSClassFromString, _REDefaultSectionIdentifier,
+                            _RESampleDataSourceKey,
+                            _REUISampleRelevanceProviderForPosition,
+                            ___CFConstantStringClassReference,
+                            __objc_empty_cache, _objc_alloc, _objc_alloc_init,
+                            _objc_autoreleaseReturnValue, _objc_msgSend,
+                            _objc_opt_class, _objc_release, _objc_retain,
+                            _objc_retainAutoreleasedReturnValue,
+                            dyld_stub_binder ]
+    objc-classes:         [ _CLKSimpleTextProvider, _NSArray, _NSBundle, _NSObject,
+                            _NSString, _NSUUID, _REBundleConfiguration, _REContent,
+                            _REElement, _REElementDataSource, _UIImage ]
+...

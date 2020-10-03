@@ -1,0 +1,22 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 08494226-A156-3C6E-9090-A6CCD0532776' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Accounts/Notification/RPAccountNotificationPlugin.bundle/RPAccountNotificationPlugin
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    objc-classes:         [ _RPAccountNotificationPlugin ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _AAAccountClassPrimary,
+                            _ACAccountTypeIdentifierAppleAccount, _LogPrintF,
+                            __LogCategory_Initialize, __objc_empty_cache,
+                            _notify_post, _objc_msgSend, _objc_release, _objc_retain,
+                            _objc_retainAutoreleasedReturnValue,
+                            dyld_stub_binder ]
+    objc-classes:         [ _NSObject, _RPClient ]
+...

@@ -1,0 +1,15 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 4F0F5DFF-5F17-3C9A-B397-5B41A21D6C52' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/SharingHUD.framework/SharingHUD
+current-version:       1526.14
+compatibility-version: 1
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _SharingHUDVersionNumber, _SharingHUDVersionString ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ dyld_stub_binder ]
+...

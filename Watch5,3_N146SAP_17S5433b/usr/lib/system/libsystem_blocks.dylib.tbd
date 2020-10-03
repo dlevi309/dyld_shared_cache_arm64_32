@@ -1,0 +1,27 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 569E81B3-5A86-3B61-9BB0-6F8F91F2AAFD' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /usr/lib/system/libsystem_blocks.dylib
+current-version:       73
+compatibility-version: 1
+parent-umbrella:       System
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _Block_size, __Block_copy, __Block_extended_layout,
+                            __Block_has_signature, __Block_isDeallocating,
+                            __Block_layout, __Block_object_assign,
+                            __Block_object_dispose, __Block_release,
+                            __Block_signature, __Block_tryRetain, __Block_use_RR2,
+                            __Block_use_stret, __NSConcreteAutoBlock,
+                            __NSConcreteFinalizingBlock, __NSConcreteGlobalBlock,
+                            __NSConcreteMallocBlock, __NSConcreteStackBlock,
+                            __NSConcreteWeakBlockVariable,
+                            _system_blocksVersionNumber,
+                            _system_blocksVersionString ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ __os_assert_log, __os_assumes_log, __os_crash,
+                            __platform_memmove, _free, _malloc, dyld_stub_binder ]
+...

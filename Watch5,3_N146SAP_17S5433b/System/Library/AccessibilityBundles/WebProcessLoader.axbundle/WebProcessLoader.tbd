@@ -1,0 +1,28 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 33ED06F5-909A-3FD6-99FF-BAC1E6530128' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/AccessibilityBundles/WebProcessLoader.axbundle/WebProcessLoader
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    objc-classes:         [ _AXWebProcessLoader ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _GSSystemRootDirectory, _NSLog,
+                            __AXSApplicationAccessibilityEnabled,
+                            __NSConcreteGlobalBlock, __NSConcreteStackBlock,
+                            ___CFConstantStringClassReference, __dispatch_main_q,
+                            __objc_empty_cache, _dispatch_after, _dispatch_once,
+                            _dispatch_time,
+                            _kAXSApplicationAccessibilityEnabledNotification,
+                            _objc_autoreleaseReturnValue, _objc_msgSend,
+                            _objc_release, _objc_retain,
+                            _objc_retainAutoreleasedReturnValue,
+                            _objc_unsafeClaimAutoreleasedReturnValue,
+                            dyld_stub_binder ]
+    objc-classes:         [ _NSBundle, _NSNotificationCenter, _NSObject, _NSString ]
+...

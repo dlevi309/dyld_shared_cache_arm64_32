@@ -1,0 +1,15 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: B2755E24-A8F1-31A8-9DA2-4CB5A404E4BD' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/CoreServices/Encodings/libCyrillicConverter.dylib
+current-version:       76
+compatibility-version: 1
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ ___CFStringEncodingGetCyrillicConverterDefinition ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ dyld_stub_binder ]
+...

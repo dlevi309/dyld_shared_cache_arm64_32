@@ -1,0 +1,20 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 8E11790B-CD25-313A-940E-544824035B2D' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /usr/lib/libETLEFSDumpDynamic.dylib
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _ETLEFSDUmpCopyCrashLocationDetails,
+                            _ETLEFSDumpCopyCrashHeaderDetails,
+                            _ETLEFSDumpCopySoftwareVersion, _ETLEFSDumpInfoFree,
+                            _ETLEFSDumpInterpret ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _TelephonyUtilStrlcpy, ___stack_chk_fail,
+                            ___stack_chk_guard, _free, _malloc, _strdup,
+                            dyld_stub_binder ]
+...

@@ -1,0 +1,15 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 93F02F45-AE91-3AE5-9715-B3793D99EF78' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/GPUCompiler.framework/Libraries/libmetal_timestamp.dylib
+current-version:       3902.67
+compatibility-version: 1
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _getMetalTimeStamp ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ dyld_stub_binder ]
+...

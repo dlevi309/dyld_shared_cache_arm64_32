@@ -1,0 +1,21 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 7D205561-D2BD-31DF-AD84-FD28265A1C35' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /usr/lib/libiconv.2.dylib
+current-version:       7
+compatibility-version: 7
+exports:
+  - archs:                [ arm64_32 ]
+    re-exports:           [ /usr/lib/libcharset.1.dylib ]
+    symbols:              [ __libiconv_version, _iconv, _iconv_canonicalize,
+                            _iconv_close, _iconv_open, _iconvctl, _iconvlist,
+                            _libiconv_set_relocation_prefix ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ ___error, ___mb_cur_max, ___stack_chk_fail,
+                            ___stack_chk_guard, _abort, _free, _locale_charset,
+                            _malloc, _mbrtowc, _memcmp, _memcpy, _qsort, _strcmp, _strlen,
+                            _wcrtomb, dyld_stub_binder ]
+...

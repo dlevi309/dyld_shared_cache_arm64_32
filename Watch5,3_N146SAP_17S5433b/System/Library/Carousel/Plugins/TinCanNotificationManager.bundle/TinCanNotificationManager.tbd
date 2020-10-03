@@ -1,0 +1,42 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 8125F2C6-4603-3AAE-B7A0-003FCF862DCE' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Carousel/Plugins/TinCanNotificationManager.bundle/TinCanNotificationManager
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    objc-classes:         [ _TinCanNotificationManager ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _TCSLogDefault, _TCSTinCanAppBundleIdentifier,
+                            _TCSTinCanInvalidUserNotification,
+                            _TCSTinCanInviteAcceptanceNotification,
+                            _TCSTinCanInviteNotification,
+                            _TCSTinCanInviteNotificationFullNameKey,
+                            _TCSTinCanInviteNotificationHandleKey,
+                            _TCSTinCanInviteTimeoutNotification,
+                            _TCSTinCanMissedNotification,
+                            _TCSTinCanUITriggerInviteName,
+                            _TCSTinCanUITriggerMissedName,
+                            __NSConcreteStackBlock, __TCSInitializeLogging,
+                            ___CFConstantStringClassReference, ___stack_chk_fail,
+                            ___stack_chk_guard, __objc_empty_cache,
+                            __os_log_error_impl, __os_log_impl, _abort_report_np,
+                            _dispatch_once, _dlerror, _dlopen, _objc_alloc,
+                            _objc_autoreleaseReturnValue, _objc_getClass,
+                            _objc_msgSend, _objc_msgSendSuper2, _objc_opt_new,
+                            _objc_release, _objc_retain,
+                            _objc_retainAutoreleaseReturnValue,
+                            _objc_retainAutoreleasedReturnValue,
+                            _objc_storeStrong, _os_log_type_enabled,
+                            dyld_stub_binder ]
+    objc-classes:         [ _CSLSUITriggerRegistration, _NSArray,
+                            _NSNotificationCenter, _NSObject, _NSString, _NSUUID,
+                            _UNMutableNotificationContent,
+                            _UNNotificationRequest, _UNNotificationSound,
+                            _UNUserNotificationCenter ]
+...

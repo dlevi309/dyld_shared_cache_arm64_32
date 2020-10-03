@@ -1,0 +1,26 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 97A3F47C-0E33-3489-9843-163C0F11A265' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Accounts/Notification/AKAccountNotificationPlugin.bundle/AKAccountNotificationPlugin
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _AKAccountNotificationPluginVersionNumber,
+                            _AKAccountNotificationPluginVersionString ]
+    objc-classes:         [ _AKAccountNotificationPlugin ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _ACAccountTypeIdentifierIDMS,
+                            _AKBugCaptureSubTypeInvalidAccountSave,
+                            _AKBugCaptureSubTypeInvalidAccountUpdate,
+                            __AKLogSystem, ___stack_chk_fail, ___stack_chk_guard,
+                            __objc_empty_cache, __os_log_error_impl, __os_log_impl,
+                            _objc_msgSend, _objc_release, _objc_retain,
+                            _objc_retainAutoreleasedReturnValue,
+                            _os_log_type_enabled, dyld_stub_binder ]
+    objc-classes:         [ _AKAccountManager, _AKAutoBugCapture, _NSObject ]
+...

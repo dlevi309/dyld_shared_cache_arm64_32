@@ -1,0 +1,44 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: F9FFDB02-20C2-3E90-A8FD-EB320707AFF7' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Assistant/NanoUIPlugins/NanoStocksSiriUI.bundle/NanoStocksSiriUI
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _kStocksBundleID ]
+    objc-classes:         [ _StocksSiriControllerFactory,
+                            _StocksSiriInfoViewController, _StocksSiriStyle394h,
+                            _StocksSiriStyle448h, _StocksSiriStyleCompact,
+                            _StocksSiriStyleFactory, _StocksSiriStyleRegular ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _SUICGetSiriUILanguageCode,
+                            _ShouldSwapColorsForLocale, _UIFontTextStyleBody,
+                            _UIFontTextStyleCaption1, _UIFontTextStyleCaption2,
+                            _UIFontTextStyleFootnote, _UIFontTextStyleHeadline,
+                            __NSConcreteGlobalBlock, __NSConcreteStackBlock,
+                            ___CFConstantStringClassReference, ___stack_chk_fail,
+                            ___stack_chk_guard, __objc_empty_cache,
+                            __os_log_error_impl, __os_log_impl, _abort_report_np,
+                            _dispatch_once, _dlerror, _dlopen, _dlsym, _objc_alloc,
+                            _objc_alloc_init, _objc_autoreleaseReturnValue,
+                            _objc_getClass, _objc_getProperty, _objc_msgSend,
+                            _objc_msgSendSuper2, _objc_opt_class, _objc_opt_new,
+                            _objc_release, _objc_retain,
+                            _objc_retainAutoreleaseReturnValue,
+                            _objc_retainAutoreleasedReturnValue,
+                            _objc_retainBlock, _objc_setProperty_atomic,
+                            _objc_storeStrong, _os_log_create,
+                            _os_log_type_enabled, dyld_stub_binder ]
+    objc-classes:         [ _NSArray, _NSBundle, _NSCharacterSet, _NSDictionary,
+                            _NSKeyedArchiver, _NSLayoutConstraint, _NSLocale,
+                            _NSMutableCharacterSet, _NSMutableDictionary,
+                            _NSNumber, _NSNumberFormatter, _NSObject, _NSString,
+                            _NSURL, _PUICButton, _STShowStockOverviewRequest,
+                            _UIColor, _UIDevice, _UIFont, _UIImage, _UIImageView,
+                            _UILabel, _UIView, _UIViewController ]
+...

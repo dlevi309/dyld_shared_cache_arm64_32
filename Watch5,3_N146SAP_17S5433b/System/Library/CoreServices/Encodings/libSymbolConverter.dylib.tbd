@@ -1,0 +1,15 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 8CFE65C2-F1C3-369D-92D9-3851618F8D8F' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/CoreServices/Encodings/libSymbolConverter.dylib
+current-version:       76
+compatibility-version: 1
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ ___CFStringEncodingGetSymbolConverterDefinition ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ dyld_stub_binder ]
+...

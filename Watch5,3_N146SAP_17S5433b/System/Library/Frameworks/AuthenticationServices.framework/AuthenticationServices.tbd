@@ -1,0 +1,78 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 8BCEE05D-403B-3751-B74E-276BBF3DB89D' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Frameworks/AuthenticationServices.framework/AuthenticationServices
+current-version:       609.1.20
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _ASAuthorizationAppleIDProviderCredentialRevokedNotification,
+                            _ASAuthorizationErrorDomain,
+                            _ASAuthorizationOperationImplicit,
+                            _ASAuthorizationOperationLogin,
+                            _ASAuthorizationOperationLogout,
+                            _ASAuthorizationOperationRefresh,
+                            _ASAuthorizationScopeEmail,
+                            _ASAuthorizationScopeFullName,
+                            _ASWebAuthenticationSessionErrorDomain ]
+    objc-classes:         [ _ASAuthorization, _ASAuthorizationAppleIDButton,
+                            _ASAuthorizationAppleIDCredential,
+                            _ASAuthorizationAppleIDProvider,
+                            _ASAuthorizationAppleIDRequest,
+                            _ASAuthorizationController,
+                            _ASAuthorizationOpenIDRequest,
+                            _ASAuthorizationPasswordProvider,
+                            _ASAuthorizationPasswordRequest,
+                            _ASAuthorizationProviderExtensionAuthorizationRequest,
+                            _ASAuthorizationRequest,
+                            _ASAuthorizationSingleSignOnCredential,
+                            _ASAuthorizationSingleSignOnProvider,
+                            _ASAuthorizationSingleSignOnRequest,
+                            _ASPasswordCredential, _ASWebAuthenticationSession,
+                            __ASIncomingCallObserver ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _AKAppleIDAuthenticationErrorDomain,
+                            _AKAuthorizationScopeEmail,
+                            _AKAuthorizationScopeFullName,
+                            _AKCreateAppleIDButtonImageWithCornerRadius,
+                            _CGAffineTransformIdentity,
+                            _CGAffineTransformMakeScale, _CGContextDrawImage,
+                            _CGImageRelease, _CGPointZero, _MGGetBoolAnswer,
+                            _NSStringFromClass, _UIAccessibilityTraitButton,
+                            _UIGraphicsGetCurrentContext, __Block_object_assign,
+                            __NSConcreteStackBlock, __Unwind_Resume,
+                            __WBSLocalizedString,
+                            ___CFConstantStringClassReference,
+                            ___objc_personality_v0, ___stack_chk_fail,
+                            ___stack_chk_guard, __dispatch_main_q,
+                            __objc_empty_cache, _abort_report_np, _dispatch_async,
+                            _dlerror, _dlopen, _kCAFilterMultiplyColor, _objc_alloc,
+                            _objc_alloc_init, _objc_autoreleaseReturnValue,
+                            _objc_copyWeak, _objc_destroyWeak,
+                            _objc_enumerationMutation, _objc_getClass,
+                            _objc_getProperty, _objc_initWeak,
+                            _objc_loadWeakRetained, _objc_msgSend,
+                            _objc_msgSendSuper2, _objc_opt_class,
+                            _objc_opt_isKindOfClass,
+                            _objc_opt_respondsToSelector, _objc_release,
+                            _objc_retain, _objc_retainAutorelease,
+                            _objc_retainAutoreleaseReturnValue,
+                            _objc_retainAutoreleasedReturnValue,
+                            _objc_retainBlock, _objc_setProperty_nonatomic_copy,
+                            _objc_storeStrong, _objc_storeWeak, dyld_stub_binder ]
+    objc-classes:         [ _AKAuthorizationController,
+                            _AKAuthorizationCredential,
+                            _AKAuthorizationCredentialStateRequest,
+                            _AKAuthorizationNotificationService,
+                            _AKAuthorizationRequest, _AKCredentialRequestContext,
+                            _AKPasswordCredential, _AKPasswordRequest, _CAFilter,
+                            _CAShapeLayer, _NSArray, _NSAssertionHandler, _NSData,
+                            _NSError, _NSLayoutConstraint, _NSMutableArray,
+                            _NSNotificationCenter, _NSObject,
+                            _NSPersonNameComponents, _NSSet, _NSString,
+                            _NSXPCInterface, _UIColor, _UIControl, _UIDevice, _UIView ]
+...

@@ -1,0 +1,40 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: DF3C1BE9-16BE-3D8A-9C96-BB0C50A390CA' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/FontServices.framework/FontServices
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _FSFontPickerSupportDone,
+                            _FSFontPickerSupportFontSelected,
+                            _FSFontPickerSupportListenerEndpoint,
+                            _FSFontPickerSupportSetup,
+                            _FontServicesVersionNumber,
+                            _FontServicesVersionString, _XTCopyAvailableFontURLs,
+                            _XTCopyFontWithName ]
+    objc-classes:         [ _FSUserFontServicesManager ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _CFArrayAppendValue, _CFArrayCreateMutable,
+                            _CFDictionaryApplyFunction, _CFRelease, _CFRetain,
+                            _CFStringAppend, _CFStringCreateMutable,
+                            _CFURLCreateStringByAddingPercentEscapes,
+                            _CFURLCreateWithString, _GSFontCopyFontFilePath,
+                            _GSFontCopyFonts, _GSFontGetCurrentGeneration, _NSLog,
+                            __Block_object_assign, __NSConcreteGlobalBlock,
+                            __NSConcreteStackBlock, __Unwind_Resume,
+                            ___CFConstantStringClassReference,
+                            ___objc_personality_v0, __objc_empty_cache,
+                            _kCFAllocatorDefault, _kCFTypeArrayCallBacks,
+                            _objc_alloc, _objc_autoreleaseReturnValue,
+                            _objc_msgSend, _objc_opt_class, _objc_release,
+                            _objc_retain, _objc_retainAutoreleasedReturnValue,
+                            _objc_sync_enter, _objc_sync_exit, dyld_stub_binder ]
+    objc-classes:         [ _NSArray, _NSDictionary, _NSError, _NSNumber, _NSObject,
+                            _NSSet, _NSString, _NSURL, _NSXPCConnection,
+                            _NSXPCInterface ]
+...

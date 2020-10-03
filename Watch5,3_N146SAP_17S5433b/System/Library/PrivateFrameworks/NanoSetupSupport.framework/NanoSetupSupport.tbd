@@ -1,0 +1,71 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: E583DFCD-BED8-3B1B-9973-D2AA7EBFFAAB' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/NanoSetupSupport.framework/NanoSetupSupport
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _PBBuddyFinishedDarwinNotification,
+                            _PBExpectedSpokenLanguage, _PBIsInternalInstall,
+                            _PBLocalizedStringFromTableInBundleForLanguage,
+                            _PBLocalizedStringFromTableInBundleForLanguages,
+                            _PBMobileUserLocale, _PBNanoRegistryWantsBuddy,
+                            _PBNanoSetupAssistantHasCompleted,
+                            _PBNanoSetupNeedsToRun, _PBRestrictionsEnabled,
+                            _PSIsWatchDekotaProvisioned,
+                            _PSNanoAssistantScreenShouldBeShownInSetupAssistant,
+                            _PSNanoBuddyIdentifier, _PSNanoBuiltinAppsNoticeHTML,
+                            _PSNanoIsBricked, _PSNanoLicensePath,
+                            _PSNanoPairedSyncComplete,
+                            _PSNanoSetupAssistantWantToRun,
+                            _PSNanoSetupCurrentVersion,
+                            _PSNanoSetupDidFinishLaunchingNotification,
+                            _PSNanoSetupDoneKey, _PSNanoSetupVersionKey,
+                            _PSNanoSignalAbsorptionRateHTML,
+                            _PSSetWatchDekotaProvisioned,
+                            _PSSetupFinishedAllStepsKey, __PairedSyncComplete,
+                            __assistantPresentedSetupAssistantPref,
+                            __booleanPrefVal, __hasAssistantCapability,
+                            __mobileGestaltCapability,
+                            __setupAssistantBooleanPrefVal,
+                            __setupAssistantIntPrefVal ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _CFBooleanGetTypeID, _CFBooleanGetValue,
+                            _CFBundleCopyLocalizationsForPreferences,
+                            _CFDictionaryAddValue, _CFDictionaryCreateMutable,
+                            _CFGetTypeID, _CFNumberGetValue,
+                            _CFPreferencesAppSynchronize,
+                            _CFPreferencesCopyValue,
+                            _CFPreferencesGetAppBooleanValue,
+                            _CFPreferencesSetAppValue, _CFPreferencesSetValue,
+                            _CFPreferencesSynchronize, _CFRelease,
+                            _MAEGetActivationStateWithError,
+                            _MCFeatureAssistantAllowed, _MGCopyAnswer,
+                            _MGGetBoolAnswer, _NRDevicePropertyIsPaired,
+                            _NRDevicePropertySystemName, _NSLog,
+                            _SFLicenseFilePath, _SecItemCopyMatching,
+                            __NSConcreteGlobalBlock, __NSConcreteStackBlock,
+                            __VSCopyLanguageIdentifierForLocale,
+                            ___CFConstantStringClassReference, ___stack_chk_fail,
+                            ___stack_chk_guard, _dispatch_once,
+                            _kCFAllocatorDefault, _kCFBooleanTrue,
+                            _kCFPreferencesAnyApplication,
+                            _kCFPreferencesAnyHost, _kCFPreferencesCurrentHost,
+                            _kMAActivationStateUnactivated, _kSecAttrAccount,
+                            _kSecAttrService, _kSecClass,
+                            _kSecClassGenericPassword, _kSecReturnData,
+                            _objc_alloc, _objc_autoreleaseReturnValue,
+                            _objc_enumerationMutation, _objc_msgSend,
+                            _objc_release, _objc_retain,
+                            _objc_retainAutoreleasedReturnValue,
+                            _objc_retainBlock, dyld_stub_binder ]
+    objc-classes:         [ _AFConnection, _AFPreferences, _MCProfileConnection,
+                            _NPSDomainAccessor, _NRPairedDeviceRegistry, _NSArray,
+                            _NSBundle, _NSDictionary, _NSLocale, _NSMutableString,
+                            _NSNumber, _NSString ]
+...

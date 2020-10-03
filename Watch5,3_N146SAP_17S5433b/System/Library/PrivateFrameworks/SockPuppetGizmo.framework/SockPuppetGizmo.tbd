@@ -1,0 +1,17 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 2F7F0C72-167B-3EDC-B0B2-00C570CE5700' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/SockPuppetGizmo.framework/SockPuppetGizmo
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ arm64_32 ]
+    re-exports:           [ /System/Library/Frameworks/WatchKit.framework/WatchKit ]
+    symbols:              [ _SockPuppetGizmoVersionNumber,
+                            _SockPuppetGizmoVersionString ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ dyld_stub_binder ]
+...

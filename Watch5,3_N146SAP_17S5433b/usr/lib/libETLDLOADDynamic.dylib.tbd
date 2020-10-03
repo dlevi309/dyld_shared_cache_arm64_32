@@ -1,0 +1,54 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 0EF2A680-A01F-30E0-B85F-0158BB16331F' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /usr/lib/libETLDLOADDynamic.dylib
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _ETLDLOADCommandCopyDebugDataField,
+                            _ETLDLOADCommandCreateChipIDRequest,
+                            _ETLDLOADCommandCreateGoRequest,
+                            _ETLDLOADCommandCreateMemoryDebugFastReadRequest,
+                            _ETLDLOADCommandCreateMemoryDebugInfoRequest,
+                            _ETLDLOADCommandCreateMemoryDebugReadRequest,
+                            _ETLDLOADCommandCreateMemoryDebugReadRequestPrivate,
+                            _ETLDLOADCommandCreateParametersRequest,
+                            _ETLDLOADCommandCreatePkHashRequest,
+                            _ETLDLOADCommandCreateSerialNumberRequest,
+                            _ETLDLOADCommandCreateVersionRequest,
+                            _ETLDLOADCommandCreateWriteRequest,
+                            _ETLDLOADCommandDumpCommand,
+                            _ETLDLOADCommandParseACKNAKResponse,
+                            _ETLDLOADCommandParseChipIDResponse,
+                            _ETLDLOADCommandParseMemoryDebugInfoResponse,
+                            _ETLDLOADCommandParseMemoryDebugReadResponse,
+                            _ETLDLOADCommandParseParametersResponse,
+                            _ETLDLOADCommandParsePkHashResponse,
+                            _ETLDLOADCommandParseSerialNumberResponse,
+                            _ETLDLOADCommandParseVersionResponse,
+                            _ETLDLOADCommandPowerCreatePowerDownRequest,
+                            _ETLDLOADCommandPowerCreateResetRequest,
+                            _ETLDLOADCommandReadMemoryDebugFastReadResponse,
+                            _ETLDLOADCommandReceiveSmallWithFlags,
+                            _ETLDLOADCommandReceiveWithBufferAndFlags,
+                            _ETLDLOADCommandSend, _ETLDLOADCreateCommandForSend,
+                            _ETLDLOADDetectProtocolVersion,
+                            _ETLDLOADExpectCommandType,
+                            _ETLDLOADGetNAKReasonAsString,
+                            _ETLDLOADGetProtocolVersion ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _ETLFrameReadFromTransport, _HDLCFrameCreateUplink,
+                            _HDLCFrameEncodeAndCache, _HDLCFrameFree,
+                            _HDLCFrameInject, _HDLCFrameInjectUnsignedChar,
+                            _HDLCFrameInjectUnsignedInt,
+                            _HDLCFrameInjectUnsignedShort,
+                            _TelephonyRadiosGetRadio,
+                            _TelephonyUtilRingBufferInitialize, __ETLDebugPrint,
+                            __ETLDebugPrintBinary, ___stack_chk_fail,
+                            ___stack_chk_guard, ___strlcpy_chk, _memcpy,
+                            dyld_stub_binder ]
+...

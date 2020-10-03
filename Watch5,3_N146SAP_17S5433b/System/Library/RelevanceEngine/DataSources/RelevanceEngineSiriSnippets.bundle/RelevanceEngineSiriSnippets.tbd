@@ -1,0 +1,56 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 9834AB9D-BF50-3287-9DE6-2A12E6815FEA' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/RelevanceEngine/DataSources/RelevanceEngineSiriSnippets.bundle/RelevanceEngineSiriSnippets
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _RESiriSnippetAlwaysShow,
+                            _RESiriSnippetBundleIdentifier,
+                            _RESiriSnippetCreateElementFromString,
+                            _RESiriSnippetLocalizedString,
+                            _RESiriSnippetShowAllSnippets, _RESiriSnippetsBundle,
+                            _RelevanceEngineSiriSnippetsVersionNumber,
+                            _RelevanceEngineSiriSnippetsVersionString,
+                            _kSiriSnippetUpdateInterval,
+                            _kSiriSnippetWeekendPadding ]
+    objc-classes:         [ _RESiriSnippetBundleConfiguration,
+                            _RESiriSnippetDataSource,
+                            _RESiriSnippetEmptyDataSource,
+                            _RESiriSnippetSampleDataSource ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _CFPreferencesGetAppBooleanValue,
+                            _CNContactGivenNameKey, _CNContactNicknameKey,
+                            _NSClassFromString, _REDefaultSectionIdentifier,
+                            _REDemoDataSourceKey, _RELogForDomain,
+                            _REPrimaryDataSourceKey, _RESampleDataSourceKey,
+                            __NSConcreteGlobalBlock, __NSConcreteStackBlock,
+                            __Unwind_Resume, ___CFConstantStringClassReference,
+                            ___NSArray0__, ___objc_personality_v0,
+                            ___stack_chk_fail, ___stack_chk_guard,
+                            __objc_empty_cache, __os_log_impl, _abort_report_np,
+                            _arc4random_uniform, _dispatch_get_global_queue,
+                            _dispatch_once, _dlerror, _dlopen, _dlsym, _objc_alloc,
+                            _objc_alloc_init, _objc_autoreleaseReturnValue,
+                            _objc_copyWeak, _objc_destroyWeak,
+                            _objc_enumerationMutation, _objc_initWeak,
+                            _objc_loadWeakRetained, _objc_msgSend,
+                            _objc_msgSendSuper2, _objc_opt_class, _objc_release,
+                            _objc_retain, _objc_retainAutoreleaseReturnValue,
+                            _objc_retainAutoreleasedReturnValue,
+                            _objc_storeStrong, _os_log_type_enabled,
+                            dyld_stub_binder ]
+    objc-classes:         [ _CLKComplicationTemplateGraphicCircularImage,
+                            _CLKFullColorImageProvider, _CLKSimpleTextProvider,
+                            _CNContactStore, _NSArray, _NSBundle, _NSCalendar, _NSDate,
+                            _NSMutableArray, _NSNotificationCenter, _NSObject,
+                            _NSString, _REBundleConfiguration, _REContent,
+                            _REDailyRoutineRelevanceProvider, _REElement,
+                            _REElementBlockAction, _REElementDataSource,
+                            _RENoContentRelevanceProvider, _REUpNextTimer ]
+...

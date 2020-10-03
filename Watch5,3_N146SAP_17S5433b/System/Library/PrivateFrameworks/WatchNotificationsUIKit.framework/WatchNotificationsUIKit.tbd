@@ -1,0 +1,60 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 1CDEDF69-C332-3BE8-A367-B85877C246EC' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/WatchNotificationsUIKit.framework/WatchNotificationsUIKit
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _wnui_bundle_log, _wnui_factory_log ]
+    objc-classes:         [ _WNUIBulletinClientFactory, _WNUIClientBundleManager,
+                            _WNUIClientBundleManagerBundleInfo,
+                            _WNUIClientBundleManagerClientInfo,
+                            _WNUIClientContainerViewController,
+                            _WNUINotificationAction ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _BSIsInternalInstall, _BSSystemRootDirectory,
+                            _NSSearchPathForDirectoriesInDomains,
+                            _UILayoutFittingCompressedSize,
+                            _WNUISetNotificationContext, __Block_object_assign,
+                            __Block_object_dispose, __NSConcreteGlobalBlock,
+                            __NSConcreteStackBlock, __Unwind_Resume,
+                            ___CFConstantStringClassReference,
+                            ___objc_personality_v0, ___stack_chk_fail,
+                            ___stack_chk_guard, __objc_empty_cache,
+                            __os_log_error_impl, __os_log_impl,
+                            _dispatch_assert_queue$V2, _dispatch_once,
+                            _dispatch_queue_attr_make_with_autorelease_frequency,
+                            _dispatch_queue_create, _dispatch_sync,
+                            _kUNBulletinContextArchivedUserNotificationKey,
+                            _objc_alloc, _objc_alloc_init,
+                            _objc_autoreleaseReturnValue, _objc_copyWeak,
+                            _objc_destroyWeak, _objc_enumerationMutation,
+                            _objc_getProperty, _objc_initWeak,
+                            _objc_loadWeakRetained, _objc_msgSend,
+                            _objc_msgSendSuper2, _objc_opt_class,
+                            _objc_opt_isKindOfClass,
+                            _objc_opt_respondsToSelector, _objc_release,
+                            _objc_retain, _objc_retainAutoreleaseReturnValue,
+                            _objc_retainAutoreleasedReturnValue,
+                            _objc_setProperty_nonatomic_copy, _objc_storeStrong,
+                            _objc_storeWeak,
+                            _objc_unsafeClaimAutoreleasedReturnValue,
+                            _os_log_create, _os_log_type_enabled, dyld_stub_binder ]
+    objc-classes:         [ _BBAction, _BSCFBundle,
+                            _CUISBulletinActionMenuPresentation,
+                            _CUISBulletinClientFactory,
+                            _CUISBulletinClientViewController,
+                            _CUISBulletinPrimaryPagePresentation, _NSArray,
+                            _NSBundle, _NSDictionary, _NSFileManager,
+                            _NSMutableArray, _NSMutableDictionary,
+                            _NSMutableOrderedSet, _NSNumber, _NSObject, _NSString,
+                            _NSURL, _PUICActionItem, _UIImage, _UIScreen, _UIView,
+                            _UNNotification, _UNNotificationAction,
+                            _UNNotificationResponse,
+                            _UNTextInputNotificationAction ]
+...

@@ -1,0 +1,39 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 586F321A-9981-3297-ADC4-21FA81776B96' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /usr/lib/libPPM.dylib
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _clientNumberAlrt, _clientNumberBsbd,
+                            _clientNumberPlat, _clientNumberStck,
+                            _clientNumberWifi, _gNotifyPort, _kApplePPM ]
+    objc-classes:         [ _IOKitUserClientInterface, _PPMClient ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _IOConnectCallScalarMethod, _IOIteratorNext,
+                            _IONotificationPortCreate,
+                            _IONotificationPortDestroy,
+                            _IONotificationPortSetDispatchQueue,
+                            _IOObjectRelease, _IORegistryEntryGetName,
+                            _IORegistryEntryGetPath,
+                            _IOServiceAddInterestNotification, _IOServiceClose,
+                            _IOServiceGetMatchingServices, _IOServiceMatching,
+                            _IOServiceOpen, _NSLog, __NSConcreteStackBlock,
+                            ___CFConstantStringClassReference,
+                            ___NSDictionary0__, ___stack_chk_fail,
+                            ___stack_chk_guard, __objc_empty_cache, _dispatch_once,
+                            _dispatch_queue_create, _kIOMasterPortDefault,
+                            _mach_task_self_, _objc_alloc, _objc_alloc_init,
+                            _objc_getProperty, _objc_msgSend, _objc_msgSendSuper2,
+                            _objc_release, _objc_retain,
+                            _objc_retainAutoreleaseReturnValue,
+                            _objc_retainAutoreleasedReturnValue,
+                            _objc_retainBlock, _objc_setProperty_atomic,
+                            _objc_storeStrong, dyld_stub_binder ]
+    objc-classes:         [ _NSMutableDictionary, _NSNumber, _NSObject, _NSString ]
+...

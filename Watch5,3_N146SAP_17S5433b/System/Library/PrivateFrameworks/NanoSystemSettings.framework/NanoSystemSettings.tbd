@@ -1,0 +1,69 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: D778CD5A-67DA-3E57-89DA-0692DEA0279A' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/NanoSystemSettings.framework/NanoSystemSettings
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _NSSLoggingDaemonObjectInit,
+                            _NSSLoggingFrameworkObjectInit, _NSSShouldRun,
+                            _NSSSystemRootDirectory,
+                            ___ATAssetTypeFromMLMediaType,
+                            _kAudiobooksBundleIdentifier,
+                            _kNanoMusicBundleIdenfier,
+                            _kNanoPhotosBundleIdenfier,
+                            _kPodcastsBundleIdentifier, _kPodcastsContainerKey,
+                            _nss_daemon_log, _nss_framework_log ]
+    objc-classes:         [ _NSSManager, _NSSUsageUtils ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _CFRelease, _CFUserNotificationCreate,
+                            _CFUserNotificationReceiveResponse,
+                            _LSUserApplicationType, _MGCopyAnswer,
+                            _NSLocalizedDescriptionKey, _NSURLFileSizeKey,
+                            _SBGetBatteryUsageTimesInSeconds,
+                            _SBSSpringBoardServerPort,
+                            _SBUserNotificationAllowInSetupKey,
+                            _SBUserNotificationDismissOnLock,
+                            _SBUserNotificationDontDismissOnUnlock,
+                            _SBUserNotificationPendInSetupIfNotAllowedKey,
+                            __Block_object_assign, __Block_object_dispose,
+                            __NSConcreteGlobalBlock, __NSConcreteStackBlock,
+                            __Unwind_Resume, ___CFConstantStringClassReference,
+                            ___objc_personality_v0, ___stack_chk_fail,
+                            ___stack_chk_guard, __dispatch_main_q,
+                            __kCFBundleShortVersionStringKey, __objc_empty_cache,
+                            __os_log_impl, _abort_report_np, _dispatch_async,
+                            _dispatch_get_global_queue, _dispatch_once,
+                            _dispatch_queue_create, _dispatch_semaphore_create,
+                            _dispatch_semaphore_signal, _dispatch_semaphore_wait,
+                            _dlerror, _dlopen, _dlsym,
+                            _kCFUserNotificationAlertHeaderKey,
+                            _kCFUserNotificationAlertMessageKey,
+                            _kCFUserNotificationAlertTopMostKey,
+                            _kCFUserNotificationIconURLKey,
+                            _kMGQDiskUsageAmountDataAvailable,
+                            _kMGQDiskUsageTotalDataCapacity, _objc_alloc,
+                            _objc_alloc_init, _objc_autoreleasePoolPop,
+                            _objc_autoreleasePoolPush,
+                            _objc_autoreleaseReturnValue, _objc_copyWeak,
+                            _objc_destroyWeak, _objc_enumerationMutation,
+                            _objc_getClass, _objc_initWeak, _objc_loadWeakRetained,
+                            _objc_msgSend, _objc_msgSendSuper2, _objc_opt_class,
+                            _objc_opt_isKindOfClass, _objc_opt_new,
+                            _objc_opt_respondsToSelector, _objc_release,
+                            _objc_retain, _objc_retainAutorelease,
+                            _objc_retainAutoreleaseReturnValue,
+                            _objc_retainAutoreleasedReturnValue,
+                            _objc_storeStrong, _os_log_create,
+                            _os_log_type_enabled, dyld_stub_binder ]
+    objc-classes:         [ _LSApplicationProxy, _LSApplicationWorkspace,
+                            _LSBundleProxy, _NSArray, _NSBundle, _NSDictionary,
+                            _NSError, _NSFileManager, _NSMutableArray,
+                            _NSMutableDictionary, _NSNumber, _NSObject, _NSString,
+                            _NSURL, _NSXPCConnection, _NSXPCInterface ]
+...

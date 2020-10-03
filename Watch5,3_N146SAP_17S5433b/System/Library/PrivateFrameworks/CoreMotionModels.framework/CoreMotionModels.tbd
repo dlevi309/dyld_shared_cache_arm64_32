@@ -1,0 +1,28 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 539DC346-4BF9-3CE8-BF29-5789D4790D8A' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/CoreMotionModels.framework/CoreMotionModels
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _CoreMotionModelsVersionNumber,
+                            _CoreMotionModelsVersionString ]
+    objc-classes:         [ _CMWorkoutClassifier, _CMWorkoutClassifierCNN,
+                            _CMWorkoutClassifierCNNInput,
+                            _CMWorkoutClassifierCNNOutput ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ ___CFConstantStringClassReference,
+                            __objc_empty_cache, _objc_alloc, _objc_alloc_init,
+                            _objc_autoreleaseReturnValue, _objc_msgSend,
+                            _objc_msgSendSuper2, _objc_opt_class, _objc_release,
+                            _objc_retain, _objc_retainAutoreleasedReturnValue,
+                            _objc_storeStrong, dyld_stub_binder ]
+    objc-classes:         [ _MLFeatureValue, _MLInternalSettings, _MLModel,
+                            _MLPredictionOptions, _NSArray, _NSAssertionHandler,
+                            _NSBundle, _NSObject, _NSSet, _NSString, _NSURL ]
+...

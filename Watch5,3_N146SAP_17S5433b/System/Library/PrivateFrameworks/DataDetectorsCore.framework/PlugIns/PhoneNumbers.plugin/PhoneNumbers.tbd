@@ -1,0 +1,20 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 054DB190-CCF0-3CF1-8229-5D1A10FF2A62' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/DataDetectorsCore.framework/PlugIns/PhoneNumbers.plugin/PhoneNumbers
+current-version:       659
+compatibility-version: 1
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _GetPrefixInitialState, _GetResultPostprocessor,
+                            _GetSuffixInitialState, _GetVersion ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _CFRelease, _CFStringCompare,
+                            _DDDFAScannerSimulateState, _DDResultAddSubresult,
+                            _DDResultCreate, _DDResultGetQueryRange,
+                            _DDResultGetType, ___CFConstantStringClassReference,
+                            dyld_stub_binder ]
+...

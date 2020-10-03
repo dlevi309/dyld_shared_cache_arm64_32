@@ -1,0 +1,12 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 163C9F2F-D9CD-3449-8FC5-60D4629270C4' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /usr/lib/libAWDProtobufFacetimeiMessage.dylib
+current-version:       1
+compatibility-version: 1
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ dyld_stub_binder ]
+...

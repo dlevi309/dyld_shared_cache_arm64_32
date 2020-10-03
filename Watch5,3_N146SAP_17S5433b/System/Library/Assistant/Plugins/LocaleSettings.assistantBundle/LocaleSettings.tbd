@@ -1,0 +1,24 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 15B2D120-AAC3-32D2-8F58-735B885BDBA4' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Assistant/Plugins/LocaleSettings.assistantBundle/LocaleSettings
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _SiriSyncSystemSettingIdentifier,
+                            _SiriSyncSystemSettingValidity ]
+    objc-classes:         [ _SiriCalendarSyncSystemSetting ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ ___CFConstantStringClassReference,
+                            __objc_empty_cache, _objc_alloc_init, _objc_msgSend,
+                            _objc_release, _objc_retain,
+                            _objc_retainAutoreleasedReturnValue,
+                            dyld_stub_binder ]
+    objc-classes:         [ _NSCalendar, _NSObject, _NSURL,
+                            _SAAceCalendarSystemSetting ]
+...

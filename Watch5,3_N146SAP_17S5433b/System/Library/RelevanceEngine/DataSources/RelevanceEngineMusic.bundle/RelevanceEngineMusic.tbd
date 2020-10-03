@@ -1,0 +1,26 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: E1CFB18F-7186-35E0-B8F5-1505D0EAD0F1' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/RelevanceEngine/DataSources/RelevanceEngineMusic.bundle/RelevanceEngineMusic
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _RelevanceEngineMusicVersionNumber,
+                            _RelevanceEngineMusicVersionString ]
+    objc-classes:         [ _REMusicBundleConfiguration,
+                            _REMusicSampleDataSource ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _RESampleDataSourceKey,
+                            ___CFConstantStringClassReference,
+                            __objc_empty_cache, _objc_autoreleaseReturnValue,
+                            _objc_msgSend, _objc_opt_class,
+                            _objc_retainAutoreleasedReturnValue,
+                            dyld_stub_binder ]
+    objc-classes:         [ _NSObject, _REBundleConfiguration,
+                            _REElementDataSource ]
+...

@@ -1,0 +1,86 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 07BDB724-7065-3D05-89EB-BB7EF77AEF30' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Carousel/ActivationViews/NanoCalendarActivationProvider.bundle/NanoCalendarActivationProvider
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ ___NCALDeviceUnlockedSinceBoot,
+                            _kNCALAppActiveStateChangedNotificationID,
+                            _kNCALBackgroundFetchNotificationID,
+                            _kNCALScreenSnapshotNotificationID,
+                            _kNCALSyntheticSnapshotCacheUpdateNotificationID,
+                            _kNCALViewTypeUpdatedNotificationID ]
+    objc-classes:         [ _NCALSyntheticSnapshotScreenSourceData,
+                            _NCALSyntheticSnapshotSourceData,
+                            _NanoCalendarActivation,
+                            _NanoCalendarActivationDemoManager,
+                            _NanoCalendarActivationView,
+                            _NanoCalendarActivationViewProvider,
+                            _NanoCalendarSnapshotManager,
+                            _NanoReminderActivation ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _CFAbsoluteTimeGetCurrent, _CFBundleGetIdentifier,
+                            _CFBundleGetMainBundle,
+                            _CFNotificationCenterAddObserver,
+                            _CFNotificationCenterGetDarwinNotifyCenter,
+                            _CFNotificationCenterRemoveObserver, _CGRectGetMaxY,
+                            _CGRectZero,
+                            _CUISActivateUIApplicationViewInvalidatedNotification,
+                            _CalRoundToScreenScale,
+                            _EKEventStoreChangedNotification,
+                            _EKPreferences_Notification_DeselectedCalendarSyncHashes,
+                            _MKBDeviceUnlockedSinceBoot, _MKBGetDeviceLockState,
+                            _NSCalendarDayChangedNotification,
+                            _NSFileProtectionCompleteUntilFirstUserAuthentication,
+                            _NSFileProtectionKey, _NSKeyedArchiveRootObjectKey,
+                            _NSSearchPathForDirectoriesInDomains,
+                            _NSStringFromCGRect, _NSStringFromClass,
+                            _OBJC_EHTYPE_$_NSException,
+                            _UIApplicationSignificantTimeChangeNotification,
+                            __EKEventURLScheme, __NSConcreteGlobalBlock,
+                            __NSConcreteStackBlock, __Unwind_Resume,
+                            ___CFConstantStringClassReference,
+                            ___objc_personality_v0, ___stack_chk_fail,
+                            ___stack_chk_guard, __dispatch_main_q,
+                            __objc_empty_cache, __os_log_fault_impl, __os_log_impl,
+                            _abort_report_np, _dispatch_after, _dispatch_async,
+                            _dispatch_once,
+                            _dispatch_queue_attr_make_with_autorelease_frequency,
+                            _dispatch_queue_attr_make_with_qos_class,
+                            _dispatch_queue_create, _dispatch_time, _dlerror,
+                            _dlopen, _dlsym, _kCalTimeZoneChangedNotification,
+                            _ncs_log_reminders_demo, _ncs_log_reminders_snapshot,
+                            _ncs_log_snapshot, _ncs_log_snapshot_creation,
+                            _ncs_log_snapshot_vending, _notify_cancel,
+                            _notify_get_state, _notify_register_dispatch,
+                            _objc_alloc, _objc_alloc_init,
+                            _objc_autoreleaseReturnValue, _objc_begin_catch,
+                            _objc_copyWeak, _objc_destroyWeak, _objc_end_catch,
+                            _objc_enumerationMutation, _objc_exception_throw,
+                            _objc_getProperty, _objc_initWeak,
+                            _objc_loadWeakRetained, _objc_msgSend,
+                            _objc_msgSendSuper2, _objc_opt_class, _objc_opt_new,
+                            _objc_release, _objc_retain,
+                            _objc_retainAutoreleaseReturnValue,
+                            _objc_retainAutoreleasedReturnValue,
+                            _objc_setProperty_nonatomic_copy, _objc_storeStrong,
+                            _os_log_type_enabled, dyld_stub_binder ]
+    objc-classes:         [ _CSLSBackgroundTaskRequest,
+                            _CSLSBackgroundTaskRequestService,
+                            _CSLSSnapshotContext, _CSLSSnapshotService,
+                            _CUISApplicationDefaultPlaceholderProvider,
+                            _CUISApplicationPlaceholderContent,
+                            _CUISApplicationPlaceholderItem, _EKEventStore,
+                            _NSArray, _NSCache, _NSData, _NSDate, _NSDictionary,
+                            _NSFileManager, _NSKeyedArchiver, _NSKeyedUnarchiver,
+                            _NSMutableArray, _NSNotificationCenter, _NSNumber,
+                            _NSObject, _NSSet, _NSString, _NSTimeZone, _NSUserDefaults,
+                            _NSValue, _NanoCalendarPreferences, _UIApplication,
+                            _UIColor, _UIImage, _UIImageView, _UIScrollView, _UIView ]
+...

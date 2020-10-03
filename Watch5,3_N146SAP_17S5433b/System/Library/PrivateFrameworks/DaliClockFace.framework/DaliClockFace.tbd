@@ -1,0 +1,82 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 7C2F596F-5B9B-3BF2-A0D2-33853B51A97C' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/DaliClockFace.framework/DaliClockFace
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _DaliClockFaceVersionNumber,
+                            _DaliClockFaceVersionString, _RTK_gfx_flush,
+                            _RTK_gfx_info_for_pixel_format, _RTK_gfx_init,
+                            _RTK_gfx_set_framebuffer,
+                            __ZN4View14setFramebufferEPK13framebuffer_t,
+                            __ZN4View4fillEj, __ZN4View6layoutEmmmm,
+                            __ZN4View8copybitsEP5image,
+                            __ZN4View8maskbitsEP4maskj,
+                            __ZN8LPEMView10invalidateEv,
+                            __ZN8LPEMView13setCapabilityEi,
+                            __ZN8LPEMView14setTransactionEi,
+                            __ZN8LPEMView17normalizeLanguageEi,
+                            __ZN8LPEMView18setModeAndLanguageENS_14cf_lpem_mode_tEi,
+                            __ZN8LPEMView4initEPK13framebuffer_tj,
+                            __ZN8LPEMView6updateEv, __ZN8TimeView10invalidateEv,
+                            __ZN8TimeView4initEPK13framebuffer_t14cf_time_mode_tj,
+                            __ZN8TimeView6updateEv, __ZN8TimeView7setTimeEj,
+                            __ZN9BadgeView10invalidateEv,
+                            __ZN9BadgeView4initEPK13framebuffer_t,
+                            __ZN9BadgeView6updateEv,
+                            __ZN9BadgeView8setBadgeE10cf_badge_t,
+                            __ZN9Clockface10invalidateEv,
+                            __ZN9Clockface11setFaceModeE14cf_face_mode_t,
+                            __ZN9Clockface12setDisplayOnEb,
+                            __ZN9Clockface4initEPK13framebuffer_t14cf_time_mode_tj,
+                            __ZN9Clockface6updateEv,
+                            __ZN9Clockface7setPuckE9cf_puck_t, __ZTI8LPEMView,
+                            __ZTI8TimeView, __ZTI9BadgeView, __ZTI9Clockface,
+                            __ZTS8LPEMView, __ZTS8TimeView, __ZTS9BadgeView,
+                            __ZTS9Clockface, __ZTV8LPEMView, __ZTV8TimeView,
+                            __ZTV9BadgeView, __ZTV9Clockface, __ZdlPv,
+                            _clockface_get_face_mode, _clockface_init,
+                            _clockface_set_badge, _clockface_set_display,
+                            _clockface_set_face_mode,
+                            _clockface_set_lpem_capability,
+                            _clockface_set_lpem_transaction, _clockface_set_puck,
+                            _clockface_set_time, _clockface_update, _decompress,
+                            _display_394h, _display_448h, _display_compact,
+                            _display_regular, _framebuffer_clip_x,
+                            _framebuffer_clip_y, _framebuffer_convert_to_real_x,
+                            _framebuffer_convert_to_real_y, _framebuffer_flush,
+                            _framebuffer_init, _gPlatformData,
+                            _gsCurrentPixelFormat, _gsCurrentPlatform,
+                            _images_394h, _images_448h, _images_compact,
+                            _images_regular, _layouts_394h, _layouts_448h,
+                            _layouts_compact, _layouts_regular, _platform_394h,
+                            _platform_448h, _platform_compact, _platform_regular ]
+    objc-classes:         [ _DCFClockFaceGenerator ]
+    weak-def-symbols:     [ __ZTI4View, __ZTI6Spacer, __ZTI8MaskView,
+                            __ZTI9ImageView, __ZTS4View, __ZTS6Spacer,
+                            __ZTS8MaskView, __ZTS9ImageView ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _CGColorSpaceCreateDeviceRGB,
+                            _CGDataProviderCreateWithData, _CGImageCreate,
+                            __NSConcreteGlobalBlock, __Unwind_Resume,
+                            __ZTVN10__cxxabiv117__class_type_infoE,
+                            __ZTVN10__cxxabiv120__si_class_type_infoE,
+                            ___CFConstantStringClassReference, ___assert_rtn,
+                            ___cxa_guard_abort, ___cxa_guard_acquire,
+                            ___cxa_guard_release, ___gxx_personality_v0,
+                            __objc_empty_cache, _atoi, _bzero, _dispatch_once, _free,
+                            _malloc, _memcpy, _objc_alloc_init,
+                            _objc_autoreleaseReturnValue, _objc_msgSend,
+                            _objc_msgSendSuper2, _objc_release, _objc_retain,
+                            _objc_retainAutorelease,
+                            _objc_retainAutoreleasedReturnValue, _uncompress,
+                            dyld_stub_binder ]
+    objc-classes:         [ _NSDate, _NSDateFormatter, _NSLocale, _NSObject, _UIDevice,
+                            _UIImage ]
+...

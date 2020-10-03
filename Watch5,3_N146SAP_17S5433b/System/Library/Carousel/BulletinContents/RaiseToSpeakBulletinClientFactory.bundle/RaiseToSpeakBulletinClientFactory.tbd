@@ -1,0 +1,26 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 407346F8-33DC-3D9F-9D3A-8037B1C5C45C' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Carousel/BulletinContents/RaiseToSpeakBulletinClientFactory.bundle/RaiseToSpeakBulletinClientFactory
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _RaiseToSpeakBulletinClientFactoryVersionNumber,
+                            _RaiseToSpeakBulletinClientFactoryVersionString ]
+    objc-classes:         [ _RTSBulletinClientFactory ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _CUISBulletinIconStyleKey, __objc_empty_cache,
+                            _objc_alloc, _objc_autoreleaseReturnValue,
+                            _objc_msgSend, _objc_release,
+                            _objc_retainAutoreleasedReturnValue,
+                            dyld_stub_binder ]
+    objc-classes:         [ _CUISBulletinClientFactory,
+                            _CUISBulletinDefaultClientViewController,
+                            _CUISBulletinPrimaryPagePresentation, _NSDictionary,
+                            _NSNumber, _NSObject ]
+...

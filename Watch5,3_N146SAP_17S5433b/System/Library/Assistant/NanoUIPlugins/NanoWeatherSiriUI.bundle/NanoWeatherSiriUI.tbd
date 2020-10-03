@@ -1,0 +1,81 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 8969C342-0F27-3FFD-8560-EB6361CB9EA6' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Assistant/NanoUIPlugins/NanoWeatherSiriUI.bundle/NanoWeatherSiriUI
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _reverse, _rotate, _swap ]
+    objc-classes:         [ _DailyForecastView, _DetailsSeparatorStyleFactory,
+                            _DetailsSeparatorView, _NWMSiriLocalization,
+                            _NWMWeatherDialStyle, _NWMWeatherDialView,
+                            _NWMWeatherDialViewModel, _NWSiriUIControllerFactory,
+                            _NWSiriUIDailyForecastViewController,
+                            _NWSiriUIHourlyDialForecastDataSource,
+                            _NWSiriUIHourlyForecastViewController,
+                            _NWSiriUISingleForecastViewController,
+                            _NWSiriWeatherDialStyle, _TenDayForecastStyleFactory,
+                            _WeatherSiriStyleFactory ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _CGAffineTransformIdentity,
+                            _CGAffineTransformMakeScale, _CGPointZero,
+                            _CGRectGetMinX, _CGRectGetMinY, _CGRectGetWidth,
+                            _CGRectIsEmpty, _CGRectZero,
+                            _NSCurrentLocaleDidChangeNotification,
+                            _NSFontAttributeName,
+                            _NSForegroundColorAttributeName,
+                            _NSLocaleTemperatureUnit,
+                            _NSLocaleTemperatureUnitCelsius, _NSLog,
+                            _NSParagraphStyleAttributeName,
+                            _NSRunLoopCommonModes, _NWKConditionIconForCode,
+                            _NWKLogForCategory,
+                            _UIFontDescriptorFeatureSettingsAttribute,
+                            _UIFontFeatureSelectorIdentifierKey,
+                            _UIFontFeatureTypeIdentifierKey,
+                            _UIFontTextStyleBody, _UIFontTextStyleCaption2,
+                            _UIFontTextStyleHeadline, _UIFontWeightBold,
+                            _UIFontWeightLight, _UIFontWeightMedium,
+                            _UILayoutFittingCompressedSize,
+                            __Block_object_assign, __Block_object_dispose,
+                            __NSConcreteGlobalBlock, __NSConcreteStackBlock,
+                            __Unwind_Resume, ___CFConstantStringClassReference,
+                            ___NSArray0__, ___objc_personality_v0, ___sincos_stret,
+                            ___stack_chk_fail, ___stack_chk_guard,
+                            __objc_empty_cache, __os_log_error_impl,
+                            _dispatch_once, _kCALineCapRound, _objc_alloc,
+                            _objc_alloc_init, _objc_autoreleaseReturnValue,
+                            _objc_destroyWeak, _objc_getProperty,
+                            _objc_loadWeakRetained, _objc_msgSend,
+                            _objc_msgSendSuper2, _objc_opt_class,
+                            _objc_opt_isKindOfClass, _objc_opt_new, _objc_release,
+                            _objc_retain, _objc_retainAutorelease,
+                            _objc_retainAutoreleaseReturnValue,
+                            _objc_retainAutoreleasedReturnValue,
+                            _objc_retainBlock, _objc_setProperty_atomic,
+                            _objc_storeStrong, _objc_storeWeak,
+                            _objc_unsafeClaimAutoreleasedReturnValue,
+                            _os_log_type_enabled, dyld_stub_binder ]
+    objc-classes:         [ _CAShapeLayer, _NSArray, _NSBundle, _NSCalendar,
+                            _NSCharacterSet, _NSDate, _NSDateFormatter,
+                            _NSDictionary, _NSLayoutConstraint, _NSLocale,
+                            _NSMapTable, _NSMutableArray,
+                            _NSMutableAttributedString, _NSMutableIndexSet,
+                            _NSMutableParagraphStyle, _NSNotificationCenter,
+                            _NSNumber, _NSNumberFormatter, _NSObject,
+                            _NSRegularExpression, _NSRunLoop, _NSString, _NSTimeZone,
+                            _NSTimer, _NWKLocalizedImage, _NWMTemperatureFormatter,
+                            _PUICButton, _PUICDynamicTextSizingParams,
+                            _PUICKeylineView, _PUICViewController,
+                            _STShowDailyWeatherForecastRequest,
+                            _STShowHourlyWeatherForecastRequest,
+                            _STShowWeatherConditionsRequest,
+                            _STWeatherAttributes, _UIApplication, _UIBezierPath,
+                            _UIColor, _UIDevice, _UIFont, _UIFontMetrics, _UIImageView,
+                            _UILabel, _UIResponder, _UIScreen, _UIView, _WFTemperature,
+                            _WFWeatherConditions ]
+...

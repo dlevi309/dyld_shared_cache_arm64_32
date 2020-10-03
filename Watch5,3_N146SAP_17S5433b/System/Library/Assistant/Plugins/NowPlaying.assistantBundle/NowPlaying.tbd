@@ -1,0 +1,53 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 2C2A5E08-06A9-377C-85BF-6EE87035154C' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Assistant/Plugins/NowPlaying.assistantBundle/NowPlaying
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _NPLanguageOptionCreate,
+                            _NPMediaRemoteDisableLanguageOption,
+                            _NPMediaRemoteSendCommandWithOptions,
+                            _NPMediaRemoteSetLanguageOption ]
+    objc-classes:         [ _NPVGetAudioTracksAndSubtitleOptions,
+                            _NPVSetAudioTrack, _NPVSetAutoSubtitles,
+                            _NPVSetDefaultAudioTrack, _NPVTurnOffSubtitles,
+                            _NPVTurnOnSubtitles ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _AFGetNowPlayingInfoDictionary,
+                            _AFLanguageOptionsForNowPlayingInfo,
+                            _CFDictionaryCreate, _CFRelease,
+                            _MRLanguageOptionCreate,
+                            _MRLanguageOptionCreateAutomaticLanguageOptionForType,
+                            _MRLanguageOptionCreateExternalRepresentation,
+                            _MRMediaRemoteCommandInfoGetCommand,
+                            _MRMediaRemoteGetSupportedCommands,
+                            _MRMediaRemoteSendCommandWithReply,
+                            _SANPCommandFailedErrorCode,
+                            _SANPCommandUnsupportedByAppErrorCode,
+                            _SANPNoSuchContentErrorCode,
+                            _SANPVideoNothingPlayingErrorCode,
+                            __Block_object_assign, __NSConcreteStackBlock,
+                            ___stack_chk_fail, ___stack_chk_guard,
+                            __objc_empty_cache, _dispatch_get_global_queue,
+                            _kCFTypeDictionaryKeyCallBacks,
+                            _kCFTypeDictionaryValueCallBacks,
+                            _kMRMediaRemoteFrameworkErrorDomain,
+                            _kMRMediaRemoteOptionLanguageOptionData,
+                            _objc_alloc_init, _objc_enumerationMutation,
+                            _objc_msgSend, _objc_release, _objc_retain,
+                            _objc_retainAutoreleasedReturnValue,
+                            dyld_stub_binder ]
+    objc-classes:         [ _NSObject, _SACommandFailed, _SACommandSucceeded,
+                            _SANPVideoGetAudioTracksAndSubtitleOptions,
+                            _SANPVideoGetAudioTracksAndSubtitleOptionsCompleted,
+                            _SANPVideoSetAudioTrack, _SANPVideoSetAutoSubtitles,
+                            _SANPVideoSetDefaultAudioTrack,
+                            _SANPVideoTurnOffSubtitles,
+                            _SANPVideoTurnOnSubtitles ]
+...

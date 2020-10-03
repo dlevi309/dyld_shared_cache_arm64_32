@@ -1,0 +1,43 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 44AFBBF5-055C-3685-8C9D-A6F38B5D7509' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Carousel/NotificationCenter/NanoCelebrationsNotificationCenterCellFactory.bundle/NanoCelebrationsNotificationCenterCellFactory
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _NanoCelebrationsNotificationCenterCellFactoryVersionNumber,
+                            _NanoCelebrationsNotificationCenterCellFactoryVersionString ]
+    objc-classes:         [ _NCENotificationCenterCell,
+                            _NCENotificationCenterCellFactory ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _CGRectZero, _CNContactGivenNameKey,
+                            _CSLPINavigateToClock, _NCECelebrationBalloonsName,
+                            _NCECelebrationFireworksName,
+                            _NCECelebrationSparklesName, _NSFontAttributeName,
+                            _NSForegroundColorAttributeName,
+                            _NSParagraphStyleAttributeName,
+                            _UIFontTextStyleHeadline, __Block_object_assign,
+                            __Block_object_dispose, __NSConcreteGlobalBlock,
+                            __NSConcreteStackBlock, __Unwind_Resume,
+                            ___CFConstantStringClassReference,
+                            ___objc_personality_v0, ___stack_chk_fail,
+                            ___stack_chk_guard, __objc_empty_cache, _dispatch_once,
+                            _dispatch_semaphore_create,
+                            _dispatch_semaphore_signal, _dispatch_semaphore_wait,
+                            _objc_alloc, _objc_alloc_init,
+                            _objc_autoreleaseReturnValue, _objc_destroyWeak,
+                            _objc_loadWeakRetained, _objc_msgSend,
+                            _objc_msgSendSuper2, _objc_opt_class, _objc_release,
+                            _objc_retain, _objc_retainAutoreleasedReturnValue,
+                            _objc_storeStrong, _objc_storeWeak, dyld_stub_binder ]
+    objc-classes:         [ _CNContactStore, _NCEBulletinsLiaison, _NSArray,
+                            _NSAttributedString, _NSBundle, _NSDictionary,
+                            _NSMutableParagraphStyle, _NSObject, _NSString,
+                            _PUICResources, _PUICTableViewCell, _UIColor, _UIDevice,
+                            _UIFont, _UIImageView, _UILabel, _UIScreen, _UIView ]
+...

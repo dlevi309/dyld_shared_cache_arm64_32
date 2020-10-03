@@ -1,0 +1,13 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 4E9A1FEE-6ACB-3CCD-A202-4A48891DFC41' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/HomeAI.framework/HomeAI
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ dyld_stub_binder ]
+...

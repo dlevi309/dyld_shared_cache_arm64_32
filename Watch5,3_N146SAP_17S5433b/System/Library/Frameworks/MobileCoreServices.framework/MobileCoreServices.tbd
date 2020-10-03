@@ -1,0 +1,17 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: A902481E-4E09-304B-8EBF-09E051FB542A' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
+current-version:       1069.17
+compatibility-version: 1
+exports:
+  - archs:                [ arm64_32 ]
+    re-exports:           [ /System/Library/Frameworks/CoreServices.framework/CoreServices ]
+    symbols:              [ _MobileCoreServicesVersionNumber,
+                            _MobileCoreServicesVersionString ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ dyld_stub_binder ]
+...

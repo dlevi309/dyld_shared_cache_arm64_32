@@ -1,0 +1,16 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 02D1388F-F2F1-3DFC-83C0-3F30CBE1A5EF' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/CoreServices/Encodings/libJapaneseConverter.dylib
+current-version:       76
+compatibility-version: 1
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ ___CFStringEncodingGetJapaneseConverterDefinition ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ ___stack_chk_fail, ___stack_chk_guard, _memcpy, _strlen,
+                            _strncmp, _strncpy, dyld_stub_binder ]
+...

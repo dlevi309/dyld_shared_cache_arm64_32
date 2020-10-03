@@ -1,0 +1,54 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 9D1F673F-4F95-3B75-8AC7-DC6DB43B4D8E' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Carousel/BulletinContents/EmergencyAlertsClientFactory.bundle/EmergencyAlertsClientFactory
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _EALogDefault, _EALogSubsystem,
+                            _EARegisterUserNotificationsLogging,
+                            _EmergencyAlertsClientFactoryVersionNumber,
+                            _EmergencyAlertsClientFactoryVersionString ]
+    objc-classes:         [ _EAEmergencyAlertClientFactory,
+                            _EAEmergencyAlertLongLookView,
+                            _EAEmergencyAlertLongLookViewController ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _CGRectNull, _CUISBulletinLongLookIconKey,
+                            _CUISBulletinLongLookTitleKey,
+                            _CUISBulletinQuickLookIconKey,
+                            _EANotificationExternalToneFilePathKey,
+                            _EANotificationExternalVibrationPatternFilePathKey,
+                            _EANotificationFromPhoneKey,
+                            _EANotificationSoundIsMutableInRelayModeKey,
+                            _NSFontAttributeName,
+                            _NSForegroundColorAttributeName,
+                            _NSLinkAttributeName, _TLToneIdentifierNone,
+                            _UIEdgeInsetsZero, _UILayoutFittingCompressedSize,
+                            __NSConcreteGlobalBlock, __NSConcreteStackBlock,
+                            ___CFConstantStringClassReference, ___stack_chk_fail,
+                            ___stack_chk_guard, __dispatch_main_q,
+                            __objc_empty_cache, __os_log_impl,
+                            _dispatch_assert_queue$V2, _dispatch_once, _objc_alloc,
+                            _objc_alloc_init, _objc_autoreleaseReturnValue,
+                            _objc_getProperty, _objc_msgSend, _objc_msgSendSuper2,
+                            _objc_opt_class, _objc_opt_new, _objc_release,
+                            _objc_retain, _objc_retainAutoreleasedReturnValue,
+                            _objc_storeStrong, _os_log_create,
+                            _os_log_type_enabled, dyld_stub_binder ]
+    objc-classes:         [ _CUISAlertPlatterView,
+                            _CUISBulletinActionMenuPresentation,
+                            _CUISBulletinClientFactory,
+                            _CUISBulletinClientViewController,
+                            _CUISBulletinLongLookLayoutAttributes,
+                            _CUISBulletinPrimaryPagePresentation, _NSBundle,
+                            _NSCharacterSet, _NSDataDetector, _NSDictionary,
+                            _NSMutableAttributedString, _NSObject, _NSString, _NSURL,
+                            _PUICHyphenatedLabel, _TLAlert, _TLAlertConfiguration,
+                            _TUCallCenter, _UIColor, _UIDevice, _UIImage, _UITextView,
+                            _UIView ]
+...

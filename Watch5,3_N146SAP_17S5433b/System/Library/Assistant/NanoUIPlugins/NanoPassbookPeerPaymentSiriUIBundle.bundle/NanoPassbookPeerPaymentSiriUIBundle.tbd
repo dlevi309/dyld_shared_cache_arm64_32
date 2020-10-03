@@ -1,0 +1,41 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 2A77EB85-FF55-3329-8794-27E27AC9E6FD' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Assistant/NanoUIPlugins/NanoPassbookPeerPaymentSiriUIBundle.bundle/NanoPassbookPeerPaymentSiriUIBundle
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _kBalloonViewHorizontalMargin,
+                            _kFirstLineBaselineFrameOriginY,
+                            _kSpacingBetweenToFieldAndRecipientName,
+                            _kToFieldHorizontalMargin, _kToLabelVerticalMargin ]
+    objc-classes:         [ _NPKPeerPaymentIntentViewController,
+                            _NPKPeerPaymentSiriSnippetContentView,
+                            _NPKSiriUIControllerFactory ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _CGRectGetMaxX, _CGRectGetMaxY, _CGRectGetWidth,
+                            _CKBalloonViewForClass, _UIEdgeInsetsZero,
+                            _UIFontTextStyleBody, _UIFontTextStyleFootnote2,
+                            __NSDictionaryOfVariableBindings,
+                            ___CFConstantStringClassReference, ___stack_chk_fail,
+                            ___stack_chk_guard, __objc_empty_cache, __os_log_impl,
+                            _objc_alloc, _objc_alloc_init,
+                            _objc_autoreleaseReturnValue,
+                            _objc_enumerationMutation, _objc_msgSend,
+                            _objc_msgSendSuper2, _objc_opt_class,
+                            _objc_opt_isKindOfClass, _objc_release, _objc_retain,
+                            _objc_retainAutoreleasedReturnValue,
+                            _objc_storeStrong, _os_log_type_enabled,
+                            _pk_Payment_log, dyld_stub_binder ]
+    objc-classes:         [ _CKTranscriptPluginBalloonView, _CKUIBehavior,
+                            _INRequestPaymentIntent, _INSendPaymentIntent,
+                            _NPKPeerPaymentMessageViewController, _NSArray,
+                            _NSBundle, _NSLayoutConstraint, _NSMutableArray,
+                            _NSObject, _PKPeerPaymentMessage, _STSurfPaymentAction,
+                            _UIColor, _UIFont, _UILabel, _UIView, _UIViewController ]
+...

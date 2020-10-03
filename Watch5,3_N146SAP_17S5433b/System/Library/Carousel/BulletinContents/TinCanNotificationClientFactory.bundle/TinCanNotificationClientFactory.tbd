@@ -1,0 +1,48 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 1FF67E81-A609-3412-8AFC-2843B9AE452A' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Carousel/BulletinContents/TinCanNotificationClientFactory.bundle/TinCanNotificationClientFactory
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    objc-classes:         [ _TinCanNotificationClientFactory ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _CNContactEmailAddressesKey,
+                            _CNContactPhoneNumbersKey, _TCSLogDefault,
+                            _TCSTinCanAppBundleIdentifier,
+                            _TCSTinCanInvalidUserNotification,
+                            _TCSTinCanInviteAcceptanceNotification,
+                            _TCSTinCanInviteAcceptedNotification,
+                            _TCSTinCanInviteDeclinedNotification,
+                            _TCSTinCanInviteNotification,
+                            _TCSTinCanInviteNotificationContactIdentifierKey,
+                            _TCSTinCanInviteNotificationFullNameKey,
+                            _TCSTinCanInviteNotificationHandleKey,
+                            _TCSTinCanInviteNotificationShortNameKey,
+                            _TCSTinCanInviteTimeoutNotification,
+                            _TCSTinCanMissedCallbackNotification,
+                            _TCSTinCanMissedNotification,
+                            __NSConcreteGlobalBlock, __TCSInitializeLogging,
+                            ___CFConstantStringClassReference, ___stack_chk_fail,
+                            ___stack_chk_guard, __objc_empty_cache,
+                            __os_log_error_impl, __os_log_impl, _dispatch_once,
+                            _objc_autoreleaseReturnValue, _objc_msgSend,
+                            _objc_msgSendSuper2, _objc_opt_class, _objc_opt_new,
+                            _objc_release, _objc_retain,
+                            _objc_retainAutoreleaseReturnValue,
+                            _objc_retainAutoreleasedReturnValue,
+                            _objc_storeStrong, _os_log_type_enabled,
+                            dyld_stub_binder ]
+    objc-classes:         [ _CNContact, _CNContactFormatter, _CNContactStore,
+                            _CUISBulletinActionMenuPresentation,
+                            _CUISBulletinClientFactory,
+                            _FBSOpenApplicationService, _NSArray, _NSBundle,
+                            _NSNotificationCenter, _NSObject, _NSString,
+                            _PUICActionItem, _TCSAvailability, _TCSContacts,
+                            _UIApplication ]
+...

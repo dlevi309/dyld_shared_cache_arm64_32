@@ -1,0 +1,20 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 37414AFE-1DC4-3F05-AD7A-3AE67823358F' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/SignpostNotification.framework/SignpostNotification
+current-version:       42.1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _EnableSignpostNotificationGeneration,
+                            _SignpostGetNewNotificationConnection,
+                            _SignpostNotificationSendNotificationSubscriptionRequestOnConnection,
+                            _SignpostNotificationVersionNumber,
+                            _SignpostNotificationVersionString ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ dyld_stub_binder ]
+...

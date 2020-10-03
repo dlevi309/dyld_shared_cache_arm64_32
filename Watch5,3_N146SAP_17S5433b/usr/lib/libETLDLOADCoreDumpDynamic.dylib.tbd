@@ -1,0 +1,24 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 39E5A318-9A60-3978-B5FF-10413291AD6B' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /usr/lib/libETLDLOADCoreDumpDynamic.dylib
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _ETLDLOADCoreDumpCaptureRecord,
+                            _ETLDLOADCoreDumpCaptureRecordFast ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _ETLDLOADCommandCreateMemoryDebugFastReadRequest,
+                            _ETLDLOADCommandCreateMemoryDebugReadRequest,
+                            _ETLDLOADCommandDumpCommand,
+                            _ETLDLOADCommandParseMemoryDebugReadResponse,
+                            _ETLDLOADCommandReadMemoryDebugFastReadResponse,
+                            _ETLDLOADCommandReceiveWithBufferAndFlags,
+                            _ETLDLOADCommandSend, _HDLCFrameFree,
+                            _TelephonyUtilRingBufferInitialize, __ETLDebugPrint,
+                            _free, _malloc, dyld_stub_binder ]
+...

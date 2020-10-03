@@ -1,0 +1,31 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: D1C1C91D-4629-34A9-9986-DEDE802A77BB' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /usr/lib/swift/libswiftClockKit.dylib
+current-version:       0
+compatibility-version: 1
+swift-version:         6
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _$sSo15CLKTextProviderC8ClockKitE6format_ABSS_s7CVarArg_pdtcfC,
+                            __swift_FORCE_LOAD_$_swiftClockKit ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _$sSS10FoundationE19_bridgeToObjectiveCSo8NSStringCyF,
+                            _$ss9getVaListys03CVaC7PointerVSays7CVarArg_pGF,
+                            _objc_msgSend, _objc_release,
+                            _objc_retainAutoreleasedReturnValue,
+                            _swift_bridgeObjectRelease,
+                            _swift_getObjCClassFromMetadata,
+                            _swift_unknownObjectRelease, dyld_stub_binder ]
+    weak-def-symbols:     [ __swift_FORCE_LOAD_$_swiftCoreFoundation,
+                            __swift_FORCE_LOAD_$_swiftCoreGraphics,
+                            __swift_FORCE_LOAD_$_swiftDarwin,
+                            __swift_FORCE_LOAD_$_swiftDispatch,
+                            __swift_FORCE_LOAD_$_swiftFoundation,
+                            __swift_FORCE_LOAD_$_swiftObjectiveC,
+                            __swift_FORCE_LOAD_$_swiftUIKit ]
+...

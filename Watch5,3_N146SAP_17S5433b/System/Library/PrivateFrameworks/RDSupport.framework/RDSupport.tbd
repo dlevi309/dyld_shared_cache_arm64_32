@@ -1,0 +1,51 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 9DE33A40-0FDD-36B2-99A1-2D9B9A1478B9' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/RDSupport.framework/RDSupport
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _RDDefaultsAbsolutePath, _RDStartPlayingDemoMovie,
+                            _RDStartPlayingDemoMovieNotification,
+                            _RDStopPlayingDemoMovie,
+                            _RDStopPlayingDemoMovieNotification,
+                            _RDSupportVersionNumber, _RDSupportVersionString,
+                            _forcedBrightnessValue, _isRunningInF5DemoMode,
+                            _killProcessNamed, _shouldAllowForcedBrightness ]
+    objc-classes:         [ _RDGizmoCommands ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _BKSDisplayBrightnessCurveSet,
+                            _BKSDisplayBrightnessGetCurrent,
+                            _BKSDisplayBrightnessSet,
+                            _BKSDisplayBrightnessSetAutoBrightnessEnabled,
+                            _CFGetTypeID,
+                            _CFNotificationCenterGetDarwinNotifyCenter,
+                            _CFNotificationCenterPostNotification,
+                            _CFNumberGetTypeID, _CFNumberGetValue,
+                            _CFPreferencesAppSynchronize,
+                            _CFPreferencesCopyAppValue,
+                            _CFPreferencesGetAppBooleanValue,
+                            _CFPreferencesGetAppIntegerValue,
+                            _CFPreferencesSetAppValue, _CFRelease,
+                            _CPSharedResourcesDirectory,
+                            _UIContentSizeCategoryLarge, __Block_object_assign,
+                            __Block_object_dispose, __NSConcreteGlobalBlock,
+                            __NSConcreteStackBlock,
+                            ___CFConstantStringClassReference, ___error,
+                            ___stack_chk_fail, ___stack_chk_guard,
+                            __objc_empty_cache, __os_log_debug_impl,
+                            __os_log_default, __os_log_error_impl, __os_log_impl,
+                            _dispatch_once, _free, _kill, _malloc, _objc_msgSend,
+                            _objc_opt_new, _objc_release, _objc_retain,
+                            _objc_retainAutorelease,
+                            _objc_retainAutoreleasedReturnValue,
+                            _os_log_type_enabled, _realloc, _strncmp, _sysctl,
+                            dyld_stub_binder ]
+    objc-classes:         [ _NPSManager, _NSArray, _NSNumber, _NSObject, _NSSet,
+                            _VTPreferences ]
+...

@@ -1,0 +1,46 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: B25ED0BC-64BB-3501-ADEA-786E5E4147B8' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/RelevanceEngine/DataSources/NanoAlarmDataSource.bundle/NanoAlarmDataSource
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    objc-classes:         [ _NanoAlarmBundleConfiguration, _NanoAlarmDataSource,
+                            _NanoAlarmDemoDataSource, _NanoAlarmLiveDataSource,
+                            _NanoAlarmSampleDataSource ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _CLKEndOfDayForDate, _CLKStartOfDayForDate,
+                            _MTAlarmManagerAlarmsChanged,
+                            _MTAlarmManagerStateReset,
+                            _REAbsoluteRelevanceProviderForDate,
+                            _REDefaultSectionIdentifier, _REPrimaryDataSourceKey,
+                            _RESampleDataSourceKey,
+                            _REUISampleRelevanceProviderForSamplePosition,
+                            __Block_object_assign, __NSConcreteGlobalBlock,
+                            __NSConcreteStackBlock,
+                            ___CFConstantStringClassReference, ___NSArray0__,
+                            ___stack_chk_fail, ___stack_chk_guard,
+                            __objc_empty_cache, _objc_alloc, _objc_alloc_init,
+                            _objc_autoreleaseReturnValue,
+                            _objc_enumerationMutation, _objc_msgSend,
+                            _objc_msgSendSuper2, _objc_opt_class,
+                            _objc_opt_isKindOfClass, _objc_opt_new, _objc_release,
+                            _objc_retain, _objc_retainAutoreleasedReturnValue,
+                            _objc_storeStrong,
+                            _objc_unsafeClaimAutoreleasedReturnValue,
+                            dyld_stub_binder ]
+    objc-classes:         [ _CLKRelativeDateTextProvider, _CLKSimpleTextProvider,
+                            _CLKTimeTextProvider, _MTAlarm, _MTAlarmManager,
+                            _MTSensitiveUIMonitor, _NAFuture, _NSArray, _NSBundle,
+                            _NSDate, _NSDateInterval, _NSMutableArray,
+                            _NSNotificationCenter, _NSObject, _NSString, _NSURL,
+                            _REBundleConfiguration, _REContent,
+                            _REDateRelevanceProvider, _REElement,
+                            _REElementDataSource, _REElementOpenAction, _UIColor,
+                            _UIImage ]
+...

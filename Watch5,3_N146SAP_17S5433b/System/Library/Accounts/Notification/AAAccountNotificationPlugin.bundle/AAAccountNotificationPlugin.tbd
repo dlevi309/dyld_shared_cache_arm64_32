@@ -1,0 +1,38 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: D8514998-3570-3DBD-A790-60D67EBCA5D1' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Accounts/Notification/AAAccountNotificationPlugin.bundle/AAAccountNotificationPlugin
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    objc-classes:         [ _AAAccountNotificationPlugin,
+                            _AABridgeFollowUpController ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _AAAccountClassPrimary,
+                            _ACAccountTypeIdentifierAppleAccount,
+                            _ACAccountTypeIdentifierDeviceLocator,
+                            _ACAccountTypeIdentifierFindMyFriends,
+                            _ACFindMyFriendsAppTokenKey,
+                            _ACFindMyFriendsTokenKey, _ACFindMyiPhoneAppTokenKey,
+                            _ACFindMyiPhoneSiriTokenKey, _ACFindMyiPhoneTokenKey,
+                            _ACSearchPartyTokenKey, _AIDAAccountPropertyAltDSID,
+                            __AALogSystem, __NSConcreteStackBlock,
+                            ___CFConstantStringClassReference, ___stack_chk_fail,
+                            ___stack_chk_guard, __objc_empty_cache,
+                            __os_log_debug_impl, __os_log_error_impl,
+                            __os_log_impl, _dispatch_async,
+                            _dispatch_queue_attr_make_with_autorelease_frequency,
+                            _dispatch_queue_create, _objc_alloc, _objc_alloc_init,
+                            _objc_msgSend, _objc_msgSendSuper2, _objc_release,
+                            _objc_retain, _objc_retainAutoreleasedReturnValue,
+                            _objc_storeStrong, _os_log_type_enabled,
+                            _os_transaction_create, dyld_stub_binder ]
+    objc-classes:         [ _ACAccount, _ACAccountCredential,
+                            _AKAppleIDAuthenticationController, _NSArray,
+                            _NSObject ]
+...

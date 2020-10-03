@@ -1,0 +1,16 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 4D0B8D1C-6114-32A9-BD9A-041B3D1B0D65' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Carousel/BulletinContents/WatchNotificationsUIClientFactory.bundle/WatchNotificationsUIClientFactory
+current-version:       0
+compatibility-version: 0
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _WatchNotificationsUIClientFactoryVersionNumber,
+                            _WatchNotificationsUIClientFactoryVersionString ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ dyld_stub_binder ]
+...

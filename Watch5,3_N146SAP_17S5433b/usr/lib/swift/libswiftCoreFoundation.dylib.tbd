@@ -1,0 +1,29 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: E92F8839-E8D3-3302-AD61-85C9A606A2B5' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /usr/lib/swift/libswiftCoreFoundation.dylib
+current-version:       0
+compatibility-version: 1
+swift-version:         6
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _$s14CoreFoundation9_CFObjectMp,
+                            _$s14CoreFoundation9_CFObjectPAAE2eeoiySbx_xtFZ,
+                            _$s14CoreFoundation9_CFObjectPAAE4hash4intoys6HasherVz_tF,
+                            _$s14CoreFoundation9_CFObjectPAAE9hashValueSivg,
+                            _$s14CoreFoundation9_CFObjectPAAE9hashValueSivpMV,
+                            _$s14CoreFoundation9_CFObjectPSHTb,
+                            _$s14CoreFoundation9_CFObjectTL,
+                            __swift_FORCE_LOAD_$_swiftCoreFoundation ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _$sSH9hashValueSivgTj, _$sSHMp,
+                            _$ss6HasherV8_combineyySuF, _CFEqual, _CFHash,
+                            dyld_stub_binder ]
+    weak-def-symbols:     [ __swift_FORCE_LOAD_$_swiftDarwin,
+                            __swift_FORCE_LOAD_$_swiftDispatch,
+                            __swift_FORCE_LOAD_$_swiftObjectiveC ]
+...

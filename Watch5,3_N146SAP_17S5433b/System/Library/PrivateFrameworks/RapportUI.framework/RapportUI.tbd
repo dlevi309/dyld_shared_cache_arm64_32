@@ -1,0 +1,38 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 8FA8FB38-AB8A-35B0-82DA-751D1C80576F' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/RapportUI.framework/RapportUI
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _RPImageForDeviceModel, _RPUILocalizedString,
+                            _RPUILocalizedStringF, _RPUILocalizedStringV ]
+    objc-classes:         [ _RPPairingManagerUIController,
+                            _RPPairingUIController ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _UTTypeCopyDeclaration,
+                            _UTTypeCopyDeclaringBundleURL,
+                            _UTTypeCreatePreferredIdentifierForTag,
+                            __NSConcreteGlobalBlock,
+                            ___CFConstantStringClassReference,
+                            __objc_empty_cache, _dispatch_once,
+                            _kUTTagClassDeviceModelCode, _kUTTypeConformsToKey,
+                            _kUTTypeIconFileKey, _objc_alloc,
+                            _objc_autoreleaseReturnValue,
+                            _objc_getAssociatedObject, _objc_getProperty,
+                            _objc_msgSend, _objc_msgSendSuper2, _objc_opt_class,
+                            _objc_opt_isKindOfClass, _objc_release, _objc_retain,
+                            _objc_retainAutorelease,
+                            _objc_retainAutoreleaseReturnValue,
+                            _objc_retainAutoreleasedReturnValue,
+                            _objc_setAssociatedObject,
+                            _objc_setProperty_nonatomic_copy, _objc_storeStrong,
+                            dyld_stub_binder ]
+    objc-classes:         [ _NSBundle, _NSNumber, _NSObject, _NSString, _UIButton,
+                            _UIColor, _UIImage, _UIScreen, _UIView ]
+...

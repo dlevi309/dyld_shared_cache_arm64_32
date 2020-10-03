@@ -1,0 +1,74 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: DC5EB8A8-EA3E-3C8A-8571-696FB5D1A61B' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/PowerlogFullOperators.framework/PowerlogFullOperators
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _kPLPMUAgentSensors,
+                            _kPLPacketLogAgentEventPointPacketCapture,
+                            _kPLPacketLogAgentEventPointPacketCaptureBytesIn,
+                            _kPLPacketLogAgentEventPointPacketCaptureBytesOut,
+                            _kPLPacketLogAgentEventPointPacketCapturePacketBlob,
+                            _kPLPacketLogAgentEventPointPacketCapturePacketBlobInfo,
+                            _kPLPacketLogAgentEventPointPacketCapturePacketTimestamp,
+                            _kPLPacketLogAgentEventPointPacketCaptureProcess,
+                            _kPLPersistentConnectionAgentCache,
+                            _kPLPersistentConnectionAgentConfig,
+                            _kPLScheduledWakeAgentEventForwardNameScheduledEvent ]
+    objc-classes:         [ _PLAWDAuxMetrics, _PLPMUAgent, _PLPacketLogAgent,
+                            _PLPersistentConnectionAgent, _PLScheduledWakeAgent ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _CFRelease, _CFStringCompare, _IOHIDEventGetFloatValue,
+                            _IOHIDEventSystemClientCopyServices,
+                            _IOHIDEventSystemClientCreate,
+                            _IOHIDEventSystemClientSetMatching,
+                            _IOHIDServiceClientCopyEvent,
+                            _IOHIDServiceClientCopyProperty,
+                            _IOPMCopyScheduledPowerEvents,
+                            _PCIntervalCacheChangedNotification,
+                            _PCIntervalCacheDateKey,
+                            _PCIntervalCacheKeepAliveIntervalKey,
+                            _PCPreferencesDidChangeNotification,
+                            _PCSettingsGetClassPollInterval,
+                            _PCSettingsGetClassPushEnabled, _PLLogCommon,
+                            __NSConcreteGlobalBlock, __NSConcreteStackBlock,
+                            ___CFConstantStringClassReference,
+                            ___NSDictionary0__, ___error, ___snprintf_chk,
+                            ___stack_chk_fail, ___stack_chk_guard, ___strcat_chk,
+                            ___strlcpy_chk, __objc_empty_cache,
+                            __os_log_debug_impl, _bzero, _close, _dispatch_once,
+                            _fcntl, _free, _ioctl, _kCFAllocatorDefault,
+                            _kPLCanSleepSemaphore, _kPLEDBufferFlushInterval,
+                            _kPLEDBufferSize, _kPLEDConfigs,
+                            _kPLEDDynamicDefinition, _kPLEDDynamicKeys, _kPLEDKeys,
+                            _kPLEDSchemaVersionKey, _kPLEDTypeKey,
+                            _kPLED_EventForwardKey, _kPLED_EventPointKey,
+                            _localtime, _malloc, _objc_alloc,
+                            _objc_autoreleaseReturnValue, _objc_destroyWeak,
+                            _objc_enumerationMutation, _objc_getProperty,
+                            _objc_loadWeakRetained, _objc_msgSend,
+                            _objc_msgSendSuper2, _objc_opt_class, _objc_opt_new,
+                            _objc_release, _objc_retain, _objc_retainAutorelease,
+                            _objc_retainAutoreleaseReturnValue,
+                            _objc_retainAutoreleasedReturnValue,
+                            _objc_setProperty_atomic, _objc_storeStrong,
+                            _objc_storeWeak, _open, _os_log_type_enabled,
+                            _pcap_cleanup_pktap_interface,
+                            _pcap_setup_pktap_interface, _read, _strftime,
+                            dyld_stub_binder ]
+    objc-classes:         [ _NSArray, _NSData, _NSDate, _NSDictionary, _NSMutableArray,
+                            _NSMutableDictionary, _NSMutableSet, _NSNumber,
+                            _NSObject, _NSString, _PCConnectionManager,
+                            _PLActivityCriterionTime, _PLActivityScheduler,
+                            _PLAgent, _PLCFNotificationOperatorComposition,
+                            _PLCoreStorage, _PLDefaults, _PLEntry,
+                            _PLEntryDefinition,
+                            _PLEntryNotificationOperatorComposition,
+                            _PLSemaphore, _PLXPCListenerOperatorComposition ]
+...

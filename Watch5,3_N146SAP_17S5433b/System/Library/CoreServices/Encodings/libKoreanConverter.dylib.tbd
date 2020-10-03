@@ -1,0 +1,16 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: FF734B76-6A02-33E5-89B6-9DBAADFE3765' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/CoreServices/Encodings/libKoreanConverter.dylib
+current-version:       76
+compatibility-version: 1
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ ___CFStringEncodingGetKoreanConverterDefinition ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ ___stack_chk_fail, ___stack_chk_guard, _strncmp,
+                            _strncpy, dyld_stub_binder ]
+...

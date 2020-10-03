@@ -1,0 +1,22 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 9C3B9E2A-3E3B-3B59-9855-CBEAD93D9D54' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Accounts/Notification/DMDAccountNotificationPlugin.bundle/DMDAccountNotificationPlugin
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    objc-classes:         [ _DMDAccountNotificationPlugin ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _CFNotificationCenterGetDarwinNotifyCenter,
+                            _CFNotificationCenterPostNotification,
+                            _DMFiCloudAccountDidChangeDarwinNotification,
+                            __objc_empty_cache, _objc_msgSend, _objc_release,
+                            _objc_retain, _objc_retainAutoreleasedReturnValue,
+                            dyld_stub_binder ]
+    objc-classes:         [ _NSObject ]
+...

@@ -1,0 +1,74 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 0684C894-621A-3A57-A9EA-8B05217877E0' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Carousel/Alerts/SharingAlertBundle.bundle/SharingAlertBundle
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    objc-classes:         [ _SFAutoUnlockAlertView,
+                            _SFAutoUnlockAlertViewController,
+                            _SFLeashingAlertView, _SFLeashingViewController,
+                            _SFWatchAuthAlertViewController,
+                            _SFWatchAuthConfirmationView,
+                            _SFWatchAuthDoubleClickView,
+                            _SFWatchAuthViewController, _SharingAlertProvider ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _AudioServicesPlaySystemSoundWithCompletion,
+                            _CGAffineTransformIdentity,
+                            _CGAffineTransformMakeRotation,
+                            _CGAffineTransformMakeTranslation, _CGRectGetHeight,
+                            _CGRectGetWidth, _IOPMAssertionCreateWithProperties,
+                            _IOPMAssertionRelease, _NSFontAttributeName,
+                            _PUICStatusBarTitleTappedNotification,
+                            _SFDispatchTimerSet, _SFLocalizedStringForKey,
+                            _SFNonBreakingStringFromDeviceName,
+                            _SFStringComponentsFromTimeInterval,
+                            _UIEdgeInsetsZero, _UIFontTextStyleBody,
+                            _UIFontTextStyleTitle1, _UIFontWeightMedium,
+                            _UIFontWeightRegular,
+                            _UIGraphicsBeginImageContextWithOptions,
+                            _UIGraphicsEndImageContext,
+                            _UIGraphicsGetImageFromCurrentImageContext,
+                            _UIRectCenteredXInRect, __Block_object_assign,
+                            __Block_object_dispose, __NSConcreteGlobalBlock,
+                            __NSConcreteStackBlock, __Unwind_Resume,
+                            ___CFConstantStringClassReference,
+                            ___objc_personality_v0, ___stack_chk_fail,
+                            ___stack_chk_guard, __dispatch_main_q,
+                            __dispatch_source_type_timer, __objc_empty_cache,
+                            __os_log_debug_impl, __os_log_error_impl,
+                            __os_log_impl, _auto_unlock_log, _dispatch_async,
+                            _dispatch_once, _dispatch_resume,
+                            _dispatch_source_cancel, _dispatch_source_create,
+                            _dispatch_source_set_event_handler,
+                            _dispatch_source_set_timer, _dispatch_time,
+                            _leash_log_, _objc_alloc, _objc_alloc_init,
+                            _objc_autoreleaseReturnValue, _objc_copyWeak,
+                            _objc_destroyWeak, _objc_initWeak,
+                            _objc_loadWeakRetained, _objc_msgSend,
+                            _objc_msgSendSuper2, _objc_opt_class,
+                            _objc_opt_isKindOfClass, _objc_opt_new, _objc_release,
+                            _objc_retain, _objc_retainAutoreleasedReturnValue,
+                            _objc_storeStrong, _objc_storeWeak,
+                            _os_log_type_enabled, dyld_stub_binder ]
+    objc-classes:         [ _CSLSBacklight, _CSLSBacklightAssertion,
+                            _CSLSDeviceOrientation, _CSLSUITriggerRegistration,
+                            _CUISAlertBackgroundView, _CUISAlertViewController,
+                            _NPKApprovalConfirmationViewController,
+                            _NPKDoubleClickClientSuppressor, _NSArray, _NSBundle,
+                            _NSDate, _NSDictionary,
+                            _NSDistributedNotificationCenter,
+                            _NSLayoutConstraint, _NSMutableArray,
+                            _NSMutableDictionary, _NSNotificationCenter, _NSNumber,
+                            _NSObject, _NSOperationQueue, _NSOrderedSet, _NSString,
+                            _PUICNavigationController, _PUICStatusBar,
+                            _SFAutoUnlockManager, _UIApplication, _UIColor,
+                            _UIDevice, _UIFont, _UIImage, _UIImageView, _UILabel,
+                            _UIScreen, _UIScrollView, _UIStackView, _UIView,
+                            _UIViewController ]
+...

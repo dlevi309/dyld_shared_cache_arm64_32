@@ -1,0 +1,18 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: CB40B367-E05C-37C2-BB13-EA70F3915A0B' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /usr/lib/libBBUpdaterDynamic_stubs.dylib
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _BBUpdaterExecCommand, _BBUpdaterExtremeCreate,
+                            _BBUpdaterSetOptions ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ __NSConcreteGlobalBlock, ___stderrp, _access,
+                            _dispatch_once, _dlopen, _dlsym, _fprintf, _getprogname,
+                            _syslog, dyld_stub_binder ]
+...

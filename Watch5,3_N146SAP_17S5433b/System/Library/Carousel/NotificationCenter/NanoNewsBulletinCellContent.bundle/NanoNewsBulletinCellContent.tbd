@@ -1,0 +1,28 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 47DFB0E8-213A-3B6E-8A11-BA6EC1923890' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Carousel/NotificationCenter/NanoNewsBulletinCellContent.bundle/NanoNewsBulletinCellContent
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _NSSNotificationUserInfoNewsKey,
+                            _NSSNotificationUserInfoPublisherNameCompactKey ]
+    objc-classes:         [ _NNBulletinCellFactory ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ ___CFConstantStringClassReference,
+                            __objc_empty_cache,
+                            _kUNBulletinContextArchivedUserNotificationKey,
+                            _objc_autoreleasePoolPop, _objc_autoreleasePoolPush,
+                            _objc_msgSend, _objc_opt_class,
+                            _objc_opt_isKindOfClass, _objc_release, _objc_retain,
+                            _objc_retainAutoreleasedReturnValue,
+                            dyld_stub_binder ]
+    objc-classes:         [ _CUISNotificationCenterCell,
+                            _CUISNotificationCenterDefaultCellFactory, _NSArray,
+                            _NSKeyedUnarchiver, _NSObject, _UIColor, _UNNotification ]
+...

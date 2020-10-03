@@ -1,0 +1,24 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: A64C60C8-23BE-3120-8DE4-937BA6DFE2FD' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/NanoHomeUtils.framework/NanoHomeUtils
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _NanoHomeUtilsVersionNumber,
+                            _NanoHomeUtilsVersionString ]
+    objc-classes:         [ _NanoHomeLocationAutomationErrorCoordinator ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ __NSConcreteGlobalBlock, __objc_empty_cache,
+                            _dispatch_once, _objc_autoreleaseReturnValue,
+                            _objc_destroyWeak, _objc_loadWeakRetained,
+                            _objc_msgSend, _objc_opt_new, _objc_release,
+                            _objc_retain, _objc_retainAutoreleaseReturnValue,
+                            _objc_storeWeak, dyld_stub_binder ]
+    objc-classes:         [ _NSObject ]
+...

@@ -1,0 +1,18 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 8E1DFB89-9699-330D-A63D-1F5161BB4631' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/WatchNotificationsUI.framework/WatchNotificationsUI
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _WNUISetNotificationContext ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _objc_getAssociatedObject, _objc_release, _objc_retain,
+                            _objc_setAssociatedObject, dyld_stub_binder ]
+    objc-classes:         [ _UIViewController ]
+...

@@ -1,0 +1,18 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 33CC67D5-CB1D-317C-91BD-D42A0DA1378D' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /usr/lib/libcharset.1.dylib
+current-version:       2
+compatibility-version: 2
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _libcharset_set_relocation_prefix, _locale_charset ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ ___stack_chk_fail, ___stack_chk_guard, _fclose, _fopen,
+                            _free, _fscanf, _getc, _getenv, _malloc, _memcpy, _nl_langinfo,
+                            _realloc, _strcmp, _strcpy, _strlen, _strncmp, _ungetc,
+                            dyld_stub_binder ]
+...

@@ -1,0 +1,75 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 8F2213E9-7485-3A48-AC3F-5E574FC016BB' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/SafariFoundation.framework/SafariFoundation
+current-version:       609.1.20
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _SFAutoFillFromAddressBookPreferenceKey,
+                            _SFCredentialProviderDeveloperEntitlement,
+                            _SFCredentialProviderExtensionPointIdentifier,
+                            _SFCredentialProviderShowsConfigurationUIKey,
+                            _SFCredentialProviderSystemEntitlement,
+                            _SFExternalCredentialIdentityStoreErrorDomain,
+                            _SFSharablePasswordURLSchemeForAirDrop,
+                            _maximumNumberOfWebCredentialEntriesToReturnForAppID ]
+    objc-classes:         [ _SFAutoFillFeatureManager,
+                            _SFDomainAssociationUtilities, _SFSafariCredential,
+                            _SFSafariCredentialStore, _SFSharablePassword,
+                            _SFSharablePasswordReceiver,
+                            _SFSharedWebCredentialsDatabaseEntry,
+                            __SFSharablePasswordEncryptionInformation ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _CFPreferencesAppSynchronize,
+                            _CFPreferencesGetAppBooleanValue,
+                            _CFPreferencesSetAppValue, _CFRelease,
+                            _CPCopySharedResourcesPreferencesDomainForDomain,
+                            _SecItemCopyMatching, _SecKeyCopyPublicKey,
+                            _SecKeyCreateDecryptedData,
+                            _SecKeyCreateEncryptedData, _SecKeyCreateRandomKey,
+                            _WBSPasswordManagerURLAllowKey,
+                            _WBSPasswordManagerURLAllowShowingPasswordDetailIfLocalAuthenticationNotConfiguredKey,
+                            _WBSPasswordManagerURLEncryptedPasswordDataKey,
+                            _WBSPasswordManagerURLEncryptionKeyReferenceKey,
+                            __Block_object_assign, __NSConcreteGlobalBlock,
+                            __NSConcreteStackBlock,
+                            __SWCServiceTypeActivityContinuation,
+                            __SWCServiceTypeAppLinks,
+                            __SWCServiceTypeWebCredentials,
+                            ___CFConstantStringClassReference, ___NSArray0__,
+                            ___stack_chk_fail, ___stack_chk_guard,
+                            __objc_empty_cache, __os_log_error_impl,
+                            _dispatch_async, _dispatch_get_global_queue,
+                            _dispatch_once, _kCFBooleanFalse, _kCFBooleanTrue,
+                            _kSecAttrAccessGroup, _kSecAttrApplicationTag,
+                            _kSecAttrEndDate, _kSecAttrIsPermanent,
+                            _kSecAttrKeySizeInBits, _kSecAttrKeyType,
+                            _kSecAttrKeyTypeRSA, _kSecAttrSynchronizable,
+                            _kSecClass, _kSecClassKey,
+                            _kSecKeyAlgorithmRSAEncryptionOAEPSHA1AESGCM,
+                            _kSecPrivateKeyAttrs, _kSecReturnPersistentRef,
+                            _kSecReturnRef, _kSecUseDataProtectionKeychain,
+                            _kSecValuePersistentRef, _objc_alloc, _objc_alloc_init,
+                            _objc_autoreleaseReturnValue,
+                            _objc_enumerationMutation, _objc_getProperty,
+                            _objc_msgSend, _objc_msgSendSuper2, _objc_opt_class,
+                            _objc_opt_isKindOfClass, _objc_release, _objc_retain,
+                            _objc_retainAutoreleaseReturnValue,
+                            _objc_retainAutoreleasedReturnValue,
+                            _objc_storeStrong,
+                            _objc_unsafeClaimAutoreleasedReturnValue,
+                            _os_log_create, _os_log_type_enabled, dyld_stub_binder ]
+    objc-classes:         [ _MCProfileConnection, _NSArray, _NSCountedSet, _NSData,
+                            _NSDate, _NSDictionary, _NSKeyedArchiver,
+                            _NSKeyedUnarchiver, _NSMapTable, _NSMutableArray,
+                            _NSMutableSet, _NSNumber, _NSObject, _NSSet, _NSString,
+                            _NSURLComponents, _NSURLProtectionSpace,
+                            _NSURLQueryItem, _WBSPasswordManagerURL,
+                            _WBSSavedPasswordStore, __SWCServiceDetails,
+                            __SWCServiceSpecifier ]
+...

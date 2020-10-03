@@ -1,0 +1,69 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: A653EF83-776C-3F8F-9BC2-BF63684D4312' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/RelevanceEngine/DataSources/RelevanceEngineHome.bundle/RelevanceEngineHome
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _REHomeAlwaysShow, _REHomeBundle,
+                            _REHomeBundleIdentifier, _REHomeContent,
+                            _REHomeImageNamed, _REHomeLocalizedString,
+                            _RelevanceEngineHomeVersionNumber,
+                            _RelevanceEngineHomeVersionString ]
+    objc-classes:         [ _REHomeBundleConfiguration, _REHomeDataSource,
+                            _REHomeDemoDataSource, _REHomeImageCache,
+                            _REHomeSampleDataSource ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _HMActionSetTypeHomeArrival,
+                            _HMActionSetTypeHomeDeparture, _HMActionSetTypeSleep,
+                            _HMActionSetTypeWakeUp, _NSStringFromSelector,
+                            _REAbsoluteRelevanceProviderForDate,
+                            _REDefaultSectionIdentifier, _REDemoDataSourceKey,
+                            _REDemoDateForIdentifier, _REImageNamedFromBundle,
+                            _RELogForDomain, _REPrimaryDataSourceKey,
+                            _RESampleDataSourceKey,
+                            _REUISampleRelevanceProviderForSamplePosition,
+                            _REUIScaledFullColorImageProviderWithImage,
+                            _REUpNextDemoUserDefaults, _UIImagePNGRepresentation,
+                            __NSConcreteGlobalBlock, __NSConcreteStackBlock,
+                            __REGetIsInternalBuild, __Unwind_Resume,
+                            ___CFConstantStringClassReference, ___NSArray0__,
+                            ___objc_personality_v0, ___stack_chk_fail,
+                            ___stack_chk_guard, __dispatch_main_q,
+                            __objc_empty_cache, __os_log_error_impl, __os_log_impl,
+                            _abort_report_np, _dispatch_after, _dispatch_once,
+                            _dispatch_queue_create, _dispatch_time, _dlerror,
+                            _dlopen, _objc_alloc, _objc_alloc_init,
+                            _objc_autoreleaseReturnValue, _objc_copyWeak,
+                            _objc_destroyWeak, _objc_enumerationMutation,
+                            _objc_getClass, _objc_initWeak, _objc_loadWeakRetained,
+                            _objc_msgSend, _objc_msgSendSuper2, _objc_opt_class,
+                            _objc_opt_new, _objc_release, _objc_retain,
+                            _objc_retainAutorelease,
+                            _objc_retainAutoreleaseReturnValue,
+                            _objc_retainAutoreleasedReturnValue,
+                            _objc_storeStrong,
+                            _objc_unsafeClaimAutoreleasedReturnValue,
+                            _os_log_type_enabled, dyld_stub_binder ]
+    objc-classes:         [ _CLCircularRegion,
+                            _CLKComplicationTemplateGraphicCircularImage,
+                            _CLKSimpleTextProvider, _HFActionSetItemProvider,
+                            _HFSimpleItemManager, _HMHomeManager,
+                            _HMMutableHomeManagerConfiguration,
+                            _INControlHomeIntent,
+                            _INDailyRoutineRelevanceProvider,
+                            _INDefaultCardTemplate, _INHomeAttributeValue,
+                            _INHomeFilter, _INHomeUserTask, _INImage,
+                            _INLocationRelevanceProvider, _INRelevantShortcut,
+                            _INRelevantShortcutStore, _INShortcut,
+                            _INSpeakableString, _IconImageCache, _NAFuture,
+                            _NAScheduler, _NSArray, _NSBundle, _NSMutableArray,
+                            _NSNumber, _NSObject, _NSString, _REBundleConfiguration,
+                            _REContent, _REElement, _REElementDataSource,
+                            _REUpNextScheduler, _UIColor ]
+...

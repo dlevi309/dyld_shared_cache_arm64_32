@@ -1,0 +1,36 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: BE5FE6AB-BF1C-3339-A0CA-87B3FABBE821' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/Accessibility.framework/Frameworks/AccessibilityMotionGestureRecognition.framework/AccessibilityMotionGestureRecognition
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _AXDescriptionForMotionGestureType,
+                            _AXIterateGestureTypesWithBlock,
+                            _AccessibilityMotionGestureRecognitionVersionNumber,
+                            _AccessibilityMotionGestureRecognitionVersionString ]
+    objc-classes:         [ _AXMotionGestureRecognitionModel, _AXMotionManager,
+                            _AXMotionRunningBuffer ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _AXPerformBlockOnMainThread, _SWCHLogHW,
+                            __Block_object_assign, __Block_object_dispose,
+                            __NSConcreteStackBlock, __Unwind_Resume,
+                            ___CFConstantStringClassReference,
+                            ___objc_personality_v0, ___stack_chk_fail,
+                            ___stack_chk_guard, __objc_empty_cache, __os_log_impl,
+                            _objc_alloc, _objc_alloc_init,
+                            _objc_autoreleaseReturnValue, _objc_destroyWeak,
+                            _objc_enumerationMutation, _objc_loadWeakRetained,
+                            _objc_msgSend, _objc_msgSendSuper2, _objc_release,
+                            _objc_retain, _objc_retainAutoreleasedReturnValue,
+                            _objc_storeStrong, _objc_storeWeak,
+                            _os_log_type_enabled, dyld_stub_binder ]
+    objc-classes:         [ _CMMotionManager, _CSLSBacklightAssertion,
+                            _CSLSDeviceOrientation, _NSMutableArray, _NSNumber,
+                            _NSObject, _NSOperationQueue, _NSString ]
+...

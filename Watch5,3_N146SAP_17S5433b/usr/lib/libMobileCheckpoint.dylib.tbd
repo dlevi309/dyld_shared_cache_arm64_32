@@ -1,0 +1,30 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 36CAF3C4-0C72-3C4C-A338-67D6CB5DD077' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /usr/lib/libMobileCheckpoint.dylib
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _MCCopyCheckpoint, _MCCopyCheckpointData,
+                            _MCCopyCheckpointValue ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _CFDictionaryGetValue, _CFRelease, _CFRetain,
+                            _MOXPCTransportClose, _MOXPCTransportOpen,
+                            _MOXPCTransportReceiveMessage, _MOXPCTransportResume,
+                            _MOXPCTransportSendMessage,
+                            __CFPropertyListCreateFiltered,
+                            ___CFConstantStringClassReference, _objc_alloc,
+                            _objc_autoreleasePoolPop, _objc_autoreleasePoolPush,
+                            _objc_autoreleaseReturnValue, _objc_msgSend,
+                            _objc_release, _objc_retain, _objc_retainAutorelease,
+                            _objc_retainAutoreleasedReturnValue,
+                            _objc_unsafeClaimAutoreleasedReturnValue, _stat,
+                            _syslog, _usleep, dyld_stub_binder ]
+    objc-classes:         [ _NSData, _NSDictionary, _NSNumber,
+                            _NSPropertyListSerialization, _NSSet, _NSString ]
+...

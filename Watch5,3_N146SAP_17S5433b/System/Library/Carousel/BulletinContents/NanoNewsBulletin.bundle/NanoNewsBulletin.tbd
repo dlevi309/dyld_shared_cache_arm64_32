@@ -1,0 +1,72 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: B158AF54-41BF-3A75-BFD7-39709AE5ED02' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Carousel/BulletinContents/NanoNewsBulletin.bundle/NanoNewsBulletin
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _FCNotificationPayloadPublisherLogoCompactURLKey,
+                            _FCNotificationPayloadPublisherLogoURLKey,
+                            _FCNotificationPayloadThumbnailURLKey,
+                            _FRArticleViewUserActivityType,
+                            _FRArticleViewUserActivityUserInfoArticleIDKey,
+                            _FRArticleViewUserActivityUserInfoContentURLKey,
+                            _FRCreateUserActivityUserInfoWithArticleIdentifierTitleURL,
+                            _FRCreateUserActivityWithArticleIdentifierTitleURL,
+                            _FRStringIsUserActivityType,
+                            _NSSNotificationAttachmentPublisherLogoCompactKey,
+                            _NSSNotificationAttachmentPublisherLogoKey,
+                            _NSSNotificationAttachmentThumbnailKey,
+                            _NSSNotificationUserInfoArticleIDKey,
+                            _NSSNotificationUserInfoExcerptKey,
+                            _NSSNotificationUserInfoNewsKey,
+                            _NSSNotificationUserInfoPublishDateKey,
+                            _NSSNotificationUserInfoPublisherNameCompactKey,
+                            _NSSNotificationUserInfoPublisherNameKey,
+                            _NSSNotificationUserInfoThumbnailDataKey,
+                            _NSSNotificationUserInfoTitleKey ]
+    objc-classes:         [ _FRGradientView, _NNBulletinClientFactory,
+                            _NNBulletinClientView,
+                            _NNBulletinClientViewController, _NNBulletinHeadline,
+                            _NNSingleBulletinClientViewController ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _CGRectGetHeight, _CGRectGetMinY, _CGRectGetWidth,
+                            _CGRectZero, _CUISBulletinLongLookPlatterColorKey,
+                            _CUISBulletinLongLookTitleKey,
+                            _CUISBulletinQuickLookSubtitleColorKey,
+                            _CUISBulletinQuickLookSubtitleKey,
+                            _UAUserActivityIsForPairedDeviceOptionKey,
+                            _UAUserActivityTypeTeamIDOverideKey,
+                            __NSConcreteGlobalBlock, __NSConcreteStackBlock,
+                            ___CFConstantStringClassReference, ___stack_chk_fail,
+                            ___stack_chk_guard, __objc_empty_cache,
+                            __os_log_default, __os_log_impl, _dispatch_once,
+                            _kUNBulletinContextArchivedUserNotificationKey,
+                            _kUTTypeText, _objc_alloc, _objc_autorelease,
+                            _objc_autoreleasePoolPop, _objc_autoreleasePoolPush,
+                            _objc_autoreleaseReturnValue,
+                            _objc_enumerationMutation, _objc_msgSend,
+                            _objc_msgSendSuper2, _objc_opt_class,
+                            _objc_opt_isKindOfClass, _objc_release, _objc_retain,
+                            _objc_retainAutorelease,
+                            _objc_retainAutoreleaseReturnValue,
+                            _objc_retainAutoreleasedReturnValue,
+                            _objc_storeStrong, _os_log_type_enabled,
+                            dyld_stub_binder ]
+    objc-classes:         [ _CAGradientLayer, _CSSearchableItemAttributeSet,
+                            _CUISBulletinActionMenuPresentation,
+                            _CUISBulletinClientFactory,
+                            _CUISBulletinClientViewController,
+                            _CUISBulletinLongLookLayoutAttributes,
+                            _CUISBulletinPrimaryPagePresentation,
+                            _NNHHeadlineStripView, _NSBundle, _NSData, _NSDictionary,
+                            _NSKeyedUnarchiver, _NSMutableArray,
+                            _NSMutableDictionary, _NSNumber, _NSObject, _NSSet, _NSURL,
+                            _NSUserActivity, _PUICActionItem, _UIColor, _UIImage,
+                            _UIScreen, _UIView, _UNNotification ]
+...

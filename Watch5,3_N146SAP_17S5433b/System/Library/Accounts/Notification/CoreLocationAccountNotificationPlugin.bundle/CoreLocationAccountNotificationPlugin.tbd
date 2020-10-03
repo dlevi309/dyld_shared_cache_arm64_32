@@ -1,0 +1,23 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: B4A7664F-B15B-31A1-AF32-6C6C72D073DB' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Accounts/Notification/CoreLocationAccountNotificationPlugin.bundle/CoreLocationAccountNotificationPlugin
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _CoreLocationAccountNotificationPluginVersionNumber,
+                            _CoreLocationAccountNotificationPluginVersionString ]
+    objc-classes:         [ _CoreLocationAccountNotificationPlugin ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _ACAccountTypeIdentifierAppleAccount,
+                            _CFNotificationCenterGetDarwinNotifyCenter,
+                            _CFNotificationCenterPostNotification,
+                            ___CFConstantStringClassReference,
+                            __objc_empty_cache, _objc_msgSend, dyld_stub_binder ]
+    objc-classes:         [ _NSObject ]
+...

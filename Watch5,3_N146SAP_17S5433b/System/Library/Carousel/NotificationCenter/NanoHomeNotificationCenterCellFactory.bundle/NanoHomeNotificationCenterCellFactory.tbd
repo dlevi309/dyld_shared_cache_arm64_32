@@ -1,0 +1,19 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: EC229EEA-7F6A-3378-B078-A79F58B862E9' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Carousel/NotificationCenter/NanoHomeNotificationCenterCellFactory.bundle/NanoHomeNotificationCenterCellFactory
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    objc-classes:         [ _NHONotificationCenterCellFactory ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ ___CFConstantStringClassReference,
+                            __objc_empty_cache, _objc_msgSend, dyld_stub_binder ]
+    objc-classes:         [ _CUISNotificationNCDefaultCellFactory, _NSArray,
+                            _NSObject ]
+...

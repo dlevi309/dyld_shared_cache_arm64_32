@@ -1,0 +1,99 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 8D3BC6FC-0988-3D29-B0AC-D6D81684DD85' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/TelephonyRPC.framework/TelephonyRPC
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _NANOPHONE_APPLICATION_BUNDLE_ID,
+                            _NPHDeriveProgramName, _NPHDeviceHasBaseband,
+                            _NPHDeviceOSIsInternalInstall, _NPHIsDebugBuild,
+                            _NPHIsWalkaboutEnabled,
+                            _NPHSharedUtilitiesAppendBuildVersion,
+                            _NPHSharedUtilitiesLocaleHaptic,
+                            _NPHSharedUtilitiesLocaleHapticDucked,
+                            _NPHShowSIMLineInfo, _NPHWiFiStringKey,
+                            _NSStringFromTUCallDisconnectedReason,
+                            _NanoPhoneVoicemailBodyReadFrom,
+                            _NanoPhoneVoicemailMetaReadFrom,
+                            _NanoPhoneVoicemailTranscriptReadFrom,
+                            __NPHPhoneNumberActiveCountryCodeKey,
+                            __NPHPhoneNumberHomeCountryCodeKey,
+                            __NPHPhoneNumberNetworkCountryCodeKey,
+                            _mach_time_elapsed_to_seconds,
+                            _nph_ensure_on_main_queue, _nph_general_log ]
+    objc-classes:         [ _NPHSYObjectWrapper, _NPHSharedUtilities,
+                            _NPHVMSyncSessionManager, _NanoPhoneVoicemailBody,
+                            _NanoPhoneVoicemailMeta,
+                            _NanoPhoneVoicemailTranscript ]
+    objc-ivars:           [ _NanoPhoneVoicemailBody._voicemailNumber,
+                            _NanoPhoneVoicemailBody._voicemailRecording,
+                            _NanoPhoneVoicemailMeta._callbackNumber,
+                            _NanoPhoneVoicemailMeta._dataPath,
+                            _NanoPhoneVoicemailMeta._date,
+                            _NanoPhoneVoicemailMeta._duration,
+                            _NanoPhoneVoicemailMeta._flags,
+                            _NanoPhoneVoicemailMeta._has,
+                            _NanoPhoneVoicemailMeta._identifier,
+                            _NanoPhoneVoicemailMeta._receiverDestinationID,
+                            _NanoPhoneVoicemailMeta._remoteUID,
+                            _NanoPhoneVoicemailMeta._sender,
+                            _NanoPhoneVoicemailMeta._voicemailBody,
+                            _NanoPhoneVoicemailMeta._voicemailNumber,
+                            _NanoPhoneVoicemailMeta._voicemailTranscript,
+                            _NanoPhoneVoicemailTranscript._transcriptionString,
+                            _NanoPhoneVoicemailTranscript._voicemailNumber ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _CFPreferencesCopyAppValue,
+                            _CNContactPhoneNumbersKey, _CNLabelPhoneNumberMain,
+                            _MGCopyAnswer, _MGGetBoolAnswer, _NSLocaleCountryCode,
+                            _PBDataWriterWriteDataField,
+                            _PBDataWriterWriteDoubleField,
+                            _PBDataWriterWriteInt32Field,
+                            _PBDataWriterWriteInt64Field,
+                            _PBDataWriterWriteStringField,
+                            _PBDataWriterWriteSubmessage, _PBReaderPlaceMark,
+                            _PBReaderReadData, _PBReaderReadString,
+                            _PBReaderRecallMark, _PBReaderSkipValueWithTag,
+                            _TUFormattedPhoneNumber, _TUHomeCountryCode,
+                            _TUNetworkCountryCode, __Block_object_assign,
+                            __Block_object_dispose, __NSConcreteGlobalBlock,
+                            __NSConcreteStackBlock, __Unwind_Resume,
+                            ___CFConstantStringClassReference,
+                            ___objc_personality_v0, ___stack_chk_fail,
+                            ___stack_chk_guard, __dispatch_main_q,
+                            __objc_empty_cache, __os_log_error_impl, __os_log_impl,
+                            _abort_report_np, _dispatch_async, _dispatch_once,
+                            _dispatch_queue_create, _dlerror, _dlopen, _fmod,
+                            _kGEOPhoneNumberCountryKey, _kGEOPhoneNumberKey,
+                            _mach_timebase_info, _objc_alloc, _objc_alloc_init,
+                            _objc_autorelease, _objc_autoreleaseReturnValue,
+                            _objc_enumerationMutation, _objc_getAssociatedObject,
+                            _objc_getClass, _objc_getProperty, _objc_msgSend,
+                            _objc_msgSendSuper2, _objc_opt_class,
+                            _objc_opt_isKindOfClass, _objc_opt_new, _objc_release,
+                            _objc_retain, _objc_retainAutorelease,
+                            _objc_retainAutoreleaseReturnValue,
+                            _objc_retainAutoreleasedReturnValue,
+                            _objc_setAssociatedObject,
+                            _objc_setProperty_nonatomic_copy, _objc_storeStrong,
+                            _os_log_create, _os_log_type_enabled, _strrchr,
+                            _xpc_dictionary_create, _xpc_dictionary_get_data,
+                            _xpc_dictionary_set_data, dyld_stub_binder ]
+    objc-classes:         [ _CNContact, _CNContactFetchRequest,
+                            _CNContactFormatter, _CNLabeledValue, _CNPhoneNumber,
+                            _GEOPhoneNumberResolver, _NRDevice, _NSArray, _NSBundle,
+                            _NSCache, _NSData, _NSDate, _NSDictionary, _NSError,
+                            _NSKeyedArchiver, _NSKeyedUnarchiver, _NSLocale,
+                            _NSMutableArray, _NSMutableDictionary, _NSNotification,
+                            _NSNotificationCenter, _NSNotificationQueue, _NSNumber,
+                            _NSObject, _NSPredicate, _NSSet, _NSString, _NSThread,
+                            _PBCodable, _TUHandle ]
+    objc-ivars:           [ _PBDataReader._bytes, _PBDataReader._error,
+                            _PBDataReader._length, _PBDataReader._pos ]
+...

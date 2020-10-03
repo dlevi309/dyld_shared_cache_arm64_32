@@ -1,0 +1,97 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 21B7F02F-4AF9-3484-B7A2-7B06BBA3D089' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Carousel/Alerts/DeskClockAlertProvider.bundle/DeskClockAlertProvider
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _DeskClockAssetImageNamed, _DeskClockBundle,
+                            _DeskClockFillFractionStringForLevel,
+                            _DeskClockIsHorizontal ]
+    objc-classes:         [ _DeskClockAlertPolicy, _DeskClockAlertProvider,
+                            _DeskClockChargingViewController, _DeskClockRing,
+                            _DeskClockUtilities, _DeskClockViewController ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _CACurrentMediaTime,
+                            _CGAffineTransformEqualToTransform,
+                            _CGAffineTransformIdentity,
+                            _CGAffineTransformMakeRotation,
+                            _CGAffineTransformMakeScale, _CGPathAddArc,
+                            _CGPathCreateMutable, _CGPathRelease, _CGPointZero,
+                            _CGRectContainsPoint, _CGRectGetHeight, _CGRectGetMaxX,
+                            _CGRectGetMidX, _CGRectGetMidY, _CGRectGetMinX,
+                            _CGRectGetMinY, _CGRectGetWidth, _CGRectInset,
+                            _CLKCeilForDevice, _CLKFloorForDevice,
+                            _CLKFormatTimeIntervalCacheInvalidateNotification,
+                            _CLKFormatTimeIntervalSeconds,
+                            _CLKRectCenteredIntegralRectForDevice,
+                            _CLKRectCenteredXInRectForDevice,
+                            _CLKRectCenteredYInRectForDevice, _CLKRectGetCenter,
+                            _CLKValueForDeviceMetrics, _CSLPIBacklightDidTurnOff,
+                            _CSLPIBacklightWillTurnOn,
+                            _CSLSDeviceOrientationInvertedDidChangeNotification,
+                            _MTAlarmManagerAlarmsChanged,
+                            _MTAlarmManagerNextAlarmChanged,
+                            _MTAlarmManagerStateReset, _MTTimerManagerStateReset,
+                            _NSCalendarDayChangedNotification,
+                            _NSCurrentLocaleDidChangeNotification,
+                            _NSFontAttributeName, _NTKClockFaceLocalizedFormat,
+                            _NTKClockFaceLocalizedString,
+                            _NTKColorByPremultiplyingAlpha,
+                            _NTKConfigureFaceDefaultsChangedNotification,
+                            _NTKLanguageIsTallScript, _NTKLoggingObjectForDomain,
+                            _NTKTimeOffsetChangedNotification,
+                            _NTSAlarmModelFiringAlarmsDidChange,
+                            _NTSTimerModelFiringTimersDidChange,
+                            _UIAccessibilityIsBoldTextEnabled,
+                            _UIApplicationSignificantTimeChangeNotification,
+                            _UIDeviceBatteryLevelDidChangeNotification,
+                            _UIDeviceOrientationDidChangeNotification,
+                            _UIFontDescriptorFeatureSettingsAttribute,
+                            _UIFontWeightLight, _UIFontWeightMedium,
+                            _UIFontWeightSemibold, __Block_object_assign,
+                            __Block_object_dispose, __NSConcreteGlobalBlock,
+                            __NSConcreteStackBlock, __Unwind_Resume,
+                            ___CFConstantStringClassReference,
+                            ___objc_personality_v0, ___stack_chk_fail,
+                            ___stack_chk_guard, __dispatch_main_q,
+                            __objc_empty_cache, __os_log_error_impl, __os_log_impl,
+                            _dispatch_after, _dispatch_once, _dispatch_time,
+                            _kCAFillModeBackwards, _kCAFillModeForwards,
+                            _kCAFillModeRemoved, _kCALineCapRound,
+                            _kCAMediaTimingFunctionLinear, _objc_alloc,
+                            _objc_autoreleaseReturnValue, _objc_copyWeak,
+                            _objc_destroyWeak, _objc_enumerationMutation,
+                            _objc_getProperty, _objc_initWeak,
+                            _objc_loadWeakRetained, _objc_moveWeak, _objc_msgSend,
+                            _objc_msgSendSuper2, _objc_opt_class, _objc_opt_new,
+                            _objc_release, _objc_retain, _objc_retainAutorelease,
+                            _objc_retainAutoreleaseReturnValue,
+                            _objc_retainAutoreleasedReturnValue,
+                            _objc_retainBlock, _objc_setProperty_nonatomic_copy,
+                            _objc_storeStrong, _objc_storeWeak,
+                            _os_log_type_enabled, dyld_stub_binder ]
+    objc-classes:         [ _CAKeyframeAnimation, _CALayer, _CAMediaTimingFunction,
+                            _CAShapeLayer, _CATransaction, _CLKDateTextProvider,
+                            _CLKRenderingContext, _CSLPIBacklight,
+                            _CSLPIBacklightAssertion, _CSLPIChargingCoordinator,
+                            _CSLPIDispatchTimer, _CSLPIDock,
+                            _CSLPISoftWakeScheduler, _CSLSDeviceOrientation,
+                            _CSLSUITriggerRegistration, _CUISAlertPolicy,
+                            _CUISAlertViewController, _MTAlarmManager,
+                            _MTTimerManager, _NSArray, _NSAttributedString,
+                            _NSBundle, _NSCalendar, _NSDate, _NSDictionary,
+                            _NSNotificationCenter, _NSNumber, _NSObject,
+                            _NSOperationQueue, _NSString, _NSTimeZone, _NSTimer,
+                            _NTKColoringLabel, _NTKDigitalTimeLabel, _NTKRing,
+                            _NTKTimeOffsetManager, _NTSAlarmSnoozeTimer,
+                            _NTSAlarmTimerAlertSoundController,
+                            _NTSFiringAlertManager, _UIColor, _UIDevice, _UIFont,
+                            _UIImage, _UIImageView, _UILabel, _UIScreen,
+                            _UITapGestureRecognizer, _UIView ]
+...

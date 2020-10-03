@@ -1,0 +1,26 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: CBF5936E-8C8F-3502-927E-595F811FB116' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/RelevanceEngine/DataSources/RelevanceEnginePodcasts.bundle/RelevanceEnginePodcasts
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _RelevanceEnginePodcastsVersionNumber,
+                            _RelevanceEnginePodcastsVersionString ]
+    objc-classes:         [ _REPodcastsBundleConfiguration,
+                            _REPodcastsSampleDataSource ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _RESampleDataSourceKey,
+                            ___CFConstantStringClassReference,
+                            __objc_empty_cache, _objc_autoreleaseReturnValue,
+                            _objc_msgSend, _objc_opt_class,
+                            _objc_retainAutoreleasedReturnValue,
+                            dyld_stub_binder ]
+    objc-classes:         [ _NSObject, _REBundleConfiguration,
+                            _REElementDataSource ]
+...

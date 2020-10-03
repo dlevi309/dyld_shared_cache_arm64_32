@@ -1,0 +1,12 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 662C19AB-A0B0-306A-878B-58EA34CF6C9C' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/CoreCapture.framework/CoreCapture
+current-version:       1
+compatibility-version: 1
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ dyld_stub_binder ]
+...

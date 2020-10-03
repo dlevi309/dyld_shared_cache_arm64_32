@@ -1,0 +1,17 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: BF06DA32-49C6-38F2-BDE7-5FF928688271' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Frameworks/UIKit.framework/UIKit
+current-version:       61000
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    re-exports:           [ /System/Library/PrivateFrameworks/ShareSheet.framework/ShareSheet,
+                            /System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ dyld_stub_binder ]
+...

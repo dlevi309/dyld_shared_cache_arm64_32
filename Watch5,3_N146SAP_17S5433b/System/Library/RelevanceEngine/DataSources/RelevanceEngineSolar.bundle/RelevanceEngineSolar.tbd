@@ -1,0 +1,57 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: A9061D30-8263-3735-9BAB-CF661F95A65D' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/RelevanceEngine/DataSources/RelevanceEngineSolar.bundle/RelevanceEngineSolar
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _NSRELocalizationBundle, _NSRELocalizedImageNamed,
+                            _NSRELocalizedString, _NanoWeatherAppBundleID,
+                            _NanoWeatherSolarBundleID ]
+    objc-classes:         [ _NSREBundleConfiguration, _NSREDataProvider,
+                            _NSREDataSource, _NSREDemoDataSource,
+                            _NSRESampleDataSource ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _NSCurrentLocaleDidChangeNotification,
+                            _NWKLogForCategory, _REDefaultSectionIdentifier,
+                            _REDemoDataSourceKey, _REPrimaryDataSourceKey,
+                            _RERoundDateDownToNearestMinute,
+                            _RESampleDataSourceKey,
+                            _REUISampleRelevanceProviderForSamplePosition,
+                            _REUIScaledFullColorImageProviderWithImage,
+                            __NSConcreteGlobalBlock, __NSConcreteStackBlock,
+                            __Unwind_Resume, ___CFConstantStringClassReference,
+                            ___NSArray0__, ___objc_personality_v0,
+                            ___stack_chk_fail, ___stack_chk_guard,
+                            __dispatch_main_q, __objc_empty_cache, __os_log_impl,
+                            _abort_report_np, _dispatch_get_global_queue,
+                            _dispatch_once, _dlerror, _dlopen, _dlsym,
+                            _kNWKConstants_WeatherAppBundleIdentifier,
+                            _objc_alloc, _objc_alloc_init,
+                            _objc_autoreleaseReturnValue, _objc_copyWeak,
+                            _objc_destroyWeak, _objc_getClass, _objc_initWeak,
+                            _objc_loadWeakRetained, _objc_msgSend,
+                            _objc_msgSendSuper2, _objc_opt_class, _objc_opt_new,
+                            _objc_release, _objc_retain,
+                            _objc_retainAutoreleaseReturnValue,
+                            _objc_retainAutoreleasedReturnValue,
+                            _objc_retainBlock, _objc_storeStrong,
+                            _os_log_type_enabled, dyld_stub_binder ]
+    objc-classes:         [ _CLKComplicationTemplateGraphicCircularImage,
+                            _CLKFullColorImageProvider, _CLKImageProvider,
+                            _CLKRelativeDateTextProvider, _CLKSimpleTextProvider,
+                            _CLKTextProvider, _CLKTimeTextProvider,
+                            _CLKUIAlmanacTransitInfo, _NSArray, _NSBundle,
+                            _NSCalendar, _NSDate, _NSDateInterval, _NSDictionary,
+                            _NSMutableArray, _NSNotificationCenter, _NSNumber,
+                            _NSObject, _NSString, _NWKLaunchURL,
+                            _NWKLocalLocationMonitor, _REBundleConfiguration,
+                            _REContent, _REDateRelevanceProvider, _REElement,
+                            _REElementDataSource, _REElementOpenAction, _REImage,
+                            _REUpNextScheduler, _REUpNextTimer, _UIImage, _UIScreen ]
+...

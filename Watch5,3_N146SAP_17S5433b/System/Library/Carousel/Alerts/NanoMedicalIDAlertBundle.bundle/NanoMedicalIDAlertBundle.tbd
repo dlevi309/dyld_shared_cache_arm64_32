@@ -1,0 +1,32 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: AC5D5D52-23C6-3ED1-B947-626F8920A780' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Carousel/Alerts/NanoMedicalIDAlertBundle.bundle/NanoMedicalIDAlertBundle
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    objc-classes:         [ _NanoMedicalIDAlertProvider,
+                            _NanoMedicalIDAlertViewController ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _CSLPIMedicalIDButtonPressed,
+                            _CSLPIMedicalIDStayOnKey, __NSConcreteStackBlock,
+                            __Unwind_Resume, ___CFConstantStringClassReference,
+                            ___objc_personality_v0, __dispatch_main_q,
+                            __objc_empty_cache, _dispatch_async, _objc_alloc,
+                            _objc_alloc_init, _objc_autoreleaseReturnValue,
+                            _objc_copyWeak, _objc_destroyWeak, _objc_getProperty,
+                            _objc_initWeak, _objc_loadWeakRetained, _objc_msgSend,
+                            _objc_msgSendSuper2, _objc_release, _objc_retain,
+                            _objc_retainAutoreleasedReturnValue,
+                            _objc_setProperty_nonatomic_copy, _objc_storeStrong,
+                            _objc_storeWeak, dyld_stub_binder ]
+    objc-classes:         [ _CSLSBacklightAssertion, _CSLSUITriggerRegistration,
+                            _CUISAlertViewController,
+                            _HKNanoMedicalIDViewController,
+                            _NSNotificationCenter, _NSObject ]
+...

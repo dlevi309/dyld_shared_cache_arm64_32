@@ -1,0 +1,65 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 31E655AF-FEAF-35C8-82B9-4244030CE49F' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/RelevanceEngine/DataSources/RelevanceEngineWallet.bundle/RelevanceEngineWallet
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _REWalletBundle, _REWalletBundleIdentifier,
+                            _REWalletImageNamed, _REWalletLocalizedString,
+                            _RelevanceEngineWalletVersionNumber,
+                            _RelevanceEngineWalletVersionString ]
+    objc-classes:         [ _REWalletBundleConfiguration, _REWalletDataSource,
+                            _REWalletSampleDataSource ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _NPKRelevantPassesDistributedNotification,
+                            _NPKRelevantPassesTupleKey,
+                            _PKPassLibraryDidAddPassNotification,
+                            _PKPassLibraryDidRemovePassNotification,
+                            _PKPassLibraryDidUpdatePassNotification,
+                            _PKPassLibraryUniqueIDUserInfoKey,
+                            _REDefaultSectionIdentifier, _REImageNamedFromBundle,
+                            _RELogForDomain, _REPrimaryDataSourceKey,
+                            _RESampleDataSourceKey,
+                            _REUISampleRelevanceProviderForSamplePosition,
+                            _REUIScaledFullColorImageProviderWithImage,
+                            __Block_object_assign, __NSConcreteGlobalBlock,
+                            __NSConcreteStackBlock, __REGetIsInternalBuild,
+                            ___CFConstantStringClassReference, ___NSArray0__,
+                            ___stack_chk_fail, ___stack_chk_guard,
+                            __objc_empty_cache, __os_log_debug_impl, __os_log_impl,
+                            _abort_report_np, _dispatch_async,
+                            _dispatch_get_global_queue, _dispatch_group_create,
+                            _dispatch_group_enter, _dispatch_group_leave,
+                            _dispatch_group_notify, _dispatch_once, _dlerror,
+                            _dlopen, _dlsym, _objc_alloc, _objc_alloc_init,
+                            _objc_autoreleaseReturnValue,
+                            _objc_enumerationMutation, _objc_getClass,
+                            _objc_msgSend, _objc_msgSendSuper2, _objc_opt_class,
+                            _objc_opt_isKindOfClass, _objc_opt_new, _objc_release,
+                            _objc_retain, _objc_retainAutorelease,
+                            _objc_retainAutoreleaseReturnValue,
+                            _objc_retainAutoreleasedReturnValue,
+                            _objc_retainBlock, _objc_storeStrong,
+                            _os_log_type_enabled, dyld_stub_binder ]
+    objc-classes:         [ _CLKComplicationTemplateGraphicCircularImage,
+                            _CLKSimpleTextProvider, _CLKTextProvider,
+                            _CLKTimeTextProvider, _CLLocation, _NSArray,
+                            _NSAttributedString, _NSBundle, _NSCalendar,
+                            _NSCharacterSet, _NSDate, _NSDateInterval,
+                            _NSDistributedNotificationCenter, _NSMutableArray,
+                            _NSMutableAttributedString, _NSMutableDictionary,
+                            _NSMutableSet, _NSNumber, _NSObject, _NSString,
+                            _NSTextAttachment, _PKFelicaPassProperties,
+                            _PKPassLibrary, _REBundleConfiguration, _REContent,
+                            _REDateRelevanceProvider, _REElement,
+                            _REElementDataSource, _REElementOpenAction,
+                            _REFeatureValue, _RELocationRelevanceProvider,
+                            _RERelevanceProvider, _UIColor, _UIImage,
+                            _UIImageSymbolConfiguration ]
+...

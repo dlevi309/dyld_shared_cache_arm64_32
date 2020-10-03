@@ -1,0 +1,29 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: C704B6A2-8563-31EB-BE8B-E48194CA6047' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Accounts/Notification/KeychainSyncAccountNotification.bundle/KeychainSyncAccountNotification
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _KeychainSyncAccountNotificationVersionNumber,
+                            _KeychainSyncAccountNotificationVersionString ]
+    objc-classes:         [ _KeychainSyncAccountNotification ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _AAAccountClassPrimary,
+                            _ACAccountTypeIdentifierAppleAccount,
+                            _ACAccountTypeIdentifierIDMS, _OTDefaultContext,
+                            _OctagonIsEnabled, _SOSCCLoggedOutOfAccount,
+                            __NSConcreteStackBlock, ___stack_chk_fail,
+                            ___stack_chk_guard, __objc_empty_cache,
+                            __os_log_debug_impl, __os_log_impl, _objc_msgSend,
+                            _objc_release, _objc_retain, _objc_retainAutorelease,
+                            _objc_retainAutoreleasedReturnValue,
+                            _os_log_type_enabled, _secLogObjForScope,
+                            dyld_stub_binder ]
+    objc-classes:         [ _AKAccountManager, _NSObject, _OTControl ]
+...

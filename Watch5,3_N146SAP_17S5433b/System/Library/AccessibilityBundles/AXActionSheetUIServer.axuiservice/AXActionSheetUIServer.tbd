@@ -1,0 +1,32 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: E5695CF8-6D81-380C-920B-4D3F00E2B43A' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/AccessibilityBundles/AXActionSheetUIServer.axuiservice/AXActionSheetUIServer
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    objc-classes:         [ _AXActionSheetUIServer ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _AXLogCommon, __Block_object_assign,
+                            __Block_object_dispose, __NSConcreteGlobalBlock,
+                            __NSConcreteStackBlock, __Unwind_Resume,
+                            ___CFConstantStringClassReference,
+                            ___objc_personality_v0, ___stack_chk_fail,
+                            ___stack_chk_guard, __objc_empty_cache, __os_log_impl,
+                            _getpid, _objc_alloc_init,
+                            _objc_autoreleaseReturnValue,
+                            _objc_enumerationMutation, _objc_msgSend,
+                            _objc_release, _objc_retain,
+                            _objc_retainAutoreleasedReturnValue,
+                            _objc_storeStrong, _os_log_type_enabled,
+                            dyld_stub_binder ]
+    objc-classes:         [ _AXAccessQueue, _AXUIClientMessenger,
+                            _AXUIDisplayManager, _NSDictionary, _NSMutableSet,
+                            _NSNumber, _NSObject, _NSString, _UIAlertAction,
+                            _UIAlertController, _UIImage, _UIViewController ]
+...

@@ -1,0 +1,53 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 5C72B684-058E-3D1F-99A1-070384951B77' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/RelevanceEngine/DataSources/RelevanceEngineStopwatch.bundle/RelevanceEngineStopwatch
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _NTKUpNextStopwatchBundleIdentifier,
+                            _NTKUpNextStopwatchContentForTime,
+                            _NTKUpNextStopwatchElementIdentifier,
+                            _REStopwatchBundle, _REStopwatchImageNamed,
+                            _REStopwatchLocalizedString,
+                            _RelevanceEngineStopwatchVersionNumber,
+                            _RelevanceEngineStopwatchVersionString ]
+    objc-classes:         [ _REStopwatchBundleConfiguration,
+                            _REStopwatchDataSource, _REStopwatchSampleDataSource ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _CLKFormatTimeIntervalCacheInvalidateNotification,
+                            _NSCurrentLocaleDidChangeNotification,
+                            _NTSStopwatchModelReloadNotification,
+                            _NTSStopwatchModelStateChangedNotification,
+                            _REDefaultSectionIdentifier, _REImageNamedFromBundle,
+                            _RELogForDomain, _REPrimaryDataSourceKey,
+                            _RESampleDataSourceKey,
+                            _REUIGraphicCircularTemplateForAppWithIdentifier,
+                            _REUISampleRelevanceProviderForSamplePosition,
+                            __NSConcreteGlobalBlock, __NSConcreteStackBlock,
+                            __Unwind_Resume, ___CFConstantStringClassReference,
+                            ___NSArray0__, ___objc_personality_v0,
+                            ___stack_chk_fail, ___stack_chk_guard,
+                            __objc_empty_cache, __os_log_debug_impl, __os_log_impl,
+                            _dispatch_async, _dispatch_once, _objc_alloc,
+                            _objc_alloc_init, _objc_autoreleaseReturnValue,
+                            _objc_copyWeak, _objc_destroyWeak, _objc_initWeak,
+                            _objc_loadWeakRetained, _objc_msgSend,
+                            _objc_msgSendSuper2, _objc_opt_class, _objc_opt_new,
+                            _objc_release, _objc_retain,
+                            _objc_retainAutoreleaseReturnValue,
+                            _objc_retainAutoreleasedReturnValue,
+                            _objc_storeStrong, _os_log_type_enabled,
+                            dyld_stub_binder ]
+    objc-classes:         [ _CLKImageProvider, _CLKRelativeDateTextProvider,
+                            _CLKSimpleTextProvider, _NSArray, _NSBundle, _NSDate,
+                            _NSLock, _NSNotificationCenter, _NSObject, _NSURL,
+                            _NTSStopwatchModel, _REBundleConfiguration, _REContent,
+                            _REElement, _REElementDataSource, _REElementOpenAction,
+                            _RESessionRelevanceProvider, _REUpNextTimer, _UIColor ]
+...

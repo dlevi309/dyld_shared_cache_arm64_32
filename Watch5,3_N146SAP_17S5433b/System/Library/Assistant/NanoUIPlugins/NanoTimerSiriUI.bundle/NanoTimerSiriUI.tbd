@@ -1,0 +1,51 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 33AFFFD3-24F6-349C-B92A-AAAA5B4740C3' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Assistant/NanoUIPlugins/NanoTimerSiriUI.bundle/NanoTimerSiriUI
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _NTALaunchApp, _NTALogForCategory ]
+    objc-classes:         [ _NTSiriUIControllerFactory,
+                            _NTSiriUICountdownViewController ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _BKSOpenApplicationOptionKeyActivateSuspended,
+                            _CLKFormatTimeInterval,
+                            _CLKFormatTimeIntervalCacheInvalidateNotification,
+                            _FBSOpenApplicationOptionKeyPayloadURL,
+                            _MTTimerManagerFiringTimerChanged,
+                            _MTTimerManagerStateReset,
+                            _MTTimerManagerTimersChanged,
+                            _NTSGetCurrentTimerSync, _NTSPauseCurrentTimerSync,
+                            _NTSResumeCurrentTimerSync,
+                            _NTSStartCurrentTimerWithDurationSync,
+                            _NTSStopCurrentTimerSync, _UIFontWeightRegular,
+                            __NSConcreteGlobalBlock, __NSConcreteStackBlock,
+                            __Unwind_Resume, ___CFConstantStringClassReference,
+                            ___PUICDeviceIsCompact, ___PUICDeviceIsCompactOnce,
+                            ___assert_rtn, ___objc_personality_v0,
+                            ___stack_chk_fail, ___stack_chk_guard,
+                            __dispatch_main_q, __objc_empty_cache,
+                            __os_log_error_impl, __os_log_impl, _dispatch_async,
+                            _dispatch_once, _kdebug_trace, _objc_alloc,
+                            _objc_alloc_init, _objc_autoreleaseReturnValue,
+                            _objc_copyWeak, _objc_destroyWeak, _objc_initWeak,
+                            _objc_loadWeakRetained, _objc_msgSend,
+                            _objc_msgSendSuper2, _objc_opt_class,
+                            _objc_opt_isKindOfClass, _objc_release, _objc_retain,
+                            _objc_retainAutoreleaseReturnValue,
+                            _objc_retainAutoreleasedReturnValue,
+                            _objc_storeStrong, _os_log_create,
+                            _os_log_type_enabled, dyld_stub_binder ]
+    objc-classes:         [ _FBSSystemService, _MTTimer, _MTTimerManager,
+                            _NSDictionary, _NSNotificationCenter, _NSNumber,
+                            _NSObject, _NSURL, _NTSTimerTimer, _NTSTimerUserPrefs,
+                            _STTimerShowTimerAndPerformAction, _UIColor, _UIDevice,
+                            _UIFont, _UILabel, _UITapGestureRecognizer,
+                            _UIViewController ]
+...

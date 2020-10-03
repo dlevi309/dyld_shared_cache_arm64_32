@@ -1,0 +1,54 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 49CB11B1-8B8C-3625-9507-C0EB7A4AB90D' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/IOAccessoryManager.framework/IOAccessoryManager
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _DRY_TRANSITION_CAPACITANCE_THRESHOLD_NF,
+                            _IOAccessoryManagerVersionNumber,
+                            _IOAccessoryManagerVersionString,
+                            _IOAccessoryStartVoltageEventMonitor,
+                            _WET_TRANSITION_CAPACITANCE_THRESHOLD_NF, _compare ]
+    objc-classes:         [ _HalogenLdcmCalc, _HalogenMeasurement ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _AudioComponentFindNext,
+                            _AudioComponentInstanceDispose,
+                            _AudioComponentInstanceNew, _AudioOutputUnitStart,
+                            _AudioOutputUnitStop, _AudioUnitInitialize,
+                            _AudioUnitRender, _AudioUnitSetProperty,
+                            _AudioUnitUninitialize, _CFBooleanGetValue, _CFRelease,
+                            _CFURLCreateFromFileSystemRepresentation,
+                            _ExtAudioFileCreateWithURL, _ExtAudioFileDispose,
+                            _ExtAudioFileWrite,
+                            _IOAccessoryManagerGetServiceWithPrimaryPort,
+                            _IOAccessoryManagerSelectEisPin, _IOAllowPowerChange,
+                            _IODeregisterForSystemPower,
+                            _IONotificationPortDestroy,
+                            _IONotificationPortSetDispatchQueue,
+                            _IOObjectRelease, _IORegisterForSystemPower,
+                            _IORegistryEntryCreateCFProperty, _IOServiceClose,
+                            _IOServiceOpen, _MGGetStringAnswer,
+                            __Block_object_assign, __Block_object_dispose,
+                            __NSConcreteStackBlock,
+                            ___CFConstantStringClassReference, ___sincos_stret,
+                            ___stack_chk_fail, ___stack_chk_guard,
+                            __objc_empty_cache, __os_log_default, __os_log_impl,
+                            _atan2, _bzero, _cabs, _carg, _cos, _dispatch_after,
+                            _dispatch_get_global_queue, _dispatch_once,
+                            _dispatch_queue_create, _dispatch_release,
+                            _dispatch_walltime, _fmod, _kCFAllocatorDefault, _log10,
+                            _mach_task_self_, _memcpy, _objc_alloc, _objc_alloc_init,
+                            _objc_copyStruct, _objc_msgSend, _objc_msgSendSuper2,
+                            _objc_release, _objc_retain, _os_log_type_enabled,
+                            _qsort, _scalbn, _scalbnf, _sin, _strlen,
+                            _vDSP_create_fftsetupD, _vDSP_destroy_fftsetupD,
+                            _vDSP_fft_zripD, dyld_stub_binder ]
+    objc-classes:         [ _BaseResourceArbiterClient, _NSCondition, _NSDate,
+                            _NSMutableData, _NSObject, _ResourceArbiterClient ]
+...

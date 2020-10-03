@@ -1,0 +1,28 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: A785D165-3235-371A-8857-D8EEB9CF4ADA' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /usr/lib/swift/libswiftHomeKit.dylib
+current-version:       0
+compatibility-version: 1
+swift-version:         6
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _$s7HomeKit49HMCharacteristicPropertySupportsEventNotificationSSvg,
+                            __swift_FORCE_LOAD_$_swiftHomeKit ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _$sSS10FoundationE36_unconditionallyBridgeFromObjectiveCySSSo8NSStringCSgFZ,
+                            _swift_once, _swift_unknownObjectRetain,
+                            dyld_stub_binder ]
+    weak-def-symbols:     [ _HMCharacteristicPropertySupportsEventNotification,
+                            __swift_FORCE_LOAD_$_swiftCoreFoundation,
+                            __swift_FORCE_LOAD_$_swiftCoreGraphics,
+                            __swift_FORCE_LOAD_$_swiftDarwin,
+                            __swift_FORCE_LOAD_$_swiftDispatch,
+                            __swift_FORCE_LOAD_$_swiftFoundation,
+                            __swift_FORCE_LOAD_$_swiftObjectiveC,
+                            __swift_FORCE_LOAD_$_swiftUIKit ]
+...

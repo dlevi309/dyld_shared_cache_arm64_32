@@ -1,0 +1,90 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 75EE4904-4095-31D2-B1EA-31C4759E82F0' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/NanoPhoneUI.framework/NanoPhoneUI
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _CTSUServerConnectionRef, _CTSUServerQueue,
+                            _NANOPHONE_APPLICATION_BUNDLE_ID, _NPHCrossFadeDelay,
+                            _NPHCrossFadeDuration, _NPHDeriveProgramName,
+                            _NPHDeviceHasBaseband, _NPHDeviceOSIsInternalInstall,
+                            _NPHDeviceScreenSizeIs394h,
+                            _NPHDeviceScreenSizeIs448h,
+                            _NPHDeviceScreenSizeIsCompact,
+                            _NPHDeviceScreenSizeIsRegular, _NPHDeviceSizeDouble,
+                            _NPHDeviceSizeDouble2, _NPHDeviceSizePointer,
+                            _NPHDeviceSizeString, _NPHIsDebugBuild,
+                            _NPHIsUnchordedTapEvent, _NPHIsWalkaboutEnabled,
+                            _NPHLayoutMetricFromPixels, _NPHRTTEnabled,
+                            _NPHRTTSupport,
+                            _NPHRTTUIConversationViewControllerClass,
+                            _NPHSharedUtilitiesAppendBuildVersion,
+                            _NPHSharedUtilitiesLocaleHaptic,
+                            _NPHSharedUtilitiesLocaleHapticDucked,
+                            _NPHShowSIMLineInfo,
+                            _NPHToContinueMessageCrossFadeDuration,
+                            _NPHToContinueMessageDuration, _NPHWiFiStringKey,
+                            _NSStringFromTUCallDisconnectedReason,
+                            _NanoPhoneUIVersionNumber, _NanoPhoneUIVersionString,
+                            __callerLabelForCall, _mach_time_elapsed_to_seconds,
+                            _nph_ensure_on_main_queue, _nph_general_log ]
+    objc-classes:         [ _NPHBacklightMinimumBrightnessAssertion, _NPHCall,
+                            _NPHDialRequestDisplayDetails, _NPHSharedUtilities,
+                            _NPHTheme ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _CFPreferencesCopyAppValue, _CGContextFillRect,
+                            _CGContextSetFillColorWithColor, _CGImageRelease,
+                            _CGRectZero, _CUTWeakLinkClass, _LICreateIconForImage,
+                            _MGCopyAnswer, _MGGetBoolAnswer, _NSLocaleCountryCode,
+                            _PUICBlurApply, _UIFontTextStyleFootnote1,
+                            _UIFontWeightMedium, _UIGraphicsBeginImageContext,
+                            _UIGraphicsBeginImageContextWithOptions,
+                            _UIGraphicsEndImageContext,
+                            _UIGraphicsGetCurrentContext,
+                            _UIGraphicsGetImageFromCurrentImageContext,
+                            _UIImageSymbolSizeLarge, _UIImageSymbolSizeMedium,
+                            _UIImageSymbolSizeSmall, _UIRoundToViewScale,
+                            __Block_object_assign,
+                            __CTServerConnectionAddIdentifierException,
+                            __CTServerConnectionCreateOnTargetQueue,
+                            __NSConcreteGlobalBlock, __NSConcreteStackBlock,
+                            __NSDictionaryOfVariableBindings,
+                            ___CFConstantStringClassReference,
+                            ___NSDictionary0__, ___stack_chk_fail,
+                            ___stack_chk_guard, __dispatch_main_q,
+                            __objc_empty_cache, __os_log_error_impl,
+                            __os_log_fault_impl, __os_log_impl, _abort_report_np,
+                            _dispatch_async, _dispatch_once,
+                            _dispatch_queue_create, _dlerror, _dlopen,
+                            _kCFAllocatorDefault, _mach_timebase_info, _objc_alloc,
+                            _objc_alloc_init, _objc_autorelease,
+                            _objc_autoreleaseReturnValue,
+                            _objc_enumerationMutation, _objc_getAssociatedObject,
+                            _objc_getClass, _objc_msgSend, _objc_msgSendSuper2,
+                            _objc_opt_class, _objc_opt_isKindOfClass,
+                            _objc_opt_new, _objc_release, _objc_retain,
+                            _objc_retainAutorelease,
+                            _objc_retainAutoreleaseReturnValue,
+                            _objc_retainAutoreleasedReturnValue,
+                            _objc_setAssociatedObject, _objc_storeStrong,
+                            _os_log_create, _os_log_type_enabled, _strrchr,
+                            dyld_stub_binder ]
+    objc-classes:         [ _BrightnessSystemClient, _CNGeminiChannel,
+                            _CNGeminiHandle, _NCABGeminiManager, _NRDevice, _NSArray,
+                            _NSBundle, _NSCache, _NSDate, _NSDictionary,
+                            _NSLayoutConstraint, _NSLocale, _NSMutableArray,
+                            _NSMutableString, _NSNotification,
+                            _NSNotificationCenter, _NSNotificationQueue, _NSNumber,
+                            _NSObject, _NSPredicate, _NSRegularExpression, _NSString,
+                            _NSThread, _NSUUID, _TUCallCapabilities, _TUCallCenter,
+                            _TUCallProviderManager, _TUContactsDataProvider,
+                            _TUContactsDataProviderFetchRequest, _TUDialRequest,
+                            _TUHandle, _UIApplication, _UIColor, _UIDevice, _UIFont,
+                            _UIImage, _UIScreen, _UIView ]
+...

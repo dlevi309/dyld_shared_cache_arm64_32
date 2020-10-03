@@ -1,0 +1,51 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 4A0E5A8A-765C-393F-B989-F10001260548' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/VisualPairing.framework/VisualPairing
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    objc-classes:         [ _VPPresenterView, _VPScannerView ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _CFArrayAppendValue, _CFArrayCreateMutable,
+                            _CFDictionaryCreateMutable, _CFDictionarySetInt64,
+                            _CFDictionarySetValue, _CFRelease, _CUDispatchTimerSet,
+                            _CUMainQueue, _CVPixelBufferGetBaseAddress,
+                            _CVPixelBufferGetBytesPerRow,
+                            _CVPixelBufferLockBaseAddress,
+                            _CVPixelBufferPoolCreate,
+                            _CVPixelBufferPoolCreatePixelBuffer,
+                            _CVPixelBufferUnlockBaseAddress,
+                            _IsAppleInternalBuild, _LogPrintF, __DefaultRuneLocale,
+                            __LogCategory_Initialize, __NSConcreteStackBlock,
+                            __Unwind_Resume, ___CFConstantStringClassReference,
+                            ___gxx_personality_v0, ___maskrune, ___stack_chk_fail,
+                            ___stack_chk_guard, __dispatch_source_type_timer,
+                            __objc_empty_cache, _bzero, _dispatch_resume,
+                            _dispatch_source_cancel, _dispatch_source_create,
+                            _dispatch_source_set_event_handler,
+                            _kCAFilterNormalBlendMode, _kCFBooleanTrue,
+                            _kCFTypeArrayCallBacks,
+                            _kCFTypeDictionaryKeyCallBacks,
+                            _kCFTypeDictionaryValueCallBacks,
+                            _kCVPixelBufferBytesPerRowAlignmentKey,
+                            _kCVPixelBufferHeightKey,
+                            _kCVPixelBufferIOSurfacePropertiesKey,
+                            _kCVPixelBufferOpenGLESCompatibilityKey,
+                            _kCVPixelBufferPixelFormatTypeKey,
+                            _kCVPixelBufferPoolMinimumBufferCountKey,
+                            _kCVPixelBufferWidthKey, _memcpy, _objc_alloc_init,
+                            _objc_getProperty, _objc_msgSend, _objc_msgSendSuper2,
+                            _objc_release, _objc_retain,
+                            _objc_retainAutoreleasedReturnValue,
+                            _objc_setProperty_nonatomic_copy, _objc_storeStrong,
+                            _strlen, dyld_stub_binder ]
+    objc-classes:         [ _AVPlayer, _CAFilter, _CALayer, _CATransaction, _NSObject,
+                            _UIView ]
+    weak-def-symbols:     [ __ZdaPv, __ZdlPv, __Znam, __Znwm ]
+...

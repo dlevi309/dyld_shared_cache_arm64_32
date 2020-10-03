@@ -1,0 +1,93 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 156C56DF-A685-32F6-A37C-9CE1B1EF8188' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/Accessibility.framework/Frameworks/AXCharacterVoices.framework/AXCharacterVoices
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _AXAXCharacterVoicesVersionNumber,
+                            _AXAXCharacterVoicesVersionString,
+                            _AXCharacterVoicePreferencesDomain,
+                            _AXCharacterVoiceTapToSpeakDidChangeNotification,
+                            _AXCharacterVoiceTapToSpeakPreference,
+                            _characterVoiceIdentifierMickey,
+                            _characterVoiceIdentifierMinnie,
+                            _kAXCharacterFaceDefaultsDomain,
+                            _kAXCharacterVoicePublicAssetServer,
+                            _kNTKCharacterFaceClass ]
+    objc-classes:         [ _AXCharacterDateUtterance, _AXCharacterFunUtterance,
+                            _AXCharacterHourDateUtterance, _AXCharacterUtterance,
+                            _AXCharacterVoice, _AXCharacterVoiceLoader,
+                            _AXCharacterVoicePreferences,
+                            _AXCharacterVoiceSynthesizer, _AXMickeyVoice,
+                            _AXMinnieVoice, _AXResourcePlayInfo ]
+    objc-ivars:           [ _AXResourcePlayInfo._afid,
+                            _AXResourcePlayInfo._currentReadPosition ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _ASServerURLForAssetType, _AXIsInternalInstall,
+                            _AXLogCharacterVoices, _AXProcessIsCarousel,
+                            _AXSetThreadPriority, _AudioFileClose,
+                            _AudioFileGetProperty, _AudioFileOpenURL,
+                            _AudioFileReadPacketData, _AudioQueueAllocateBuffer,
+                            _AudioQueueDispose, _AudioQueueEnqueueBuffer,
+                            _AudioQueueFlush, _AudioQueueNewOutput,
+                            _AudioQueueSetParameter, _AudioQueueStart,
+                            _AudioQueueStop, _CFCopyDescription,
+                            _CFNotificationCenterAddObserver,
+                            _CFNotificationCenterGetDarwinNotifyCenter,
+                            _CFNotificationCenterPostNotification,
+                            _CFNotificationCenterRemoveObserver,
+                            _CFPreferencesCopyAppValue,
+                            _CFPreferencesGetAppBooleanValue,
+                            _CFPreferencesSetAppValue, _CFPreferencesSynchronize,
+                            _CFRelease, _MASetServerUrlOverride,
+                            _NPSHasCompletedInitialSync, _NSLog,
+                            _NSStringFromClass,
+                            _NSStringFromPSYWatchSyncProgressState,
+                            _NSStringFromPSYWatchSyncSessionType,
+                            _SCNetworkReachabilityCreateWithAddress,
+                            _SCNetworkReachabilityGetFlags,
+                            _SCNetworkReachabilitySetCallback,
+                            _SCNetworkReachabilitySetDispatchQueue, __AXAssert,
+                            __AXSCharacterVoiceDefaultSupportedLanguages,
+                            __AXSCharacterVoiceSupportedForLocaleIdentifier,
+                            __AXSVoiceOverTouchEnabled, __Block_object_assign,
+                            __Block_object_dispose, __NSConcreteGlobalBlock,
+                            __NSConcreteStackBlock, __Unwind_Resume,
+                            ___CFConstantStringClassReference, ___NSArray0__,
+                            ___memcpy_chk, ___objc_personality_v0,
+                            ___stack_chk_fail, ___stack_chk_guard,
+                            __objc_empty_cache, __os_log_debug_impl,
+                            __os_log_error_impl, __os_log_impl, _arc4random,
+                            _arc4random_uniform, _dispatch_after, _dispatch_async,
+                            _dispatch_get_global_queue, _dispatch_once,
+                            _dispatch_queue_attr_make_with_qos_class,
+                            _dispatch_queue_create, _dispatch_sync, _dispatch_time,
+                            _kCFBooleanFalse, _kCFBooleanTrue,
+                            _kCFPreferencesAnyHost, _kCFPreferencesCurrentUser,
+                            _memcpy, _objc_alloc, _objc_alloc_init,
+                            _objc_autoreleaseReturnValue, _objc_copyWeak,
+                            _objc_destroyWeak, _objc_enumerationMutation,
+                            _objc_getProperty, _objc_initWeak,
+                            _objc_loadWeakRetained, _objc_msgSend,
+                            _objc_msgSendSuper2, _objc_opt_class,
+                            _objc_opt_isKindOfClass, _objc_opt_new,
+                            _objc_opt_respondsToSelector, _objc_release,
+                            _objc_retain, _objc_retainAutoreleaseReturnValue,
+                            _objc_retainAutoreleasedReturnValue,
+                            _objc_retainBlock, _objc_setProperty_nonatomic_copy,
+                            _objc_storeStrong, _objc_storeWeak,
+                            _os_log_type_enabled, dyld_stub_binder ]
+    objc-classes:         [ _AXCarouselServer, _AXLanguageManager, _AXMALoader,
+                            _AXSettings, _NPSManager, _NSArray, _NSCalendar, _NSDate,
+                            _NSDictionary, _NSFileManager, _NSLocale,
+                            _NSMutableArray, _NSMutableDictionary, _NSNumber,
+                            _NSObject, _NSPredicate, _NSScanner, _NSSet, _NSString,
+                            _NSURL, _NSUserDefaults, _PSYSyncClientStateObserver,
+                            _SCRCThread ]
+...

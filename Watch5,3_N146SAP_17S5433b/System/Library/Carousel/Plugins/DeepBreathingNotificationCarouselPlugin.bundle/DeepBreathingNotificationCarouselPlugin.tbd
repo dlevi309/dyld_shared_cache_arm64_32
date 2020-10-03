@@ -1,0 +1,53 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 33B87CA9-3C4C-3C69-83D9-F4332A9AE2C6' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Carousel/Plugins/DeepBreathingNotificationCarouselPlugin.bundle/DeepBreathingNotificationCarouselPlugin
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _NLAlertProviderUITriggerNameDeepBreathingReminder,
+                            _NLAlertProviderUITriggerNameDeepBreathingWeeklySummary,
+                            _NLDeepBreathingNotificationBundleIdentifier,
+                            _NLDeepBreathingNotificationReminderCategoryIdentifier,
+                            _NLDeepBreathingNotificationReminderIdentifier,
+                            _NLDeepBreathingNotificationWeeklySummaryCategoryIdentifier,
+                            _NLDeepBreathingNotificationWeeklySummaryIdentifier ]
+    objc-classes:         [ _NLDeepBreathingNotificationCarouselPlugin ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _FIDefaultLocalizationTableName,
+                            _FIRandomStringForPrefixWithTableName,
+                            _HKDispatchQueueName, _HKLogDeepBreathing,
+                            _TLAlertTopicActivityGoalBehind,
+                            __HKInitializeLogging, __NSConcreteStackBlock,
+                            ___CFConstantStringClassReference,
+                            ___NSDictionary0__, ___stack_chk_fail,
+                            ___stack_chk_guard, __dispatch_main_q,
+                            __objc_empty_cache, __os_log_error_impl, __os_log_impl,
+                            _dispatch_async, _dispatch_queue_create,
+                            _kFIWeeklySummaryInfoDailyTotalsKey,
+                            _kFIWeeklySummaryInfoTotalDeepBreathingSessionCountKey,
+                            _kNLCoachingAlertRequestWeeklySummaryInfoUserInfoKey,
+                            _kNLCoachingResponseInfoAlertActionKey,
+                            _kNLCoachingResponseNotification,
+                            _kNLDeepBreathingCoachingSubmanagerIdentifier,
+                            _kNLDeepBreathingWeeklySummaryCoachingManagerIdentifier,
+                            _objc_alloc, _objc_alloc_init, _objc_copyWeak,
+                            _objc_destroyWeak, _objc_enumerationMutation,
+                            _objc_initWeak, _objc_loadWeakRetained, _objc_msgSend,
+                            _objc_msgSendSuper2, _objc_opt_class, _objc_release,
+                            _objc_retain, _objc_retainAutoreleasedReturnValue,
+                            _objc_storeStrong, _os_log_type_enabled,
+                            dyld_stub_binder ]
+    objc-classes:         [ _CSLSUITriggerRegistration, _NLCoachingAlertRequest,
+                            _NLCoachingAlertResponse, _NLNanoExtendedHealthStore,
+                            _NSArray, _NSBundle, _NSDate, _NSDictionary,
+                            _NSNotificationCenter, _NSNumber, _NSObject, _NSString,
+                            _UNMutableNotificationContent,
+                            _UNMutableNotificationSound, _UNNotificationRequest,
+                            _UNNotificationSound, _UNUserNotificationCenter ]
+...

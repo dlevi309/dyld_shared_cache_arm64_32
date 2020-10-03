@@ -1,0 +1,21 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: D9E52782-BD3B-37BB-8A42-BECF78CFA73B' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Carousel/NotificationCenter/RaiseToSpeakNotificationCenterCellContent.bundle/RaiseToSpeakNotificationCenterCellContent
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _RaiseToSpeakNotificationCenterCellContentVersionNumber,
+                            _RaiseToSpeakNotificationCenterCellContentVersionString ]
+    objc-classes:         [ _RTSNotificationNCDefaultCellFactory ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ ___CFConstantStringClassReference,
+                            __objc_empty_cache, _objc_msgSend, dyld_stub_binder ]
+    objc-classes:         [ _CUISNotificationNCDefaultCellFactory, _NSArray,
+                            _NSObject ]
+...

@@ -1,0 +1,16 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: D47CD77E-D00F-3DF9-A5A8-66B2ECE6EA70' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/SharingXPCServices.framework/SharingXPCServices
+current-version:       1526.14
+compatibility-version: 1
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _SharingXPCServicesVersionNumber,
+                            _SharingXPCServicesVersionString ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ dyld_stub_binder ]
+...

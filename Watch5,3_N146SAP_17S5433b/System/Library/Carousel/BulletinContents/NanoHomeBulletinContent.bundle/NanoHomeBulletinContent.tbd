@@ -1,0 +1,93 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: F0BC3B24-BA77-3ABB-990D-7D2083040684' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Carousel/BulletinContents/NanoHomeBulletinContent.bundle/NanoHomeBulletinContent
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _NHOBulletinActionIdentifierToggleLights,
+                            _NHOBulletinActionIdentifierToggleLockMechanism,
+                            _NHOBulletinActionIdentifierToggleMicrophone,
+                            _NHOBulletinActionIdentifierToggleSecuritySystem,
+                            _nho_general_log ]
+    objc-classes:         [ _LaunchContext, _NHOBulletinAction,
+                            _NHOBulletinClientFactory,
+                            _NHOBulletinLocationTriggerAction,
+                            _NHOCameraControlsView, _NHOCameraView,
+                            _NHOHomeManager, _NHOMicButton, _NHONotificationIcons,
+                            _NHOSlider, _NHOTheme, _NHOTouchInsetsButton,
+                            _NanoHomeVideoBulletinViewController ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _CGAffineTransformIdentity,
+                            _CGAffineTransformMakeTranslation, _CGImageRelease,
+                            _CGPointZero, _CGRectContainsPoint, _CGRectGetHeight,
+                            _CGRectInset, _CGRectZero,
+                            _CSISBulletinLongLookHeaderLaunchBundleIdentifierKey,
+                            _CSISBulletinLongLookHeaderLaunchURLKey,
+                            _CUISBulletinLongLookIconKey,
+                            _CUISBulletinQuickLookIconKey,
+                            _CUISBulletinQuickLookSubtitleColorKey,
+                            _CUISBulletinQuickLookSubtitleKey, _HFLogForCategory,
+                            _HFResultPrimaryStateKey, _HFToggledPrimaryState,
+                            _HMCharacteristicTypeInputEvent,
+                            _HMCharacteristicTypeMotionDetected,
+                            _HMCharacteristicTypeTargetSecuritySystemState,
+                            _LICreateIconFromCachedBitmap, _NAStringFromBOOL,
+                            _NSFontAttributeName, _UIEdgeInsetsZero,
+                            _UIFontTextStyleBody, _UIFontTextStyleFootnote1,
+                            _UIRectCenteredAboutPointScale, _UIRectGetCenter,
+                            _UIRoundToViewScale, __Block_object_assign,
+                            __NSConcreteGlobalBlock, __NSConcreteStackBlock,
+                            __Unwind_Resume, ___CFConstantStringClassReference,
+                            ___NSArray0__, ___NSDictionary0__,
+                            ___objc_personality_v0, ___stack_chk_fail,
+                            ___stack_chk_guard, __dispatch_main_q,
+                            __objc_empty_cache, __os_log_error_impl, __os_log_impl,
+                            _dispatch_async, _dispatch_once, _kdebug_trace,
+                            _objc_alloc, _objc_alloc_init,
+                            _objc_autoreleaseReturnValue, _objc_copyWeak,
+                            _objc_destroyWeak, _objc_enumerationMutation,
+                            _objc_getProperty, _objc_initWeak,
+                            _objc_loadWeakRetained, _objc_msgSend,
+                            _objc_msgSendSuper2, _objc_opt_class,
+                            _objc_opt_isKindOfClass, _objc_opt_new,
+                            _objc_opt_respondsToSelector, _objc_release,
+                            _objc_retain, _objc_retainAutorelease,
+                            _objc_retainAutoreleaseReturnValue,
+                            _objc_retainAutoreleasedReturnValue,
+                            _objc_retainBlock, _objc_setProperty_nonatomic_copy,
+                            _objc_storeStrong, _objc_storeWeak,
+                            _objc_unsafeClaimAutoreleasedReturnValue,
+                            _os_log_create, _os_log_type_enabled, dyld_stub_binder ]
+    objc-classes:         [ _CALayer, _CATransaction, _CSLSBacklightAssertion,
+                            _CUISBulletinActionMenuPresentation,
+                            _CUISBulletinClientFactory,
+                            _CUISBulletinClientViewController,
+                            _CUISBulletinDefaultClientViewController,
+                            _CUISBulletinLongLookLayoutAttributes,
+                            _CUISBulletinPrimaryPagePresentation,
+                            _HFCameraAudioManager, _HFControlItem,
+                            _HFLightbulbServiceItem, _HFLockMechanismServiceItem,
+                            _HFPrimaryStateControlItem, _HFSecurityServiceItem,
+                            _HFServiceItemProvider, _HFSimpleItemManager,
+                            _HMCameraView, _HMFProcessInfo, _HMHomeManager,
+                            _HMMutableHomeManagerConfiguration,
+                            _LSApplicationProxy, _NACVolumeController, _NAFuture,
+                            _NAPromise, _NAScheduler, _NMUVolumeControlsView,
+                            _NRPairedDeviceRegistry, _NSArray, _NSBundle,
+                            _NSDictionary, _NSError, _NSLayoutConstraint,
+                            _NSMutableArray, _NSMutableDictionary, _NSNumber,
+                            _NSObject, _NSSet, _NSString, _NSTimer, _NSURLComponents,
+                            _NSURLQueryItem, _NSUUID, _NSUserDefaults,
+                            _NanoHomeLocationAutomationErrorCoordinator,
+                            _PUICActionItem, _PUICApplication,
+                            _PUICCurvedCollectionView, _PUICTableViewCell,
+                            _UIApplication, _UIButton, _UIColor, _UIDevice, _UIFont,
+                            _UIGraphicsImageRenderer, _UIImage, _UIImageView,
+                            _UILabel, _UILayoutGuide, _UIScreen, _UIView ]
+...

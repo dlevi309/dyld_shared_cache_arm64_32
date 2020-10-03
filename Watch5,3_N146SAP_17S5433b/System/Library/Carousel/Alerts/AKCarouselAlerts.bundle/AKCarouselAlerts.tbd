@@ -1,0 +1,53 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 1B88184A-6A36-39E1-8780-2A5526C765BB' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Carousel/Alerts/AKCarouselAlerts.bundle/AKCarouselAlerts
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _AKCarouselAlertsVersionNumber,
+                            _AKCarouselAlertsVersionString ]
+    objc-classes:         [ _AKCarouselAlertProvider ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _AKCarouselAlertAlternateButtonTitleKey,
+                            _AKCarouselAlertDefaultButtonTitleKey,
+                            _AKCarouselAlertIdentifierKey,
+                            _AKCarouselAlertMessageKey,
+                            _AKCarouselAlertOtherButtonTitleKey,
+                            _AKCarouselAlertOverWriteExistingAlertKey,
+                            _AKCarouselAlertResponseKey,
+                            _AKCarouselAlertServiceName,
+                            _AKCarouselAlertSupplementViewDataKey,
+                            _AKCarouselAlertSupplementViewKey,
+                            _AKCarouselAlertSystemSoundIDKey,
+                            _AKCarouselAlertTextFieldContentTypeKey,
+                            _AKCarouselAlertTextFieldExplanationKey,
+                            _AKCarouselAlertTextFieldInputLengthKey,
+                            _AKCarouselAlertTextFieldInputTypeKey,
+                            _AKCarouselAlertTextFieldIsSecureKey,
+                            _AKCarouselAlertTitleKey,
+                            _AudioServicesPlaySystemSoundWithOptions,
+                            __AKLogSystem, __Block_object_assign,
+                            __NSConcreteStackBlock,
+                            ___CFConstantStringClassReference, ___stack_chk_fail,
+                            ___stack_chk_guard, __dispatch_main_q,
+                            __objc_empty_cache, __os_log_debug_impl,
+                            __os_log_error_impl, __os_log_impl, _dispatch_async,
+                            _objc_alloc, _objc_alloc_init,
+                            _objc_autoreleaseReturnValue, _objc_copyWeak,
+                            _objc_destroyWeak, _objc_initWeak,
+                            _objc_loadWeakRetained, _objc_msgSend,
+                            _objc_msgSendSuper2, _objc_opt_class, _objc_release,
+                            _objc_retain, _objc_retainAutoreleasedReturnValue,
+                            _objc_storeStrong, _objc_storeWeak,
+                            _os_log_type_enabled, dyld_stub_binder ]
+    objc-classes:         [ _AKAlertViewController, _BSAuditToken, _NSArray, _NSData,
+                            _NSDictionary, _NSError, _NSMutableDictionary, _NSNumber,
+                            _NSObject, _NSSet, _NSString, _NSXPCInterface,
+                            _NSXPCListener, _NSXPCListenerEndpoint ]
+...

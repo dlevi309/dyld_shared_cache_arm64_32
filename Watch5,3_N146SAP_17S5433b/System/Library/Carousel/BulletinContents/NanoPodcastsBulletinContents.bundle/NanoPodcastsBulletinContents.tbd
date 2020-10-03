@@ -1,0 +1,25 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 2B70D614-0DA2-39A8-B37B-88E81266BD88' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Carousel/BulletinContents/NanoPodcastsBulletinContents.bundle/NanoPodcastsBulletinContents
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64_32 ]
+    objc-classes:         [ _NMTBulletinClientFactory,
+                            _NMTBulletinClientViewController ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ __objc_empty_cache, _objc_alloc,
+                            _objc_autoreleaseReturnValue, _objc_msgSend,
+                            _objc_msgSendSuper2, _objc_release, _objc_retain,
+                            _objc_retainAutoreleasedReturnValue,
+                            _objc_storeStrong, dyld_stub_binder ]
+    objc-classes:         [ _CUISBulletinClientFactory,
+                            _CUISBulletinDefaultClientViewController,
+                            _CUISBulletinPrimaryPagePresentation, _NSObject,
+                            _UIImage ]
+...

@@ -1,0 +1,30 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: 535BFBAC-9456-3A35-8E86-D089C546D2B4' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /usr/lib/libETLDLFDynamic.dylib
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _ETLDLFAddVersionReport,
+                            _ETLDLFConversionParametersInit, _ETLDLFConvert,
+                            _ETLDLFConvertDebugData, _ETLDLFConvertExt,
+                            _ETLDLFConverter, _ETLDLFParse ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _ETLDecompress, _ETLDecompressCheck,
+                            _ETLDecompressProcessNonHDLCData,
+                            _ETLEVENTProcessEventItemTSLength,
+                            _ETLEVENTProcessHeader, _ETLLOGParseLogHeader,
+                            _ETLLOGParseLogRecord, _ETLMESSAGECreateFromQSR,
+                            _ETLMESSAGECreateFromQSR4,
+                            _ETLMESSAGEParseMessageHeader,
+                            _ETLParseLogEventOrMessageExt,
+                            _ETLTimestampFromTimeval, _ETLTimestampGetTimeval,
+                            __ETLDebugPrint, __ETLDebugPrintBinary,
+                            ___snprintf_chk, ___stack_chk_fail, ___stack_chk_guard,
+                            ___strlcat_chk, ___strlcpy_chk, _free, _localtime_r,
+                            _malloc, _memcpy, _strlen, dyld_stub_binder ]
+...

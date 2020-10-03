@@ -1,0 +1,18 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64_32 ]
+uuids:                 [ 'arm64_32: FA837685-49E8-39D9-B25C-0C71DA0EE12A' ]
+platform:              watchos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/HIDPlugins/AttentionAwarenessFilter.plugin/AttentionAwarenessFilter
+current-version:       0
+compatibility-version: 0
+exports:
+  - archs:                [ arm64_32 ]
+    symbols:              [ _AttentionAwarenessFilterVersionNumber,
+                            _AttentionAwarenessFilterVersionString,
+                            _AttentionServiceEventFilterFactory ]
+undefineds:
+  - archs:                [ arm64_32 ]
+    symbols:              [ __AWAttentionServiceEventFilterFactory,
+                            dyld_stub_binder ]
+...
